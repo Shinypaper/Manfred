@@ -1,3 +1,89 @@
-h1 {
-	color: @black;
+//Global Styles
+//-------------
+
+a:hover {
+	text-decoration: none;
+}
+
+.row {
+	.make-row();
+}
+
+.blockicon {
+	display: block;
+}
+
+
+
+
+//Page Styles
+//-----------
+
+.logo {
+		background-color: @brand-primary;
+		h1 {
+		display: inline;
+		border-bottom: 4px solid @brand-success;	
+	}
+	img {
+		.img-circle;
+		margin: @grid-gutter-width;
+	}
+}
+
+.hero {
+
+	margin: @grid-gutter-width;
+	text-align: center;
+	h1 {
+		display: inline;
+		border-bottom: 4px solid @brand-success;	
+	}
+}
+
+.work {
+	text-align: center;
+	padding: 350px;
+	background-color: @slate;
+	h1 {
+		color: @body-bg;
+	}
+}
+
+.team {
+	&:extend(.row);
+	margin: 0;
+	margin-bottom: (@grid-gutter-width *2);
+	.teamate {
+		.make-sm-column(6);
+		text-align: center;
+		padding: @grid-gutter-width;
+		img {
+			max-width: 250px;
+			.img-circle;
+		}
+	}
+}
+
+.navigation {
+	background-color: @brand-success;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	ul {
+		&:extend(.row);
+		padding-left: 0;
+		margin-bottom: 0;
+		a {
+			color: @body-bg;
+			font-size: 18px;
+		}
+	}
+	li {
+		.make-sm-column(3);
+		text-align: center;
+		padding: @grid-gutter-width (@grid-gutter-width *2);
+		list-style: none;
+
+	}
 }
