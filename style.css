@@ -5611,16 +5611,19 @@ a:hover {
 }
 @media (min-width: 768px) {
   .section {
-    padding: 100px;
+    padding: 100px 0;
   }
 }
 @media (min-width: 992px) {
   .section {
-    padding: 140px;
+    padding: 140px 0;
   }
 }
 .accent {
   border-bottom: 4px solid #05d62e;
+}
+img {
+  max-width: 100%;
 }
 .masthead {
   background-color: #202024;
@@ -5731,7 +5734,7 @@ a:hover {
   text-align: center;
   background-image: url('/assets/img/background.svg');
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 .where h1 {
   margin-bottom: 40px;

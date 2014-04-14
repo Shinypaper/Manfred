@@ -17,17 +17,19 @@ a:hover {
 .section {
 	padding: 40px;
 	@media (min-width: @screen-sm) {
-	padding: 100px;
+	padding: 100px 0;
 	}
 	@media (min-width: @screen-md) { 
-	padding: 140px;
+	padding: 140px 0;
 	}
 }
 
 .accent {
 	border-bottom: 4px solid @brand-primary;
 }
-
+img {
+	max-width: 100%;
+}
 
 //Page Styles
 //-----------
@@ -111,7 +113,7 @@ a:hover {
 	text-align: center;
 	background-image: url('/assets/img/background.svg');
 	background-position: center;
-	background-size: 100%;
+	background-size: cover;
 	h1 {
 		margin-bottom: 40px;
 		display: inline-block;
