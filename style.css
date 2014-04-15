@@ -5653,12 +5653,9 @@ img {
   color: #f4f3f3;
   border-bottom: 4px solid #05d62e;
 }
-.logo img {
-  margin: 30px;
-  padding: 10px;
-  background-color: #f4f3f3;
-  width: 100px;
-  border-radius: 50%;
+.logo i {
+  font-size: 3.5em;
+  color: #f4f3f3;
 }
 .navigation ul {
   padding-left: 0;
