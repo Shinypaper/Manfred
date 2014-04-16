@@ -5757,10 +5757,33 @@ img {
 .how .contact {
   color: #f4f3f3;
 }
+.how .blurb {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .how .blurb {
+    float: left;
+    width: 50%;
+  }
+}
+.how .form {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .how .form legend {
   color: #f4f3f3;
-  margin-top: 100px;
   border-bottom: 4px solid #05d62e;
+}
+@media (min-width: 768px) {
+  .how .form {
+    float: left;
+    width: 50%;
+  }
 }
 .how .form .form-control {
   border-radius: 0;
