@@ -5631,7 +5631,7 @@ img {
 }
 .masthead {
   background-color: #202024;
-  padding: 20px 150px 0;
+  padding: 20px 150px;
 }
 .masthead:before,
 .masthead:after {
@@ -5655,11 +5655,15 @@ img {
 .logo h1 {
   display: inline;
   color: #f4f3f3;
-  border-bottom: 4px solid #05d62e;
+  position: absolute;
+  top: 30px;
 }
-.logo i {
-  font-size: 3.5em;
-  color: #f4f3f3;
+.logo img {
+  width: 100px;
+  margin-right: 10px;
+}
+.code {
+  color: #05d62e;
 }
 .navigation ul {
   padding-left: 0;
@@ -5687,9 +5691,11 @@ img {
 }
 .navigation li {
   display: inline-block;
-  margin: 45px 60px 0;
+  margin: 42px 60px 0;
   list-style: none;
   text-transform: uppercase;
+}
+.navigation li:hover {
   border-bottom: 4px solid #05d62e;
 }
 .team {
@@ -5733,9 +5739,6 @@ img {
 }
 .where {
   text-align: center;
-  background-image: url('/assets/img/background.svg');
-  background-position: center;
-  background-size: cover;
 }
 .where h1 {
   margin-bottom: 40px;
@@ -5791,6 +5794,18 @@ img {
 }
 .how .form .form-control {
   border-radius: 0;
+}
+.portfolio_details {
+  background-color: #202024;
+  text-align: center;
+}
+.portfolio_details img {
+  width: 100%;
+}
+.portfolio_blurb {
+  background-color: #2e2e34;
+  color: #f4f3f3;
+  text-align: center;
 }
 .clearfix:before,
 .clearfix:after,
