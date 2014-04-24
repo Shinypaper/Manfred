@@ -37,7 +37,7 @@ img {
 .masthead {
 	.clearfix();
 	background-color: @gray-dark;
-	padding: 20px 150px 0;
+	padding: 20px 150px;
 }
 
 .logo {
@@ -45,12 +45,17 @@ img {
 		h1 {
 		display: inline;
 		color: @body-bg;
-		.accent;
+		position: absolute;
+		top: 30px;
 	}
-	i {
-		font-size: 3.5em;
-		color: @body-bg;
+	img {
+		width: 100px;
+		margin-right: 10px;
 	}
+}
+
+.code {
+	color: @brand-primary;
 }
 
 .navigation {
@@ -65,10 +70,12 @@ img {
 	}
 	li {
 		display: inline-block;
-		margin: 45px (@grid-gutter-width *2) 0;
+		margin: 42px (@grid-gutter-width *2) 0;
 		list-style: none;
 		text-transform: uppercase;
-		.accent;
+		&:hover {
+			.accent;
+		}
 	}
 }
 
@@ -108,9 +115,6 @@ img {
 
 .where {
 	text-align: center;
-	background-image: url('/assets/img/background.svg');
-	background-position: center;
-	background-size: cover;
 	h1 {
 		margin-bottom: 40px;
 		display: inline-block;
@@ -147,4 +151,18 @@ img {
 	}
 }
 
+//Portfolio Page
 
+.portfolio_details {
+	background-color: @gray-dark;
+	text-align: center;
+	img {
+		width: 100%;
+	}
+}
+
+.portfolio_blurb {
+	background-color: @gray;
+	color: @body-bg;
+	text-align: center;
+}
