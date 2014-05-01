@@ -103,15 +103,16 @@
                     <legend>Let's work together</legend>
                 
                     <div class="form-group">
-                        <label for="">Name</label>
+                        <label for="full_name">Name</label>
                         <input type="text" class="form-control" id="" >
-                        <label for="">Email</label>
+                        <label for="email">Email</label>
                         <input type="text" class="form-control" id="" >
-                        <label for="">Project Details</label>
+                        <label for="comments">Project Details</label>
                         <textarea type="textarea" class="form-control" id=""></textarea>
                     </div>
                     <a href="send_form_email.php"><button type="submit" class="btn btn-primary">Submit</button></a>
                 </form>
+                <?php print_r($_POST); ?>
             </div>
         </div>
     </div>
