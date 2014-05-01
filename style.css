@@ -5830,6 +5830,17 @@ img {
   color: #f4f3f3;
   text-align: center;
 }
+footer {
+  text-align: center;
+  background-color: #202024;
+}
+footer img {
+  width: 80px;
+}
+footer .footer_accent {
+  padding: 2px;
+  background-color: #05d62e;
+}
 .clearfix:before,
 .clearfix:after,
 .container:before,
