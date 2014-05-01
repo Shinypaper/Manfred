@@ -757,7 +757,8 @@ pre code {
 .row,
 .team,
 .where .client,
-.how .contact {
+.how .contact,
+.mobile_row {
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -5602,7 +5603,8 @@ a:hover {
 .row,
 .team,
 .where .client,
-.how .contact {
+.how .contact,
+.mobile_row {
   margin-left: -15px;
   margin-right: -15px;
   margin: 0;
@@ -5796,16 +5798,35 @@ img {
   border-radius: 0;
 }
 .portfolio_details {
+  background-color: #2e2e34;
+}
+.portfolio_mobile {
   background-color: #202024;
   text-align: center;
 }
+.portfolio_details {
+  margin: 0 auto;
+}
 .portfolio_details img {
   width: 100%;
+  padding: 0 10%;
 }
 .portfolio_blurb {
-  background-color: #2e2e34;
-  color: #f4f3f3;
+  background-color: #f4f3f3;
+  color: #2e2e34;
   text-align: center;
+}
+.mobile_row .mobile_images .mobile_image {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .mobile_row .mobile_images .mobile_image {
+    float: left;
+    width: 50%;
+  }
 }
 footer {
   text-align: center;
@@ -5859,7 +5880,11 @@ footer .footer_accent {
 .how .contact:before,
 .how .contact:after,
 .how .contact:before,
-.how .contact:after {
+.how .contact:after,
+.mobile_row:before,
+.mobile_row:after,
+.mobile_row:before,
+.mobile_row:after {
   content: " ";
   display: table;
 }
@@ -5883,7 +5908,9 @@ footer .footer_accent {
 .where .client:after,
 .where .client:after,
 .how .contact:after,
-.how .contact:after {
+.how .contact:after,
+.mobile_row:after,
+.mobile_row:after {
   clear: both;
 }
 .center-block {
