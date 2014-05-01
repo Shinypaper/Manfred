@@ -17,10 +17,10 @@ a:hover {
 .section {
 	padding: 40px;
 	@media (min-width: @screen-sm) {
-	padding: 100px 0;
+		padding: 100px 0;
 	}
 	@media (min-width: @screen-md) { 
-	padding: 140px 0;
+		padding: 140px 0;
 	}
 }
 
@@ -41,8 +41,8 @@ img {
 }
 
 .logo {
-		float: left;
-		h1 {
+	float: left;
+	h1 {
 		display: inline;
 		color: @body-bg;
 		position: absolute;
@@ -121,11 +121,37 @@ img {
 		color: @gray;
 		//.accent;
 	}
-	.client {
+	.clients {
 		&:extend(.row);
-		img {
+		.client {
 			.make-sm-column(3);
-			.img-circle;
+			figure {
+				position: relative;
+				overflow: hidden;
+				border-radius: 50%;
+			}
+			.client_meta {
+				position: absolute;
+				left: 0;
+				top: 100%;
+				right: 0;
+				height: 100%;
+				background: rgba(255,255,255,0.5);
+				border-radius: 50%;
+				padding-top: 10%;
+				-webkit-transition: top .4s, padding-top .4s;
+				-moz-transition: top .4s, padding-top .4s;
+				-ms-transition: top .4s, padding-top .4s;
+				-o-transition: top .4s, padding-top .4s;
+				transition: top .4s, padding-top .4s;
+				font-size: 2em;
+			}
+			&:hover {
+				.client_meta {
+					top: 60%;
+					//padding-top: 45%;
+				}
+			}
 		}
 	}
 }
