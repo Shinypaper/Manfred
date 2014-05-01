@@ -120,6 +120,8 @@ $headers = 'From: '.$email_from."\r\n".
  
 <!-- include your own success html here -->
  
+<!-- INSERT REDIRECT -->
+
 <?php print_r($email_message); ?> 
  
  
