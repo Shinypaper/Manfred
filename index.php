@@ -112,11 +112,15 @@
                     </div>
                     <a href="send_form_email.php"><button type="submit" class="btn btn-primary">Submit</button></a>
                 </form>
-                <?php print_r($_POST); ?>
             </div>
         </div>
     </div>
     </section>
+
+    <footer>
+        <img src="/assets/img/cbrewers.png" alt="">
+        <div class="footer_accent"></div>
+    </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
