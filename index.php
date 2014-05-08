@@ -98,21 +98,22 @@
                 <p><span class="accent">M</span> : 416-888-2556 </p>
                 <p><span class="accent">E</span> : info@brolli.com </p>
             </div>
-            <div class="form">
-                <form name="contactform" method="POST" role="form" action="send_form_email.php">
+            <div id="form-messages" class="form">
+                <form id="ajax-contact" method="post" action="mailer.php">
                     <legend>Let's work together</legend>
                 
                     <div class="form-group">
-                        <label for="full_name">Name</label>
-                        <input type="text" name="full_name" class="form-control" id="" >
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
                         <label for="email">Email</label>
-                        <input type="text" name="email" class="form-control" id="" >
+                        <input type="email" id="email" name="email" class="form-control" required>
                         <label for="comments">Project Details</label>
-                        <textarea type="textarea" name="comments" class="form-control" id=""></textarea>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+
                     </div>
                     <a href="send_form_email.php"><button type="submit" class="btn btn-primary">Submit</button></a>
                 </form>
-                <?php print_r($_POST); ?>
+                
             </div>
         </div>
     </div>
@@ -125,6 +126,7 @@
         <script src="assets/js/vendor/wow.min.js"></script>
 
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/app.js"></script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

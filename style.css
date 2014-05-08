@@ -5797,6 +5797,14 @@ img {
 .how .form .form-control {
   border-radius: 0;
 }
+.success {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 20px;
+}
+.form-control {
+  margin-bottom: 20px;
+}
 .portfolio_details {
   background-color: #2e2e34;
 }
