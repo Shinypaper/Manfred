@@ -1,0 +1,23 @@
+{
+  "name": "manfred",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "~3.7.0",
+    "gulp-less": "~1.2.3",
+    "gulp-livereload": "~1.5.0",
+    "gulp-rename": "~1.2.0",
+    "gulp-util": "~2.2.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@repo.razoredgelabs.com:carwashfinder.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
