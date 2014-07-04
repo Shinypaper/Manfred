@@ -32,7 +32,6 @@
               <li><a href="">why</a></li>
               <li><a href="">where</a></li>
               <li><a href="">how</a></li>
-              
            </ul>
         </nav>
     </section>
@@ -96,7 +95,7 @@
             <div class="blurb">
                 <h1>We'd love to learn more about you and your needs.</h1>
                 <p><span class="accent">M</span> : 416-888-2556 </p>
-                <p><span class="accent">E</span> : info@brolli.com </p>
+                <p><span class="accent">E</span> : info@codebrewers.ca </p>
             </div>
             <div class="form">
                 <form name="contactform" method="POST" role="form" action="send_form_email.php">

@@ -5673,7 +5673,7 @@ a:hover {
   }
 }
 .accent {
-  border-bottom: 4px solid #ff961d;
+  border-bottom: 4px solid #05d62e;
 }
 img {
   max-width: 100%;
@@ -5745,7 +5745,7 @@ img {
   text-transform: uppercase;
 }
 .navigation li:hover {
-  border-bottom: 4px solid #ff961d;
+  border-bottom: 4px solid #05d62e;
 }
 .team {
   background-color: #202024;
@@ -5753,7 +5753,7 @@ img {
 .team h1 {
   color: #f4f3f3;
   display: inline-block;
-  border-bottom: 4px solid #ff961d;
+  border-bottom: 4px solid #05d62e;
 }
 .team .teamate {
   position: relative;
@@ -5781,7 +5781,7 @@ img {
 .why h1 {
   margin-bottom: 40px;
   display: inline-block;
-  border-bottom: 4px solid #ff961d;
+  border-bottom: 4px solid #05d62e;
 }
 .why p {
   font-size: 20px;
@@ -5833,7 +5833,7 @@ img {
 }
 .how .form legend {
   color: #f4f3f3;
-  border-bottom: 4px solid #ff961d;
+  border-bottom: 4px solid #05d62e;
 }
 @media (min-width: 768px) {
   .how .form {
