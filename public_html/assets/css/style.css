@@ -5844,6 +5844,17 @@ img {
 .how .form .form-control {
   border-radius: 0;
 }
+.four-oh-four {
+  background-color: #202024;
+  text-align: center;
+}
+.four-oh-four h1 {
+  font-size: 400px;
+  color: #05d62e;
+}
+.four-oh-four p {
+  color: white;
+}
 .portfolio_details {
   background-color: #2e2e34;
 }
