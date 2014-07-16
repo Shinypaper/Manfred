@@ -17,6 +17,14 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
 
+    <section class="masthead">
+        <a href="/">
+            <div class="logo">
+                <img src="/assets/img/cbrewers.png" alt=""><h1><span class="code">Code</span>Brewers</h1>
+            </div>
+        </a>
+    </section>
+
     <section class="section four-oh-four">
         <div class="container">
             <h1><span class="wow flip" data-wow-delay="0.6s" data-wow-duration="1.3s">4</span><span class="wow flip" data-wow-delay="0.8s" data-wow-duration="1.3s">0</span><span class="wow flip" data-wow-delay="1s" data-wow-duration="1.3s">4</span></h1>
