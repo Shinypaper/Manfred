@@ -114,7 +114,7 @@
             </div>
             <div class="success">
                 <h1>We will be in touch soon.</h1>
-                <p>In the meantime, try and think about the answer to these six questions.</p>
+                <p>In the meantime, try and think about the answer to these three questions.</p>
                 <p>1. What makes my company <span class="code">remarkable?</span> </p>
                 <p>2. Who exactly are <span class="code">my customers?</span></p>
                 <p>3. What do I consider a <span class="code">successful</span> website?</p>
