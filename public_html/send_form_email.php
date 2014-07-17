@@ -1,12 +1,12 @@
 <?php
  
-if(isset($_POST['email'])) {
+if(isset($_GET['email'])) {
  
      
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
-    $email_to = "chineebro@gmail.com";
+    $email_to = "manfred.headley@gmail.com";
  
     $email_subject = "CodeBrewers";
  
@@ -34,11 +34,11 @@ if(isset($_POST['email'])) {
  
     // validation expected data exists
  
-    if(!isset($_POST['full_name']) ||
+    if(!isset($_GET['full_name']) ||
  
-        !isset($_POST['email']) ||
+        !isset($_GET['email']) ||
 
-        !isset($_POST['comments'])) {
+        !isset($_GET['comments'])) {
  
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
  
@@ -46,11 +46,11 @@ if(isset($_POST['email'])) {
  
      
  
-    $full_name = $_POST['full_name']; // required
+    $full_name = $_GET['full_name']; // required
  
-    $email_from = $_POST['email']; // required
+    $email_from = $_GET['email']; // required
  
-    $comments = $_POST['comments']; // required
+    $comments = $_GET['comments']; // required
  
      
  
@@ -119,11 +119,7 @@ $headers = 'From: '.$email_from."\r\n".
  
  
 <!-- include your own success html here -->
- 
-<?php print_r($email_message); ?> 
- 
- 
- 
+ <?php print_r($full_name); ?>
 <?php
  
 }

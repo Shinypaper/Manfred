@@ -5844,6 +5844,23 @@ img {
 .how .form .form-control {
   border-radius: 0;
 }
+.how .success {
+  display: none;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .how .success {
+    float: left;
+    width: 50%;
+  }
+}
+.how .success legend {
+  color: #f4f3f3;
+  border-bottom: 4px solid #05d62e;
+}
 .four-oh-four {
   background-color: #202024;
   text-align: center;
@@ -5891,7 +5908,7 @@ footer img {
   width: 80px;
 }
 footer .footer_accent {
-  padding: 2px;
+  padding: 4px;
   background-color: #05d62e;
 }
 .clearfix:before,

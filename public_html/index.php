@@ -14,7 +14,7 @@
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.css">
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -97,8 +97,8 @@
                 <p><span class="accent">M</span> : 416-888-2556 </p>
                 <p><span class="accent">E</span> : info@codebrewers.ca </p>
             </div>
-            <div class="form">
-                <form name="contactform" method="POST" role="form" action="send_form_email.php">
+            <div class="form contact_form">
+                <form id="contact_form" name="contactform" role="form">
                     <legend>Let's work together</legend>
                 
                     <div class="form-group">
@@ -109,8 +109,18 @@
                         <label for="comments">Project Details</label>
                         <textarea type="textarea" name="comments" class="form-control" id=""></textarea>
                     </div>
-                    <a href="send_form_email.php"><button type="submit" class="btn btn-primary">Submit</button></a>
+                    <a href="/" class="send_form"><button class="btn btn-primary">Submit</button></a>
                 </form>
+            </div>
+            <div class="success">
+                <h1>We will be in touch soon.</h1>
+                <p>In the meantime, try and think about the answer to these six questions.</p>
+                <p>1. What makes my company <span class="code">remarkable?</span> </p>
+                <p>2. What is the <span class="code"> main goal</span> of my website?.</p>
+                <p>3. What does my business <span class="code">actually do?</span></p>
+                <p>4. Who exactly are <span class="code">my customers?</span></p>
+                <p>5. What do I consider a <span class="code">successful</span> website?</p>
+                <p>6. What is the <span class="code">most important</span> factor of my new website?</p>
             </div>
         </div>
     </div>
@@ -118,7 +128,7 @@
 
     <footer>
         <img src="/assets/img/cbrewers.png" alt="">
-        <!-- <div class="footer_accent"></div> -->
+        <div class="footer_accent"></div>
         <progress value="0" id="progressBar">
             <div class="progress-container">
                 <span class="progress-bar"></span>
@@ -127,7 +137,7 @@
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="assets/js/vendor/bootstrap.min.js"></script>
         <script src="assets/js/vendor/wow.min.js"></script>
