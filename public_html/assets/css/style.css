@@ -5857,9 +5857,8 @@ img {
     width: 50%;
   }
 }
-.how .success legend {
-  color: #f4f3f3;
-  border-bottom: 4px solid #05d62e;
+.how .success p {
+  font-size: 1.2em;
 }
 .four-oh-four {
   background-color: #202024;

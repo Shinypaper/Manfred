@@ -116,11 +116,8 @@
                 <h1>We will be in touch soon.</h1>
                 <p>In the meantime, try and think about the answer to these six questions.</p>
                 <p>1. What makes my company <span class="code">remarkable?</span> </p>
-                <p>2. What is the <span class="code"> main goal</span> of my website?.</p>
-                <p>3. What does my business <span class="code">actually do?</span></p>
-                <p>4. Who exactly are <span class="code">my customers?</span></p>
-                <p>5. What do I consider a <span class="code">successful</span> website?</p>
-                <p>6. What is the <span class="code">most important</span> factor of my new website?</p>
+                <p>2. Who exactly are <span class="code">my customers?</span></p>
+                <p>3. What do I consider a <span class="code">successful</span> website?</p>
             </div>
         </div>
     </div>
