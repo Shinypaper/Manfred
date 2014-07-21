@@ -102,14 +102,20 @@
                     <legend>Let's work together</legend>
                 
                     <div class="form-group">
-                        <label for="full_name">Name</label>
-                        <input type="text" name="full_name" class="form-control" id="" >
-                        <label for="email">Email</label>
-                        <input type="text" name="email" class="form-control" id="" >
-                        <label for="comments">Project Details</label>
-                        <textarea type="textarea" name="comments" class="form-control" id=""></textarea>
+                        <div class="input_container">
+                            <label for="full_name">Name</label>
+                            <input type="text" name="full_name" class="form-control" id="" >
+                        </div>
+                        <div class="input_container">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" class="form-control" id="" >
+                        </div>
+                        <div class="input_container">
+                            <label for="comments">Project Details</label>
+                            <textarea type="textarea" name="comments" class="form-control" id=""></textarea>
+                        </div>
                     </div>
-                    <a href="/" class="send_form"><button class="btn btn-primary">Submit</button></a>
+                    <a href="javascript:void(0);" class="send_form"><input type="submit" class="btn btn-primary" /></a>
                 </form>
             </div>
             <div class="success">
@@ -125,7 +131,7 @@
 
     <footer>
         <img src="/assets/img/cbrewers.png" alt="">
-        <div class="footer_accent"></div>
+        <!-- <div class="footer_accent"></div> -->
         <progress value="0" id="progressBar">
             <div class="progress-container">
                 <span class="progress-bar"></span>
@@ -138,6 +144,7 @@
 
         <script src="assets/js/vendor/bootstrap.min.js"></script>
         <script src="assets/js/vendor/wow.min.js"></script>
+        <script src="assets/js/vendor/jquery.validate.min.js"></script>
 
         <script src="assets/js/main.js"></script>
 

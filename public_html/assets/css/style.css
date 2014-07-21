@@ -5868,6 +5868,9 @@ img {
 .four-oh-four h1 {
   font-size: 400px;
 }
+.input_container {
+  padding-bottom: 15px;
+}
 .portfolio_details {
   background-color: #2e2e34;
 }
