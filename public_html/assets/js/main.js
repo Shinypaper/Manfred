@@ -52,12 +52,12 @@ $(document).ready(function(){
     new WOW().init();
 
     $('.send_form').click(function() {
-    data = $('#contact_form').serialize();
+    data = $('#contact_form').serializeArray();
     $('.contact_form').fadeOut('300');
 
     $('.success').delay(400).fadeIn('600');
         return false;
+      console.log(data);
     });
-
 
 });
