@@ -758,7 +758,7 @@ pre code {
 .team,
 .where .client,
 .how .contact,
-.mobile_row {
+.portfolio .mobile_row {
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -5651,7 +5651,7 @@ a:hover {
 .team,
 .where .client,
 .how .contact,
-.mobile_row {
+.portfolio .mobile_row {
   margin-left: -15px;
   margin-right: -15px;
   margin: 0;
@@ -5800,6 +5800,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 50%;
+  margin-top: 120px;
 }
 @media (min-width: 768px) {
   .where .client img {
@@ -5871,36 +5872,54 @@ img {
 .input_container {
   padding-bottom: 15px;
 }
-.portfolio_details {
+.portfolio .panel {
+  border: none;
+}
+.portfolio .portfolio_details {
   background-color: #2e2e34;
 }
-.portfolio_mobile {
+.portfolio .portfolio_mobile {
   background-color: #202024;
   text-align: center;
 }
-.portfolio_details {
+.portfolio .portfolio_details {
   margin: 0 auto;
 }
-.portfolio_details img {
+.portfolio .portfolio_details img {
   width: 100%;
   padding: 0 10%;
 }
-.portfolio_blurb {
+.portfolio .portfolio_blurb {
   background-color: #f4f3f3;
   color: #2e2e34;
   text-align: center;
 }
-.mobile_row .mobile_images .mobile_image {
+.portfolio .mobile_row .mobile_images .mobile_image {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .mobile_row .mobile_images .mobile_image {
+  .portfolio .mobile_row .mobile_images .mobile_image {
     float: left;
     width: 50%;
   }
+}
+.portfolio .mobile_row .mobile_images .mobile_study_text {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .portfolio .mobile_row .mobile_images .mobile_study_text {
+    float: left;
+    width: 50%;
+  }
+}
+.portfolio .mobile_row .mobile_images .mobile_study_text p {
+  color: #f4f3f3;
 }
 footer {
   text-align: center;
@@ -5955,10 +5974,10 @@ footer .footer_accent {
 .how .contact:after,
 .how .contact:before,
 .how .contact:after,
-.mobile_row:before,
-.mobile_row:after,
-.mobile_row:before,
-.mobile_row:after {
+.portfolio .mobile_row:before,
+.portfolio .mobile_row:after,
+.portfolio .mobile_row:before,
+.portfolio .mobile_row:after {
   content: " ";
   display: table;
 }
@@ -5983,8 +6002,8 @@ footer .footer_accent {
 .where .client:after,
 .how .contact:after,
 .how .contact:after,
-.mobile_row:after,
-.mobile_row:after {
+.portfolio .mobile_row:after,
+.portfolio .mobile_row:after {
   clear: both;
 }
 .center-block {

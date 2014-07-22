@@ -74,4 +74,22 @@ $(document).ready(function(){
         }
     });
 
+
+    $(".scroll-where").click(function (){
+       $('body').scrollTo('#Where');
+    });
+
+    $(".scroll-who").click(function (){
+       $('body').scrollTo('#Who');
+    });
+
+    $(".scroll-how").click(function (){
+       $('body').scrollTo('#How');
+    });
+
+    $(".scroll-why").click(function (){
+       $('body').scrollTo('#Why');
+    });
+
+
 });
