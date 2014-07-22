@@ -1,6 +1,6 @@
 <?php
- 
-if(isset($_GET['email'])) {
+
+if(isset($_POST['email'])) {
  
      
  
@@ -34,11 +34,11 @@ if(isset($_GET['email'])) {
  
     // validation expected data exists
  
-    if(!isset($_GET['full_name']) ||
+    if(!isset($_POST['full_name']) ||
  
-        !isset($_GET['email']) ||
+        !isset($_POST['email']) ||
 
-        !isset($_GET['comments'])) {
+        !isset($_POST['comments'])) {
  
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
  
@@ -46,11 +46,11 @@ if(isset($_GET['email'])) {
  
      
  
-    $full_name = $_GET['full_name']; // required
+    $full_name = $_POST['full_name']; // required
  
-    $email_from = $_GET['email']; // required
+    $email_from = 'info@codebrewers.ca'; // required
  
-    $comments = $_GET['comments']; // required
+    $comments = $_POST['comments']; // required
  
      
  
@@ -96,7 +96,7 @@ if(isset($_GET['email'])) {
  
     $email_message .= "Name: ".clean_string($full_name)."\n";
 
-    $email_message .= "Email: ".clean_string($email_from)."\n";
+    $email_message .= "Email: ".clean_string($_POST['email'])."\n";
   
     $email_message .= "Comments: ".clean_string($comments)."\n";
  
@@ -119,7 +119,6 @@ $headers = 'From: '.$email_from."\r\n".
  
  
 <!-- include your own success html here -->
- <?php print_r($full_name); ?>
 <?php
  
 }
