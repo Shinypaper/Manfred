@@ -177,18 +177,67 @@ img {
 	}
 }
 
+
+
+//Contact Form
+
+.success {
+	font-size: 36px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.form-control {
+	margin-bottom: 20px;
+}
+
+
 //Portfolio Page
 
 .portfolio_details {
+	background-color: @gray;
+}
+
+.portfolio_mobile {
 	background-color: @gray-dark;
 	text-align: center;
+}
+
+.portfolio_details {
+	margin: 0 auto;
 	img {
 		width: 100%;
+		padding:0 10%;
 	}
 }
 
 .portfolio_blurb {
-	background-color: @gray;
-	color: @body-bg;
+	background-color: @body-bg;
+	color: @gray;
 	text-align: center;
+}
+
+.mobile_row {
+	&:extend(.row);
+	.mobile_images {
+		.mobile_image {
+			.make-sm-column(6);
+		}
+	}
+}
+
+
+
+//Footer styles
+
+footer {
+		text-align: center;
+		background-color: @gray-dark;
+	img {
+		width: 80px;
+	}
+	.footer_accent {
+		padding: 2px;
+		background-color: @brand-primary;
+	}
 }

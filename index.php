@@ -126,22 +126,22 @@
                 <p><span class="accent">M</span> : 416-888-2556 </p>
                 <p><span class="accent">E</span> : info@brolli.com </p>
             </div>
-            <div class="form">
-                <form action="" method="POST" role="form">
+            <div id="form-messages" class="form">
+                <form id="ajax-contact" method="post" action="mailer.php">
                     <legend>Let's work together</legend>
                 
                     <div class="form-group">
-                        <label for="">Name</label>
-                        <input type="text" class="form-control" id="" >
-                        <label for="">Email</label>
-                        <input type="text" class="form-control" id="" >
-                        <label for="">Phone</label>
-                        <input type="text" class="form-control" id="">
-                        <label for="">Notes</label>
-                        <textarea type="textarea" class="form-control" id=""></textarea>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <label for="comments">Project Details</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <a href="send_form_email.php"><button type="submit" class="btn btn-primary">Submit</button></a>
                 </form>
+                
             </div>
         </div>
     </div>
@@ -154,6 +154,7 @@
         <script src="assets/js/vendor/wow.min.js"></script>
 
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/app.js"></script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
