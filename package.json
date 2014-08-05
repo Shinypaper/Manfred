@@ -1,22 +1,21 @@
 {
-  "name": "manfred",
-  "version": "0.0.0",
+  "name": "sass",
+  "version": "0.0.1",
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "~3.7.0",
-    "gulp-less": "~1.2.3",
-    "gulp-livereload": "~1.5.0",
+    "gulp": "~3.8.6",
+    "gulp-sass": "~0.7.2",
+    "gulp-livereload": "~2.1.0",
     "gulp-rename": "~1.2.0",
-    "gulp-util": "~2.2.14"
-  },
+    "gulp-util": "~2.2.14"  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Shinypaper/Manfred.git"
+    "url": ""
   },
   "author": "",
   "license": "ISC"

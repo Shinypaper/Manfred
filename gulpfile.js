@@ -1,21 +1,21 @@
 var gulp = require('gulp')
-    ,less = require('gulp-less')
+    ,sass = require('gulp-sass')
     ,livereload = require('gulp-livereload')
     ,path = require('path')
     ,rename = require('gulp-rename')
     ,gutil = require('gulp-util');
 
-var less_src = './public_html/assets/less/style.less'
-    ,css_dest = './public_html/assets/css'
-    ,less_watched = './public_html/assets/less/*.less'
-    ,js_watched = './public_html/assets/js/*.js'
-    ,templates_watched = './public_html/**/*.php';
+var sass_src = './public_html/assets/stylesheets/bootstrap.scss' // bootstrap.sass with import to custom.sass file
+    ,css_dest = './public_html/assets/css' // css destination dir
+    ,sass_watched = './public_html/assets/stylesheets/**/*.scss' // sass files to watch for changes
+    ,js_watched = './public_html/assets/js/**/*.js' // js files to watch for changes
+    ,templates_watched = './public_html/**/*.php'; // other files to watch for changes (php / html)
 
-gulp.task('less', function() {
-  gulp.src(less_src)
-  .pipe(rename('style.less'))
-  .pipe(less({
-    paths: [ path.join(__dirname, 'less', 'includes') ]
+gulp.task('sass', function() {
+  gulp.src(sass_src)
+  .pipe(rename('style.scss'))
+  .pipe(sass({
+    paths: [ path.join(__dirname, 'sass', 'includes') ]
   }))
   .pipe(gulp.dest(css_dest))
   .pipe(livereload())
@@ -25,7 +25,7 @@ gulp.task('less', function() {
 gulp.task('watch', function() {
   var server = livereload();
 
-  gulp.watch(less_watched, ['less']);
+  gulp.watch(sass_watched, ['sass']);
 
   gulp.watch([templates_watched, js_watched]).on('change', function(file) {
       server.changed(file.path);
@@ -34,4 +34,4 @@ gulp.task('watch', function() {
 });
 
 
-gulp.task('default', ['less', 'watch']);
+gulp.task('default', ['sass', 'watch']);

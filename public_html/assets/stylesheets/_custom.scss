@@ -1,0 +1,292 @@
+
+
+//Global Styles
+//-------------
+
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.004);
+    font-weight: bold;
+}
+
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  /* Dimensions */
+  width: 100%;
+  height: .45em;
+
+  /* Reset the apperance */  
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* For Firefox/IE10+ */
+  background-color: transparent;
+
+  /* For IE10+, color of the progress bar */
+  color: $brand-primary;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+.flat::-webkit-progress-value {
+  background-color: $brand-primary;
+}
+
+.flat::-moz-progress-bar {
+  background-color: $brand-primary;
+}
+
+
+.progress-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .25em;
+  display: block;
+}
+
+.progress-bar {
+  width: 50%;
+  display: block;
+  height: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+.section {
+	padding: 40px;
+	@media (min-width: $screen-sm) {
+	padding: 100px 0;
+	}
+	@media (min-width: $screen-md) { 
+	padding: 140px 0;
+	}
+}
+
+@mixin accent {
+	border-bottom: 4px solid $brand-primary;
+}
+
+img {
+	max-width: 100%;
+}
+
+//Page Styles
+//-----------
+
+.masthead {
+	@include clearfix();
+	background-color: $gray-dark;
+	padding: 20px 150px;
+}
+
+.logo {
+		float: left;
+		h1 {
+		display: inline;
+		color: $body-bg;
+		position: absolute;
+		top: 30px;
+	}
+	img {
+		width: 100px;
+		margin-right: 10px;
+	}
+}
+
+.code {
+	color: $brand-primary;
+}
+
+.navigation {
+	ul {
+		padding-left: 0;
+		margin-bottom: 0;
+		@include clearfix();
+		a {
+			color: $body-bg;
+			font-size: 18px;
+		}
+	}
+	li {
+		display: inline-block;
+		margin: 42px ($grid-gutter-width *2) 0;
+		list-style: none;
+		text-transform: uppercase;
+		&:hover {
+			@include accent();
+		}
+	}
+}
+
+
+.team {
+	@extend .row;
+	background-color: $gray-dark;
+	h1 {
+		color: $body-bg;
+		display: inline-block;
+		@include accent();
+	}
+	.teamate {
+		@include make-sm-column(4);
+		text-align: center;
+		padding: $grid-gutter-width;
+		img {
+			width: 250px;
+			@extend .img-circle;
+		}
+	}
+}
+
+.why {
+	background-color: $gray;
+	text-align: center;
+	color: $body-bg;
+	h1 {
+		margin-bottom: 40px;
+		display: inline-block;
+		@include accent();
+	}
+	p {
+		font-size: 20px;
+	}
+}
+
+.where {
+	text-align: center;
+	h1 {
+		margin-bottom: 40px;
+		display: inline-block;
+		color: $gray;
+		@include accent();
+	}
+	.client {
+		@extend .row;
+		img {
+			@include make-sm-column(3);
+			@extend .img-circle;
+			margin-top: 120px;
+		}
+	}
+}
+
+.how {
+	background-color: $gray-dark;
+	.contact {
+		@extend .row;
+		color: $body-bg;
+	}
+	.blurb {
+		@include make-sm-column(6);
+	}
+	.form {
+		legend {
+			color: $body-bg;
+			@include accent();
+		}
+		@include make-sm-column(6);
+		.form-control {
+			border-radius: 0;
+		}
+	}
+	.success {
+		display: none;
+		@include make-sm-column(6);
+		p {
+			font-size: 1.2em; 
+		}
+	}
+}
+.four-oh-four {
+	background-color: $gray-dark;
+	text-align: center;
+	color: white;
+	h1 {
+		font-size: 400px;
+	}
+
+}
+
+
+
+//Contact Form
+
+
+.input_container {
+	padding-bottom: ($grid-gutter-width /2);
+}
+
+//Portfolio Page
+
+.portfolio {
+	.panel {
+		border: none;
+	}
+	.portfolio_details {
+		background-color: $gray;
+	}
+
+	.portfolio_mobile {
+		background-color: $gray-dark;
+		text-align: center;
+	}
+
+	.portfolio_details {
+		margin: 0 auto;
+		img {
+			width: 100%;
+			padding:0 10%;
+		}
+	}
+
+	.portfolio_blurb {
+		background-color: $body-bg;
+		color: $gray;
+		text-align: center;
+	}
+
+	.mobile_row {
+		@extend .row;
+		.mobile_images {
+			.mobile_image {
+				@include make-sm-column(6);
+			}
+			.mobile_study_text {
+				@include make-sm-column(6);
+				p {
+					color: $body-bg;
+				}
+			}
+		}
+	}
+
+}
+//Footer styles
+
+footer {
+		text-align: center;
+		background-color: $gray-dark;
+	img {
+		width: 80px;
+	}
+	.footer_accent {
+		padding: 4px;
+		background-color: $brand-primary;
+	}
+}
+
