@@ -74,22 +74,24 @@ $(document).ready(function(){
         }
     });
 
+});
 
-    $(".scroll-where").click(function (){
-       $('body').scrollTo('#Where');
+
+jQuery(document).ready(function($) {
+
+  $(function() {
+    $('a[href*=#]:not([href=#], .accordion-toggle)').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
     });
-
-    $(".scroll-who").click(function (){
-       $('body').scrollTo('#Who');
-    });
-
-    $(".scroll-how").click(function (){
-       $('body').scrollTo('#How');
-    });
-
-    $(".scroll-why").click(function (){
-       $('body').scrollTo('#Why');
-    });
-
+  });
 
 });

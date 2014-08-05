@@ -1,6 +1,6 @@
 
     <footer>
-        <img src="/assets/img/cbrewers.png" alt="">
+        <img src="/assets/img/cbrewers-cup.png" alt="">
         <!-- <div class="footer_accent"></div> -->
         <progress value="0" id="progressBar">
             <div class="progress-container">

@@ -177,9 +177,9 @@
 			</div>
 			<div class="container">
 				<div class="client">
-					<a class="wow flipInY accordion-toggle" data-wow-duration="1s" data-wow-delay="0.3s" data-toggle="collapse" data-parent="#accordion" href="#clientOne"><img src="http://placehold.it/200/202024&text=client" alt=""></a>
-					<a class="wow flipInY accordion-toggle" data-wow-duration="1s" data-wow-delay="0.5s" data-toggle="collapse" data-parent="#accordion" href="#clientTwo"><img src="http://placehold.it/200/202024&text=client" alt=""></a>
-					<a class="wow flipInY accordion-toggle" data-wow-duration="1s" data-wow-delay="0.7s" data-toggle="collapse" data-parent="#accordion" href="#clientThree"><img src="http://placehold.it/200/202024&text=client" alt=""></a>
+					<a class="wow flipInY accordion-toggle" data-wow-duration="1s" data-wow-delay="0.3s" data-toggle="collapse" data-parent="#accordion" href="#clientOne"><img src="assets/img/clients/phil-logo.png" alt=""></a>
+					<a class="wow flipInY accordion-toggle" data-wow-duration="1s" data-wow-delay="0.5s" data-toggle="collapse" data-parent="#accordion" href="#clientTwo"><img src="assets/img/clients/falling-logo.png" alt=""></a>
+					<a class="wow flipInY accordion-toggle" data-wow-duration="1s" data-wow-delay="0.7s" data-toggle="collapse" data-parent="#accordion" href="#clientThree"><img src="assets/img/clients/nite-logo.png" alt=""></a>
 					<a class="wow flipInY accordion-toggle" data-wow-duration="1s" data-wow-delay="0.9s" data-toggle="collapse" data-parent="#accordion" href="#clientFour"><img src="http://placehold.it/200/202024&text=client" alt=""></a>
 				</div>
 			</div>
