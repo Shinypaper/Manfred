@@ -1,24 +1,33 @@
-        <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">CodeBrewers</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <form class="navbar-form navbar-right" role="form">
-                <div class="form-group">
-                  <input type="text" placeholder="Email" class="form-control">
-                </div>
-                <div class="form-group">
-                  <input type="password" placeholder="Password" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
-              </form>
-            </div><!--/.navbar-collapse -->
-          </div>
-        </div>
+<header>
+	<nav class="navbar navigation navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-mobile">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- <a class="navbar-brand" href="#">
+				<img src="assets/img/logo.png" alt=""></a>
+			-->
+			</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="nav-moblie">
+				<a href="/">
+					<div class="logo">
+						<img src="/assets/img/cbrewers.png" alt="">
+					</div>
+				</a>
+				<ul class="nav navbar-nav">
+					<li><a class="scroll-who" href="#Who">who</a></li>
+					<li><a class="scroll-why" href="#Why">why</a></li>
+					<li><a class="scroll-where" href="#Where">where</a></li>
+					<li><a class="scroll-how" href="#How">how</a></li>
+				</ul>
+			</div>
+		</div>
+</nav>
+</header>

@@ -133,7 +133,8 @@ img {
 		}
 	}
 }
-.navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
 	color: $body-bg;
 	background-color: $gray-dark;
 	@include accent();
@@ -141,19 +142,21 @@ img {
 
 
 .team {
-	@extend .row;
 	background-color: $gray-dark;
 	h1 {
 		color: $body-bg;
 		display: inline-block;
 		@include accent();
 	}
+	.teammates {
+		@include clearfix();
+		padding-top: ($grid-gutter-width *2);
+	}
 	.teamate {
 		@include make-sm-column(4);
 		text-align: center;
-		padding: $grid-gutter-width;
 		img {
-			width: 250px;
+			width: 300px;
 			@extend .img-circle;
 		}
 	}
@@ -181,12 +184,14 @@ img {
 		color: $gray;
 		@include accent();
 	}
-	.client {
+	.clients {
 		@extend .row;
-		img {
+		.client {
 			@include make-sm-column(3);
-			@extend .img-circle;
-			margin-top: 120px;
+			img {
+				@extend .img-circle;
+				margin-top: 120px;
+			}
 		}
 	}
 }
@@ -266,20 +271,22 @@ img {
 		text-align: center;
 	}
 
-	.mobile_row {
+
+	.mobile_images {
 		@extend .row;
-		.mobile_images {
-			.mobile_image {
-				@include make-sm-column(6);
-			}
-			.mobile_study_text {
-				@include make-sm-column(6);
-				p {
-					color: $body-bg;
-				}
+		.mobile_image {
+			@include make-sm-column(6);
+			margin-bottom: $grid-gutter-width;
+		}
+		.mobile_study_text {
+			@include make-sm-column(6);
+			p {
+				color: $body-bg;
+				font-size: 1.4em;
 			}
 		}
 	}
+
 
 }
 //Footer styles
