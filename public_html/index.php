@@ -123,29 +123,21 @@
 						
 					<div id="clientThree" class="collapse">
 						<section class="portfolio_details section">
-							<img src="assets/img/clients/PhilipStavrou.png" alt="">
+							<img src="assets/img/clients/niteflite-desktop.png" alt="">
 						</section>
 
 						<section class="portfolio_blurb section">
-								<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, consectetur, porro, nihil aut animi possimus iure fugit dignissimos error quibusdam eius iste voluptatibus laborum mollitia corporis. Impedit, libero quibusdam maiores.</h2>
+								<h2>This client wanted a modern single page site that would have all his relevant information readily accesible. To add a dynamic feel and convey motion and energy a parallax effect was employed.</h2>
 						</section>
 
 						<section class="portfolio_mobile section">
 							<div class="mobile_row">
 								<div class="mobile_images">
 									<div class="mobile_image">
-										<img src="assets/img/clients/PhilipStavroutablet.png" alt="">
+										<img src="assets/img/clients/niteflite-mobile.png" alt="">
 									</div>
 									<div class="mobile_study_text">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos accusantium sapiente, obcaecati suscipit quidem. Consectetur modi, provident sed! Minus quibusdam, odit distinctio illo necessitatibus dolor consectetur, suscipit officia fuga natus.</p>
-									</div>
-								</div>
-								<div class="mobile_images">
-									<div class="mobile_image">
-										<img src="assets/img/clients/PhilipStavroumobile.png" alt="">
-									</div>
-									<div class="mobile_study_text">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos accusantium sapiente, obcaecati suscipit quidem. Consectetur modi, provident sed! Minus quibusdam, odit distinctio illo necessitatibus dolor consectetur, suscipit officia fuga natus.</p>
+										<p>For a mobile view, it was important to maintian maximum functionality, where still retaining the overall feel of the site. To that end efforts were made to declutter the interface so that core actions were easy to determine.</p>
 									</div>
 								</div>
 							</div>

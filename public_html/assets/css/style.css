@@ -4808,6 +4808,9 @@ img {
   background-color: #F4F3F3;
   color: #2E2E34;
   text-align: center; }
+  .portfolio .portfolio_blurb > h2 {
+    width: 80%;
+    margin: auto; }
 .portfolio .mobile_images .mobile_image {
   position: relative;
   min-height: 1px;
@@ -4829,7 +4832,8 @@ img {
       width: 50%; } }
   .portfolio .mobile_images .mobile_study_text p {
     color: #F4F3F3;
-    font-size: 1.4em; }
+    font-size: 1.4em;
+    width: 80%; }
 
 footer {
   text-align: center;
