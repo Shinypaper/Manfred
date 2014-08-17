@@ -4,9 +4,6 @@
 @mixin accent {
 	border-bottom: 4px solid $brand-primary;
 }
-
-
-
 //Global Styles
 //-------------
 
@@ -14,59 +11,6 @@ html, html a {
     -webkit-font-smoothing: antialiased;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.004);
     font-weight: bold;
-}
-
-progress {
-  /* Positioning */
-  position: fixed;
-  left: 0;
-  bottom: 0;
-
-  /* Dimensions */
-  width: 100%;
-  height: .45em;
-
-  /* Reset the apperance */  
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-
-  /* Get rid of the default border in Firefox/Opera. */
-  border: none;
-
-  /* For Firefox/IE10+ */
-  background-color: transparent;
-
-  /* For IE10+, color of the progress bar */
-  color: $brand-primary;
-}
-
-progress::-webkit-progress-bar {
-  background-color: transparent;
-}
-
-.flat::-webkit-progress-value {
-  background-color: $brand-primary;
-}
-
-.flat::-moz-progress-bar {
-  background-color: $brand-primary;
-}
-
-
-.progress-container {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: .25em;
-  display: block;
-}
-
-.progress-bar {
-  width: 50%;
-  display: block;
-  height: inherit;
 }
 
 a:hover {
@@ -80,7 +24,7 @@ a:hover {
 	padding: 100px 0;
 	}
 	@media (min-width: $screen-md) { 
-	padding: 140px 0;
+	padding: 113px 0;
 	}
 }
 
@@ -184,15 +128,15 @@ img {
 		color: $gray;
 		@include accent();
 	}
-	.clients {
-		@extend .row;
-		.client {
-			@include make-sm-column(3);
-			img {
-				@extend .img-circle;
-				margin-top: 120px;
-			}
-		}
+}
+.clients {
+	@extend .row;
+}
+.client {
+	@include make-sm-column(3);
+	img {
+		@extend .img-circle;
+		margin-top: 120px;
 	}
 }
 
@@ -233,6 +177,33 @@ img {
 
 }
 
+//Bio
+.greeting {
+	text-align: center;
+	background-color: $gray-dark;
+	padding: $grid-gutter-width;
+	h1 {
+		display: inline-block;	
+		color: $body-bg;
+		@include accent();
+	}
+}
+.bio {
+	@extend .row;
+	.bio_image {
+		@include make-md-column(6);
+		img {
+			width: 100%;
+		}
+	}
+	.bio_text {
+		@include make-md-column(6);
+		h2 {
+			@include accent();
+			display: inline-block;
+		}
+	}
+}
 
 
 //Contact Form
@@ -245,9 +216,14 @@ img {
 //Portfolio Page
 
 .portfolio {
-	.panel {
-		border: none;
+
+	.porfolio_header {
+		text-align: center;
+		padding: $grid-gutter-width;
+		background-color: $body-bg;
+		margin-bottom: $grid-gutter-width;
 	}
+
 	.portfolio_details {
 		background-color: $gray;
 	}
@@ -287,7 +263,6 @@ img {
 			p {
 				color: $body-bg;
 				font-size: 1.4em;
-				width: 80%;
 			}
 		}
 	}

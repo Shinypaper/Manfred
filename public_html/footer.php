@@ -1,12 +1,7 @@
 
     <footer>
-        <img src="/assets/img/cbrewers-cup.png" alt="">
+        <a href="/"><img src="/assets/img/cbrewers-cup.png" alt=""></a>
         <div class="footer_accent"></div>
-        <progress value="0" id="progressBar">
-            <div class="progress-container">
-                <span class="progress-bar"></span>
-            </div>
-        </progress>
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
