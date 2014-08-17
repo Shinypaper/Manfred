@@ -123,7 +123,9 @@
 						
 					<div id="clientThree" class="collapse">
 						<section class="portfolio_details section">
-							<img src="assets/img/clients/niteflite-desktop.png" alt="">
+							<div class="container">
+								<img src="assets/img/clients/niteflite-desktop.png" alt="">
+							</div>
 						</section>
 
 						<section class="portfolio_blurb section">
@@ -131,7 +133,7 @@
 						</section>
 
 						<section class="portfolio_mobile section">
-							<div class="mobile_row">
+							<div class="container">
 								<div class="mobile_images">
 									<div class="mobile_image">
 										<img src="assets/img/clients/niteflite-mobile.png" alt="">
