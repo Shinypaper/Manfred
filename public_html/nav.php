@@ -22,7 +22,7 @@
 					</div>
 				</a>
 				<ul class="nav navbar-nav">
-					<li><a class="scroll-who" href="#Who">who</a></li>
+					<li><a class="scroll-who" href="/who.php">who</a></li>
 					<li><a class="scroll-why" href="#Why">why</a></li>
 					<li><a class="scroll-where" href="#Where">where</a></li>
 					<li><a class="scroll-how" href="#How">how</a></li>
