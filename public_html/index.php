@@ -86,7 +86,7 @@
 							<textarea type="textarea" name="comments" class="form-control" id=""></textarea>
 						</div>
 					</div>
-					<a href="javascript:void(0);" class="send_form"><input type="submit" class="btn btn-primary" /></a>
+					<a href="javascript:void(0);" class="send_form"><input type="submit" class="submit-button" /></a>
 				</form>
 			</div>
 			<div class="success">

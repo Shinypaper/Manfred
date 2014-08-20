@@ -6,7 +6,7 @@
 	    <section class="portfolio_details section">
 	    	<div class="porfolio_header">
 	    		<h1>NiteFlite Pro DJ</h1>
-	    		<a href="http://www.nitefliteprodj.com" target="_blank">www.nitefliteprodj.com</a>
+	    		<a class="visit-site" href="http://www.nitefliteprodj.com" target="_blank">visit site</a>
 	    	</div>	
 			<div class="container">
 				<img src="assets/img/clients/niteflite-desktop.png" alt="">

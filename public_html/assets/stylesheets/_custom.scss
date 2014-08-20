@@ -18,6 +18,20 @@ a:hover {
 }
 
 
+@mixin action-button($border-thickness, $color) {
+	border: $border-thickness solid $color;
+	background: none;
+	font-size: 1.5em;
+	padding: 6px 18px;
+	text-transform: uppercase;
+	color: $color;
+	&:hover {
+		color: lighten($color, 50%);
+		border: $border-thickness solid lighten($color, 50%);
+	}
+}
+
+
 .section {
 	padding: 40px;
 	@media (min-width: $screen-sm) {
@@ -211,6 +225,11 @@ img {
 
 .input_container {
 	padding-bottom: ($grid-gutter-width /2);
+	text-transform: uppercase;
+}
+
+.submit-button {
+	@include action-button(2px,$brand-primary);
 }
 
 //Portfolio Page
@@ -269,6 +288,15 @@ img {
 
 
 }
+
+.visit-site {
+	@include action-button(2px,$gray-dark);
+}
+
+
+
+
+
 //Footer styles
 
 footer {

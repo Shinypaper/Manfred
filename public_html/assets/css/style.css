@@ -4783,7 +4783,19 @@ img {
     display: inline-block; }
 
 .input_container {
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  text-transform: uppercase; }
+
+.submit-button {
+  border: 2px solid #05D62E;
+  background: none;
+  font-size: 1.5em;
+  padding: 6px 18px;
+  text-transform: uppercase;
+  color: #05D62E; }
+  .submit-button:hover {
+    color: #dcfee2;
+    border: 2px solid #dcfee2; }
 
 .portfolio .porfolio_header {
   text-align: center;
@@ -4829,6 +4841,17 @@ img {
   .portfolio .mobile_images .mobile_study_text p {
     color: #F4F3F3;
     font-size: 1.4em; }
+
+.visit-site {
+  border: 2px solid #202024;
+  background: none;
+  font-size: 1.5em;
+  padding: 6px 18px;
+  text-transform: uppercase;
+  color: #202024; }
+  .visit-site:hover {
+    color: #9c9ca7;
+    border: 2px solid #9c9ca7; }
 
 footer {
   text-align: center;
