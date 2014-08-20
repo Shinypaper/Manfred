@@ -4588,7 +4588,7 @@ a:hover {
   text-decoration: none; }
 
 .section {
-  padding: 40px; }
+  padding: 40px 0; }
   @media (min-width: 768px) {
     .section {
       padding: 100px 0; } }
@@ -4715,6 +4715,12 @@ img {
 
 .client {
   position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px; }
@@ -4723,7 +4729,7 @@ img {
       float: left;
       width: 25%; } }
   .client img {
-    margin-top: 120px; }
+    margin-top: 40px; }
 
 .how {
   background-color: #202024; }
@@ -4806,7 +4812,19 @@ img {
     display: inline-block; }
 
 .input_container {
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  text-transform: uppercase; }
+
+.submit-button {
+  border: 2px solid #05D62E;
+  background: none;
+  font-size: 1.5em;
+  padding: 6px 18px;
+  text-transform: uppercase;
+  color: #05D62E; }
+  .submit-button:hover {
+    color: #dcfee2;
+    border: 2px solid #dcfee2; }
 
 .portfolio .porfolio_header {
   text-align: center;
@@ -4852,6 +4870,17 @@ img {
   .portfolio .mobile_images .mobile_study_text p {
     color: #F4F3F3;
     font-size: 1.4em; }
+
+.visit-site {
+  border: 2px solid #202024;
+  background: none;
+  font-size: 1.5em;
+  padding: 6px 18px;
+  text-transform: uppercase;
+  color: #202024; }
+  .visit-site:hover {
+    color: #9c9ca7;
+    border: 2px solid #9c9ca7; }
 
 footer {
   text-align: center;

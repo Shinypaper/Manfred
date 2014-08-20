@@ -18,8 +18,22 @@ a:hover {
 }
 
 
+@mixin action-button($border-thickness, $color) {
+	border: $border-thickness solid $color;
+	background: none;
+	font-size: 1.5em;
+	padding: 6px 18px;
+	text-transform: uppercase;
+	color: $color;
+	&:hover {
+		color: lighten($color, 50%);
+		border: $border-thickness solid lighten($color, 50%);
+	}
+}
+
+
 .section {
-	padding: 40px;
+	padding: 40px 0;
 	@media (min-width: $screen-sm) {
 	padding: 100px 0;
 	}
@@ -166,10 +180,11 @@ img {
 	@extend .row;
 }
 .client {
+	@include make-xs-column(6);
 	@include make-sm-column(3);
 	img {
 		@extend .img-circle;
-		margin-top: 120px;
+		margin-top: 40px;
 	}
 }
 
@@ -244,6 +259,11 @@ img {
 
 .input_container {
 	padding-bottom: ($grid-gutter-width /2);
+	text-transform: uppercase;
+}
+
+.submit-button {
+	@include action-button(2px,$brand-primary);
 }
 
 //Portfolio Page
@@ -302,6 +322,15 @@ img {
 
 
 }
+
+.visit-site {
+	@include action-button(2px,$gray-dark);
+}
+
+
+
+
+
 //Footer styles
 
 footer {
