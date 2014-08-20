@@ -33,26 +33,9 @@ img {
 	max-width: 100%;
 }
 
-//Page Styles
+//Navigation
 //-----------
 
-.masthead {
-	@include clearfix();
-	background-color: $gray-dark;
-	padding: 20px 150px;
-}
-
-.logo {
-	float: left;
-	margin-top: 7px;
-	img {
-		width: 300px;
-	}
-}
-
-.code {
-	color: $brand-primary;
-}
 
 .navigation {
 	background-color: $gray-dark;
@@ -83,6 +66,52 @@ img {
 	background-color: $gray-dark;
 	@include accent();
 }
+
+.mobile-nav {
+	padding: 15px 10px 10px; 
+	background: $gray-dark;
+	text-align: center;
+	@media (min-width: $screen-sm) { 
+		display: none;
+	}
+}
+
+.footer-select {
+	color: $body-bg;
+}
+
+.footer-icons {
+	font-size: 1.8em;
+}
+
+.footer-labels {
+	text-transform: uppercase;
+	white-space: nowrap;
+	font-size: 0.8em;
+}
+
+
+//Page Styles
+//-----------
+
+.masthead {
+	@include clearfix();
+	background-color: $gray-dark;
+	padding: 20px 150px;
+}
+
+.logo {
+	float: left;
+	margin-top: 7px;
+	img {
+		width: 300px;
+	}
+}
+
+.code {
+	color: $brand-primary;
+}
+
 
 
 .team {
@@ -280,6 +309,12 @@ footer {
 	.footer_accent {
 		padding: 4px;
 		background-color: $brand-primary;
+	}
+}
+
+footer {
+	@media (max-width: $screen-sm) {
+		padding-bottom: 65px;
 	}
 }
 
