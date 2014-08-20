@@ -1,0 +1,25 @@
+{
+  "name": "Manfred",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "*",
+    "gulp-sass": "~0.7.2",
+    "gulp-livereload": "~1.5.0",
+    "gulp-util": "~2.2.14",
+    "gulp-watch": "~0.6.5",
+    "gulp-embedlr": "~0.5.2",
+    "tiny-lr": "~0.0.7",
+    "gulp-uglify": "~0.3.0",
+    "gulp-plumber": "~0.6.2",
+    "gulp-rename": "~1.2.0",
+    "gulp-file-include": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "default"
+  },
+  "author": "",
+  "license": "ISC"
+}

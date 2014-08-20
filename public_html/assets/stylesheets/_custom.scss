@@ -1,0 +1,353 @@
+
+//Mixins
+
+@mixin accent {
+	border-bottom: 4px solid $brand-primary;
+}
+//Global Styles
+//-------------
+
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.004);
+    font-weight: bold;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+@mixin action-button($border-thickness, $color) {
+	border: $border-thickness solid $color;
+	background: none;
+	font-size: 1.5em;
+	padding: 6px 18px;
+	text-transform: uppercase;
+	color: $color;
+	&:hover {
+		color: lighten($color, 50%);
+		border: $border-thickness solid lighten($color, 50%);
+	}
+}
+
+
+.section {
+	padding: 40px 0;
+	@media (min-width: $screen-sm) {
+	padding: 100px 0;
+	}
+	@media (min-width: $screen-md) { 
+	padding: 113px 0;
+	}
+}
+
+
+img {
+	max-width: 100%;
+}
+
+//Navigation
+//-----------
+
+
+.navigation {
+	background-color: $gray-dark;
+	display: none;
+	@media (min-width: $screen-sm) { 
+		display: block;
+	}
+	ul {
+		padding-left: 0;
+		margin-bottom: 0;
+		@include clearfix();
+	}
+	li {
+		display: inline-block;
+		margin: 42px ($grid-gutter-width *2) 0;
+		list-style: none;
+		text-transform: uppercase;
+		a {
+			color: $body-bg;
+			font-size: 18px;
+			&:hover, &:active, &:focus {
+				color: $body-bg;
+				background-color: $gray-dark;
+				@include accent();
+			}
+		}
+	}
+}
+.navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: $body-bg;
+	background-color: $gray-dark;
+	@include accent();
+}
+
+.mobile-nav {
+	padding: 15px 10px 10px; 
+	background: $gray-dark;
+	text-align: center;
+	@media (min-width: $screen-sm) { 
+		display: none;
+	}
+}
+
+.footer-select {
+	color: $body-bg;
+}
+
+.footer-icons {
+	font-size: 1.8em;
+}
+
+.footer-labels {
+	text-transform: uppercase;
+	white-space: nowrap;
+	font-size: 0.8em;
+}
+
+
+//Page Styles
+//-----------
+
+.masthead {
+	@include clearfix();
+	background-color: $gray-dark;
+	padding: 20px 150px;
+}
+
+.logo {
+	float: left;
+	margin-top: 7px;
+	img {
+		width: 300px;
+	}
+}
+
+.code {
+	color: $brand-primary;
+}
+
+
+
+.team {
+	background-color: $gray-dark;
+	h1 {
+		color: $body-bg;
+		display: inline-block;
+		@include accent();
+	}
+	.teammates {
+		@include clearfix();
+		padding-top: ($grid-gutter-width *2);
+	}
+	.teamate {
+		@include make-sm-column(4);
+		text-align: center;
+		img {
+			width: 300px;
+			@extend .img-circle;
+		}
+	}
+}
+
+.why {
+	background-color: $gray;
+	text-align: center;
+	color: $body-bg;
+	h1 {
+		margin-bottom: 40px;
+		display: inline-block;
+		@include accent();
+	}
+	p {
+		font-size: 20px;
+	}
+}
+
+.where {
+	text-align: center;
+	h1 {
+		margin-bottom: 40px;
+		display: inline-block;
+		color: $gray;
+		@include accent();
+	}
+}
+.clients {
+	@extend .row;
+}
+.client {
+	@include make-xs-column(6);
+	@include make-sm-column(3);
+	img {
+		@extend .img-circle;
+		margin-top: 40px;
+	}
+}
+
+.how {
+	background-color: $gray-dark;
+	.contact {
+		@extend .row;
+		color: $body-bg;
+	}
+	.blurb {
+		@include make-sm-column(6);
+	}
+	.form {
+		legend {
+			color: $body-bg;
+			@include accent();
+		}
+		@include make-sm-column(6);
+		.form-control {
+			border-radius: 0;
+		}
+	}
+	.success {
+		display: none;
+		@include make-sm-column(6);
+		p {
+			font-size: 1.2em; 
+		}
+	}
+}
+.four-oh-four {
+	background-color: $gray-dark;
+	text-align: center;
+	color: white;
+	h1 {
+		font-size: 400px;
+	}
+
+}
+
+//Bio
+.greeting {
+	text-align: center;
+	background-color: $gray-dark;
+	padding: $grid-gutter-width;
+	h1 {
+		display: inline-block;	
+		color: $body-bg;
+		@include accent();
+	}
+}
+.bio {
+	@extend .row;
+	.bio_image {
+		@include make-md-column(6);
+		img {
+			width: 100%;
+		}
+	}
+	.bio_text {
+		@include make-md-column(6);
+		h2 {
+			@include accent();
+			display: inline-block;
+		}
+	}
+}
+
+
+//Contact Form
+
+
+.input_container {
+	padding-bottom: ($grid-gutter-width /2);
+	text-transform: uppercase;
+}
+
+.submit-button {
+	@include action-button(2px,$brand-primary);
+}
+
+//Portfolio Page
+
+.portfolio {
+
+	.porfolio_header {
+		text-align: center;
+		padding: $grid-gutter-width;
+		background-color: $body-bg;
+		margin-bottom: $grid-gutter-width;
+	}
+
+	.portfolio_details {
+		background-color: $gray;
+	}
+
+	.portfolio_mobile {
+		background-color: $gray-dark;
+		text-align: center;
+	}
+
+	.portfolio_details {
+		margin: 0 auto;
+		img {
+			width: 100%;
+			padding:0 10%;
+		}
+	}
+
+	.portfolio_blurb {
+		background-color: $body-bg;
+		color: $gray;
+		text-align: center;
+		> h2 {
+			width: 80%;
+			margin: auto;
+		}
+	}
+
+
+	.mobile_images {
+		@extend .row;
+		.mobile_image {
+			@include make-sm-column(6);
+			margin-bottom: $grid-gutter-width;
+		}
+		.mobile_study_text {
+			@include make-sm-column(6);
+			p {
+				color: $body-bg;
+				font-size: 1.4em;
+			}
+		}
+	}
+
+
+}
+
+.visit-site {
+	@include action-button(2px,$gray-dark);
+}
+
+
+
+
+
+//Footer styles
+
+footer {
+		text-align: center;
+		background-color: $gray-dark;
+	img {
+		width: 80px;
+	}
+	.footer_accent {
+		padding: 4px;
+		background-color: $brand-primary;
+	}
+}
+
+footer {
+	@media (max-width: $screen-sm) {
+		padding-bottom: 65px;
+	}
+}
+
