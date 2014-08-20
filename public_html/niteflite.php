@@ -29,7 +29,6 @@
 				</div>
 			</div>
 		</section>
-
 	</div>	
 	    <section class="where section">
 		    <h1>More of our work.</h1>
@@ -45,4 +44,4 @@
 	        </div>
 	    </section>
 
-<?php include('footer.php'); ?>
+<?php include 'footer.php'; ?>
