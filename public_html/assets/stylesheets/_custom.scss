@@ -39,6 +39,10 @@ img {
 
 .navigation {
 	background-color: $gray-dark;
+	display: none;
+	@media (min-width: $screen-sm) { 
+		display: block;
+	}
 	ul {
 		padding-left: 0;
 		margin-bottom: 0;

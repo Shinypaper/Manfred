@@ -11,7 +11,6 @@
 									<img src="assets/img/manfred.jpg" alt="">
 								</div>
 							</a>
-							<!-- <h1>UX</h1> -->
 						</div>
 					</div>
 					<div class="teamate wow fadeIn" data-wow-delay="0.6s" data-wow-duration="1.3s">
@@ -21,7 +20,6 @@
 									<img src="assets/img/dillon.jpg" alt="">
 								</div>
 							</a>
-							<!-- <h1>DV</h1> -->
 						</div>
 					</div> 
 				   <div class="teamate wow fadeInRight" data-wow-delay="0.6s" data-wow-duration="1.3s">
@@ -31,7 +29,6 @@
 									<img src="assets/img/johann.jpg" alt="">
 								</div>
 							</a>
-							<!-- <h1>DS</h1> -->
 						</div>
 					</div>
 				</div>	

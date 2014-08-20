@@ -1,39 +1,8 @@
 
     <footer>
-        <a href="/"><img src="/assets/img/cbrewers-cup.png" alt=""></a>
+        <a href="/"><img src="/assets/img/coderbrewers-icon.png" alt=""></a>
         <div class="footer_accent"></div>
     </footer>
-
-    <div class="mobile-nav navbar-fixed-bottom row">
-
-        <a href="#Who">
-            <div class="col-xs-3 footer-select">
-                <i class="fa fa-home footer-icons"></i>
-                <div class="footer-labels">home</div>
-            </div>
-        </a>
-
-        <a href="#Why">
-            <div class="col-xs-3 footer-select">
-                <i class="fa fa-group footer-icons"></i>
-                <div class="footer-labels">about us</div>
-            </div>
-        </a>
-        <a href="#Where">
-            <div class="col-xs-3 footer-select">
-                <i class="fa fa-folder-open footer-icons"></i>
-                <div class="footer-labels">portfolio</div>
-            </div>
-        </a>
-
-        <a href="#How">
-            <div class="col-xs-3 footer-select">
-                <i class="fa fa-envelope footer-icons"></i>
-                <div class="footer-labels">contact</div>
-            </div>
-        </a>
-
-    </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
