@@ -4599,24 +4599,6 @@ a:hover {
 img {
   max-width: 100%; }
 
-.masthead {
-  background-color: #202024;
-  padding: 20px 150px; }
-  .masthead:before, .masthead:after {
-    content: " ";
-    display: table; }
-  .masthead:after {
-    clear: both; }
-
-.logo {
-  float: left;
-  margin-top: 7px; }
-  .logo img {
-    width: 300px; }
-
-.code {
-  color: #05D62E; }
-
 .navigation {
   background-color: #202024; }
   .navigation ul {
@@ -4644,6 +4626,43 @@ img {
   color: #F4F3F3;
   background-color: #202024;
   border-bottom: 4px solid #05D62E; }
+
+.mobile-nav {
+  padding: 15px 10px 10px;
+  background: #202024;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .mobile-nav {
+      display: none; } }
+
+.footer-select {
+  color: #F4F3F3; }
+
+.footer-icons {
+  font-size: 1.8em; }
+
+.footer-labels {
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 0.8em; }
+
+.masthead {
+  background-color: #202024;
+  padding: 20px 150px; }
+  .masthead:before, .masthead:after {
+    content: " ";
+    display: table; }
+  .masthead:after {
+    clear: both; }
+
+.logo {
+  float: left;
+  margin-top: 7px; }
+  .logo img {
+    width: 300px; }
+
+.code {
+  color: #05D62E; }
 
 .team {
   background-color: #202024; }
@@ -4838,3 +4857,7 @@ footer {
   footer .footer_accent {
     padding: 4px;
     background-color: #05D62E; }
+
+@media (max-width: 768px) {
+  footer {
+    padding-bottom: 65px; } }
