@@ -26,9 +26,11 @@
 					<div class="mobile_study_text">
 						<p>For a mobile view, it was important to maintian maximum functionality, where still retaining the overall feel of the site. To that end efforts were made to declutter the interface so that core actions were easy to determine.</p>
 					</div>
+
 				</div>
 			</div>
 		</section>
+
 	</div>	
 	    <section class="where section">
 		    <h1>More of our work.</h1>
@@ -44,4 +46,4 @@
 	        </div>
 	    </section>
 
-<?php include 'footer.php'; ?>
+<?php include('footer.php'); ?>
