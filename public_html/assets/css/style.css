@@ -4849,6 +4849,17 @@ img {
     color: #F4F3F3;
     font-size: 1.4em; }
 
+.visit-site {
+  border: 2px solid black;
+  background: none;
+  font-size: 1.5em;
+  padding: 6px 18px;
+  text-transform: uppercase;
+  color: black; }
+  .visit-site:hover {
+    color: #808080;
+    border: 2px solid #808080; }
+
 footer {
   text-align: center;
   background-color: #202024; }

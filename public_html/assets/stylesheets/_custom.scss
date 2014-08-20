@@ -28,6 +28,19 @@ a:hover {
 	}
 }
 
+@mixin action-button($border-thickness, $color) {
+	border: $border-thickness solid $color;
+	background: none;
+	font-size: 1.5em;
+	padding: 6px 18px;
+	text-transform: uppercase;
+	color: $color;
+	&:hover {
+		color: lighten($color, 50%);
+		border: $border-thickness solid lighten($color, 50%);
+	}
+}
+
 
 img {
 	max-width: 100%;
@@ -298,6 +311,11 @@ img {
 
 
 }
+
+.visit-site {
+	@include action-button(2px, black);
+}
+
 //Footer styles
 
 footer {
