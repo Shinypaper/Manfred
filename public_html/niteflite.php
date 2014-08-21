@@ -6,7 +6,7 @@
 	    <section class="portfolio_details section">
 	    	<div class="porfolio_header">
 	    		<h1>NiteFlite Pro DJ</h1>
-	    		
+
 	    		<a class="visit-site" href="http://www.nitefliteprodj.com" target="_blank">visit site</a>
 	    	</div>	
 			<div class="container">
@@ -48,4 +48,3 @@
 	    </section>
 
 <?php include('footer.php'); ?>
-
