@@ -1,8 +1,8 @@
 
 //Mixins
 
-@mixin accent {
-	border-bottom: 4px solid $brand-primary;
+@mixin accent($color) {
+	border-bottom: 4px solid $color;
 }
 //Global Styles
 //-------------
@@ -16,6 +16,7 @@ html, html a {
 a:hover {
 	text-decoration: none;
 }
+
 
 
 @mixin action-button($border-thickness, $color) {
@@ -38,7 +39,7 @@ a:hover {
 	padding: 100px 0;
 	}
 	@media (min-width: $screen-md) { 
-	padding: 113px 0;
+	padding: 200px 0;
 	}
 }
 
@@ -52,7 +53,7 @@ img {
 
 
 .navigation {
-	background-color: $gray-dark;
+	background-color: $gray;
 	display: none;
 	@media (min-width: $screen-sm) { 
 		display: block;
@@ -71,23 +72,20 @@ img {
 			color: $body-bg;
 			font-size: 18px;
 			&:hover, &:active, &:focus {
-				color: $body-bg;
-				background-color: $gray-dark;
-				@include accent();
+				color: $brand-primary;
+				background-color: $gray;
 			}
 		}
 	}
 }
 .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-	color: $body-bg;
-	background-color: $gray-dark;
-	@include accent();
+	color: $brand-primary;
 }
 
 .mobile-nav {
 	padding: 15px 10px 10px; 
-	background: $gray-dark;
+	background: $gray;
 	text-align: center;
 	@media (min-width: $screen-sm) { 
 		display: none;
@@ -114,7 +112,7 @@ img {
 
 .masthead {
 	@include clearfix();
-	background-color: $gray-dark;
+	background-color: $gray;
 	padding: 20px 150px;
 }
 
@@ -133,11 +131,11 @@ img {
 
 
 .team {
-	background-color: $gray-dark;
+	background-color: $body-bg;
 	h1 {
 		color: $body-bg;
 		display: inline-block;
-		@include accent();
+		@include accent($brand-primary);
 	}
 	.teammates {
 		@include clearfix();
@@ -148,59 +146,59 @@ img {
 		text-align: center;
 		img {
 			width: 300px;
-			@extend .img-circle;
 		}
 	}
 }
 
 .why {
-	background-color: $gray;
+	background-color: $brand-secondary;
 	text-align: center;
 	color: $body-bg;
 	h1 {
 		margin-bottom: 40px;
 		display: inline-block;
-		@include accent();
+		// @include accent($brand-primary);
+		font-size: 80px;
 	}
 	p {
-		font-size: 20px;
+		font-size: 25px;
 	}
 }
 
 .where {
 	text-align: center;
+	background-color: $body-bg;
 	h1 {
 		margin-bottom: 40px;
 		display: inline-block;
 		color: $gray;
-		@include accent();
+		@include accent($brand-primary);
 	}
 }
-.clients {
-	@extend .row;
-}
 .client {
-	@include make-xs-column(6);
-	@include make-sm-column(3);
+	display: block;
+	float: left;
+	width: 25%;
+	text-shadow: none;
 	img {
-		@extend .img-circle;
 		margin-top: 40px;
+		width: 100%;
 	}
 }
 
 .how {
-	background-color: $gray-dark;
+	background-color: $body-bg;
 	.contact {
 		@extend .row;
-		color: $body-bg;
+		color: $gray;
 	}
 	.blurb {
 		@include make-sm-column(6);
 	}
 	.form {
 		legend {
-			color: $body-bg;
-			@include accent();
+			color: $gray;
+			@include accent($brand-secondary);
 		}
 		@include make-sm-column(6);
 		.form-control {
@@ -216,7 +214,7 @@ img {
 	}
 }
 .four-oh-four {
-	background-color: $gray-dark;
+	background-color: $gray;
 	text-align: center;
 	color: white;
 	h1 {
@@ -228,12 +226,12 @@ img {
 //Bio
 .greeting {
 	text-align: center;
-	background-color: $gray-dark;
+	background-color: $gray;
 	padding: $grid-gutter-width;
 	h1 {
 		display: inline-block;	
 		color: $body-bg;
-		@include accent();
+		@include accent($brand-primary);
 	}
 }
 .bio {
@@ -247,7 +245,7 @@ img {
 	.bio_text {
 		@include make-md-column(6);
 		h2 {
-			@include accent();
+			@include accent($brand-primary);
 			display: inline-block;
 		}
 	}
@@ -282,7 +280,7 @@ img {
 	}
 
 	.portfolio_mobile {
-		background-color: $gray-dark;
+		background-color: $gray;
 		text-align: center;
 	}
 
@@ -324,7 +322,7 @@ img {
 }
 
 .visit-site {
-	@include action-button(2px,$gray-dark);
+	@include action-button(2px,$gray);
 }
 
 
@@ -335,7 +333,7 @@ img {
 
 footer {
 		text-align: center;
-		background-color: $gray-dark;
+		background-color: $gray;
 	img {
 		width: 80px;
 	}

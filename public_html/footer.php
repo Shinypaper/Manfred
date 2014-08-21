@@ -1,6 +1,6 @@
 
     <footer>
-        <a href="/"><img src="/assets/img/coderbrewers-icon.png" alt=""></a>
+        <a href="/"><img src="/assets/img/codebrewer-icon-alt.png" alt=""></a>
         <div class="footer_accent"></div>
     </footer>
 

@@ -1,5 +1,26 @@
 <?php include 'header.php'; ?>
 
+
+
+	<section class="why section" id="Why">
+		<div class="container wow fadeInUp" data-wow-duration="1.7s" data-wow-delay="0.5s">
+			<h1>It's nice to meet you. <span class="code">Together</span> we can make great things.</h1>
+			<p>We’re a company of three because we believe the best results come from a direct partnership with clients. In other words, we do the work and we maintain the relationship. No sales reps, no account execs, no big guns trying to represent the work of someone else. We are with you every step of the way.</p>
+			<p>No matter what, we've got you covered.</p>
+		</div>
+	</section>
+
+	<section class="where section" id="Where">
+		<h1>Here's where you can see our work</h1>
+		
+				<div class="clients">
+					<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.3s" href="#clientOne"><img src="assets/img/clients/phil-logo.png" alt=""></a>
+					<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.5s" href="#clientTwo"><img src="assets/img/clients/falling-logo.png" alt=""></a>
+					<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.7s" href="niteflite.php"><img src="assets/img/clients/nite-logo.png" alt=""></a>
+					<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.9s" href="#clientFour"><img src="assets/img/clients/phil-logo.png" alt=""></a>				
+				</div>
+	</section>
+
 	<section class="team section" id="Who">
 		<div class="container">
 			<div class="row">
@@ -7,7 +28,7 @@
 					<div class="teamate wow fadeInLeft" data-wow-delay="0.6s" data-wow-duration="1.3s">
 						<div class="teamate_inner">
 							<a href="">
-								<div class="blockicon bio" data-toggle="tooltip" data-placement="bottom" title="Meet Manfred">
+								<div class="blockicon bio" data-toggle="tooltip" data-placement="bottom" title="Hi Im Manfred. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla aperiam omnis molestias deserunt laudantium quidem, assumenda unde incidunt est excepturi officia nisi, reiciendis fugiat nihil, rerum placeat eaque ipsum perspiciatis!">
 									<img src="assets/img/manfred.jpg" alt="">
 								</div>
 							</a>
@@ -34,26 +55,6 @@
 				</div>	
 			</div>
 		</div>
-	</section>
-
-	<section class="why section" id="Why">
-		<div class="container">
-			<h1>Why should you work with us?</h1>
-			<p>We’re a company of three because we believe the best results come from a direct partnership with clients. In other words, we do the work and we maintain the relationship. No sales reps, no account execs, no big guns trying to represent the work of someone else. We are with you every step of the way.</p>
-			<p>No matter what, we've got you covered.</p>
-		</div>
-	</section>
-
-	<section class="where section" id="Where">
-		<h1>Here's where you can see our work</h1>
-			<div class="container">
-				<div class="clients">
-					<a class="client wow flipInY" data-wow-duration="1s" data-wow-delay="0.3s" href="#clientOne"><img src="assets/img/clients/phil-logo.png" alt=""></a>
-					<a class="client wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s" href="#clientTwo"><img src="assets/img/clients/falling-logo.png" alt=""></a>
-					<a class="client wow flipInY" data-wow-duration="1s" data-wow-delay="0.7s" href="niteflite.php"><img src="assets/img/clients/nite-logo.png" alt=""></a>
-					<a class="client wow flipInY" data-wow-duration="1s" data-wow-delay="0.9s" href="#clientFour"><img src="assets/img/clients/phil-logo.png" alt=""></a>				
-				</div>
-			</div>
 	</section>
 
 	<section class="how section" id="How">
