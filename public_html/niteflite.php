@@ -36,7 +36,6 @@
 	    <section class="where section">
 		    <h2>More of our work.</h2>
 	        <div class="portfolio">
-	            <div class="container">
 		            <div class="clients">
 	                    <a class="client wow flipInY" data-wow-duration="1s" data-wow-delay="0.3s" href="phil.php"><img src="assets/img/clients/phil-logo.png" alt=""></a>
 						<a class="client wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s" href="#clientTwo"><img src="assets/img/clients/falling-logo.png" alt=""></a>
@@ -44,7 +43,6 @@
 						<a class="client wow flipInY" data-wow-duration="1s" data-wow-delay="0.9s" href="#clientFour"><img src="assets/img/clients/phil-logo.png" alt=""></a>
 		            </div>
 	            </div>
-	        </div>
 	    </section>
 
 

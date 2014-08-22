@@ -4817,6 +4817,11 @@ img {
 legend {
   font-size: 3em; }
 
+.portfolio:before, .portfolio:after {
+  content: " ";
+  display: table; }
+.portfolio:after {
+  clear: both; }
 .portfolio .porfolio_header {
   text-align: center;
   padding: 30px;

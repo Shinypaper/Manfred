@@ -269,7 +269,7 @@ legend {
 //Portfolio Page
 
 .portfolio {
-
+	@include clearfix();
 	.porfolio_header {
 		text-align: center;
 		padding: $grid-gutter-width;
