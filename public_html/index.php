@@ -5,7 +5,7 @@
 	<section class="hero section">
     	<div class="title-text">
     		<h1>It's nice to meet you. <span class="code">Together</span> we can make great things.</h1>
-    	<i class="fa fa-angle-double-down"></i>
+	    	<i class="fa fa-angle-double-down wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.4s"></i>
     	</div>
 	</section>
  

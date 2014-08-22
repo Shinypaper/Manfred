@@ -4618,7 +4618,7 @@ img {
       clear: both; }
   .navigation li {
     display: inline-block;
-    margin: 42px 60px 0;
+    margin: 58px 60px 0;
     list-style: none;
     text-transform: uppercase; }
     .navigation li a {
@@ -4918,4 +4918,4 @@ body {
     font-size: 80px; }
 
 .fa-angle-double-down {
-  font-size: 0.5em; }
+  font-size: 8em; }
