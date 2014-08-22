@@ -23,6 +23,11 @@ html, html a {
     font-weight: bold;
 }
 
+h2 {
+	font-size: 3em;
+}
+
+
 a:hover {
 	text-decoration: none;
 }
@@ -269,16 +274,19 @@ legend {
 		text-align: center;
 		padding: $grid-gutter-width;
 		background-color: $body-bg;
-		margin-bottom: $grid-gutter-width;
+		h1 {
+			font-size: 5em;
+		}
 	}
 
-	.portfolio_details {
-		background-color: $gray;
-	}
+	
 
 	.portfolio_mobile {
 		background-color: $gray;
 		text-align: center;
+		.mobile_header {
+			color: $body-bg;
+		}
 	}
 
 	.portfolio_details {
@@ -293,30 +301,25 @@ legend {
 		background-color: $body-bg;
 		color: $gray;
 		text-align: center;
+		font-size: 1.2em;
 		> h2 {
 			width: 80%;
 			margin: auto;
 		}
 	}
-
-
-	.mobile_images {
-		@extend .row;
-		.mobile_image {
-			@include make-sm-column(6);
-			margin-bottom: $grid-gutter-width;
-		}
-		.mobile_study_text {
-			@include make-sm-column(6);
-			p {
-				color: $body-bg;
-				font-size: 1.4em;
-			}
-		}
-	}
-
-
 }
+
+.mobile_study_text {
+	background: $gray;
+	color: $body-bg;	
+	font-size: 1.5em;
+	padding: 100px 0;
+}
+
+.mobile_header {
+	padding-bottom: 100px;
+}
+
 
 .visit-site {
 	@include action-button(2px,$brand-primary);

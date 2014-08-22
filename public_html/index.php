@@ -99,7 +99,7 @@
 			<div class="blurb">
 				<h2>We'd love to learn more about you and your needs.</h2>
 				<p><span class="accent">M</span> : 416-888-2556 </p>
-				<p><span class="accent">E</span> : info@codebrewers.ca </p>
+				<p><span class="accent">E</span> : <a href="info@codebrewers.ca?Subject=Hello%20again" target="_top">info@codebrewers.ca</a></p>
 			</div>
 		</div>
 	</div>
