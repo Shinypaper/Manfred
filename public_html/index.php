@@ -2,16 +2,22 @@
 
 
 
+	<div id="header-div">
+    	<div class="title-text">
+    		<h1>It's nice to meet you. <span class="code">Together</span> we can make great things.</h1>
+    	</div>
+	</div>
+
 	<section class="why section" id="Why">
 		<div class="container wow fadeInUp" data-wow-duration="1.7s" data-wow-delay="0.5s">
-			<h1>It's nice to meet you. <span class="code">Together</span> we can make great things.</h1>
+			
 			<p>We’re a company of three because we believe the best results come from a direct partnership with clients. In other words, we do the work and we maintain the relationship. No sales reps, no account execs, no big guns trying to represent the work of someone else. We are with you every step of the way.</p>
 			<p>No matter what, we've got you covered.</p>
 		</div>
 	</section>
 
 	<section class="where section" id="Where">
-		<h1>Here's where you can see our work</h1>
+		<h2>Here's where you can see our work</h2>
 		
 				<div class="clients">
 					<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.3s" href="#clientOne"><img src="assets/img/clients/phil-logo.png" alt=""></a>
@@ -61,11 +67,6 @@
 	<div class="container">
 		
 		<div class="contact">
-			<div class="blurb">
-				<h1>We'd love to learn more about you and your needs.</h1>
-				<p><span class="accent">M</span> : 416-888-2556 </p>
-				<p><span class="accent">E</span> : info@codebrewers.ca </p>
-			</div>
 			<div class="form contact_form">
 				<form id="contact_form" name="contactform" role="form">
 					<legend>Let's work together</legend>
@@ -88,11 +89,16 @@
 				</form>
 			</div>
 			<div class="success">
-				<h1>We will be in touch soon.</h1>
+				<h2>We will be in touch soon.</h2>
 				<p>In the meantime, try and think about the answer to these three questions.</p>
 				<p>1. What makes my company <span class="code">remarkable?</span> </p>
 				<p>2. Who exactly are <span class="code">my customers?</span></p>
 				<p>3. What do I consider a <span class="code">successful</span> website?</p>
+			</div>
+			<div class="blurb">
+				<h2>We'd love to learn more about you and your needs.</h2>
+				<p><span class="accent">M</span> : 416-888-2556 </p>
+				<p><span class="accent">E</span> : info@codebrewers.ca </p>
 			</div>
 		</div>
 	</div>

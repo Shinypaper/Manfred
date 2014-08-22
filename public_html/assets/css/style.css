@@ -4667,7 +4667,7 @@ img {
 
 .team {
   background-color: #F4F3F3; }
-  .team h1 {
+  .team h2 {
     color: #F4F3F3;
     display: inline-block;
     border-bottom: 4px solid #e74c3c; }
@@ -4695,17 +4695,13 @@ img {
   background-color: #34495e;
   text-align: center;
   color: #F4F3F3; }
-  .why h1 {
-    margin-bottom: 40px;
-    display: inline-block;
-    font-size: 80px; }
   .why p {
     font-size: 25px; }
 
 .where {
   text-align: center;
   background-color: #F4F3F3; }
-  .where h1 {
+  .where h2 {
     margin-bottom: 40px;
     display: inline-block;
     color: #2E2E34;
@@ -4764,14 +4760,14 @@ img {
   background-color: #2E2E34;
   text-align: center;
   color: white; }
-  .four-oh-four h1 {
+  .four-oh-four h2 {
     font-size: 400px; }
 
 .greeting {
   text-align: center;
   background-color: #2E2E34;
   padding: 30px; }
-  .greeting h1 {
+  .greeting h2 {
     display: inline-block;
     color: #F4F3F3;
     border-bottom: 4px solid #e74c3c; }
@@ -4906,3 +4902,30 @@ footer {
 @media (max-width: 768px) {
   footer {
     padding-bottom: 65px; } }
+
+html, body {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+#header-div {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: url(/assets/img/toronto.jpg) no-repeat center;
+  position: relative; }
+
+.title-text {
+  color: #fff;
+  font-size: 10em;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-top: 220px; }
+  .title-text h1 {
+    margin-bottom: 40px;
+    display: inline-block;
+    font-size: 80px; }

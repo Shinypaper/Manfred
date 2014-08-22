@@ -140,7 +140,7 @@ img {
 
 .team {
 	background-color: $body-bg;
-	h1 {
+	h2 {
 		color: $body-bg;
 		display: inline-block;
 		@include accent($brand-primary);
@@ -162,12 +162,7 @@ img {
 	background-color: $brand-secondary;
 	text-align: center;
 	color: $body-bg;
-	h1 {
-		margin-bottom: 40px;
-		display: inline-block;
-		// @include accent($brand-primary);
-		font-size: 80px;
-	}
+	
 	p {
 		font-size: 25px;
 	}
@@ -176,7 +171,7 @@ img {
 .where {
 	text-align: center;
 	background-color: $body-bg;
-	h1 {
+	h2 {
 		margin-bottom: 40px;
 		display: inline-block;
 		color: $gray;
@@ -225,7 +220,7 @@ img {
 	background-color: $gray;
 	text-align: center;
 	color: white;
-	h1 {
+	h2 {
 		font-size: 400px;
 	}
 
@@ -236,7 +231,7 @@ img {
 	text-align: center;
 	background-color: $gray;
 	padding: $grid-gutter-width;
-	h1 {
+	h2 {
 		display: inline-block;	
 		color: $body-bg;
 		@include accent($brand-primary);
@@ -371,6 +366,41 @@ footer {
 footer {
 	@media (max-width: $screen-sm) {
 		padding-bottom: 65px;
+	}
+}
+
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+}
+
+#header-div {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url(/assets/img/toronto.jpg) no-repeat center;
+    position: relative;
+}
+
+.title-text {
+    color: #fff;
+    font-size: 10em;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 220px;
+    h1 {
+  		margin-bottom: 40px;
+		display: inline-block;
+		// @include accent($brand-primary);
+		font-size: 80px;
 	}
 }
 
