@@ -4910,21 +4910,17 @@ body {
   margin: 0;
   padding: 0; }
 
-#header-div {
+.hero {
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
-  background: url(/assets/img/toronto.jpg) no-repeat center;
-  position: relative; }
+  background: url(/assets/img/toronto.jpg) no-repeat center; }
 
 .title-text {
   color: #fff;
-  font-size: 10em;
   text-align: center;
   width: 80%;
-  margin: auto;
-  padding-top: 220px; }
+  margin: 0 auto;
+  padding-top: 200px; }
   .title-text h1 {
     margin-bottom: 40px;
     display: inline-block;

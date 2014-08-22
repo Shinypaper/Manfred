@@ -2,11 +2,11 @@
 
 
 
-	<div id="header-div">
+	<section class="hero section">
     	<div class="title-text">
     		<h1>It's nice to meet you. <span class="code">Together</span> we can make great things.</h1>
     	</div>
-	</div>
+	</section>
 
 	<section class="why section" id="Why">
 		<div class="container wow fadeInUp" data-wow-duration="1.7s" data-wow-delay="0.5s">
