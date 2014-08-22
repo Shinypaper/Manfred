@@ -5,6 +5,7 @@
 	<div id="header-div">
     	<div class="title-text">
     		<h1>It's nice to meet you. <span class="code">Together</span> we can make great things.</h1>
+    	<i class="fa fa-angle-double-down"></i>
     	</div>
 	</div>
 

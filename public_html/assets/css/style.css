@@ -4807,9 +4807,6 @@ img {
   padding: 6px 18px;
   text-transform: uppercase;
   color: #e74c3c; }
-  .submit-button:hover {
-    color: white;
-    border: 2px solid white; }
 
 .form-control {
   border: none; }
@@ -4871,9 +4868,6 @@ legend {
   color: #e74c3c; }
   .visit-site:hover {
     color: white;
-    border: 2px solid white; }
-  .visit-site:hover {
-    color: white;
     background: #e74c3c; }
 
 .submit-button {
@@ -4883,9 +4877,6 @@ legend {
   padding: 6px 18px;
   text-transform: uppercase;
   color: #e74c3c; }
-  .submit-button:hover {
-    color: white;
-    border: 2px solid white; }
   .submit-button:hover {
     color: white;
     background: #e74c3c; }
@@ -4929,3 +4920,6 @@ body {
     margin-bottom: 40px;
     display: inline-block;
     font-size: 80px; }
+
+.fa-angle-double-down {
+  font-size: 0.5em; }
