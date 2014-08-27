@@ -1,11 +1,18 @@
 
 //Mixins
 
-@mixin accent {
-	border-bottom: 4px solid $brand-primary;
+@mixin accent($color) {
+	border-bottom: 4px solid $color;
 }
 
-
+@mixin action-button($border-thickness, $color) {
+	border: $border-thickness solid $color;
+	background: none;
+	font-size: 1.5em;
+	padding: 6px 18px;
+	text-transform: uppercase;
+	color: $color;
+}
 
 //Global Styles
 //-------------
@@ -16,6 +23,7 @@ html, html a {
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 progress {
   /* Positioning */
   position: fixed;
@@ -62,13 +70,12 @@ progress::-webkit-progress-bar {
   left: 0;
   height: .25em;
   display: block;
+=======
+h2 {
+	font-size: 3em;
+>>>>>>> origin/manfred
 }
 
-.progress-bar {
-  width: 50%;
-  display: block;
-  height: inherit;
-}
 
 a:hover {
 	text-decoration: none;
@@ -76,26 +83,84 @@ a:hover {
 
 
 .section {
-	padding: 40px;
+	padding: 40px 0;
 	@media (min-width: $screen-sm) {
 	padding: 100px 0;
 	}
 	@media (min-width: $screen-md) { 
-	padding: 140px 0;
+	padding: 200px 0;
 	}
 }
-
 
 img {
 	max-width: 100%;
 }
+
+//Navigation
+//-----------
+
+
+.navigation {
+	background-color: $gray;
+	display: none;
+	@media (min-width: $screen-sm) { 
+		display: block;
+	}
+	ul {
+		padding-left: 0;
+		margin-bottom: 0;
+		@include clearfix();
+	}
+	li {
+		display: inline-block;
+		margin: 58px ($grid-gutter-width *2) 0;
+		list-style: none;
+		text-transform: uppercase;
+		a {
+			color: $body-bg;
+			font-size: 18px;
+			&:hover, &:active, &:focus {
+				color: $brand-primary;
+				background-color: $gray;
+			}
+		}
+	}
+}
+.navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: $brand-primary;
+}
+
+.mobile-nav {
+	padding: 15px 10px 10px; 
+	background: $gray;
+	text-align: center;
+	@media (min-width: $screen-sm) { 
+		display: none;
+	}
+}
+
+.footer-select {
+	color: $body-bg;
+}
+
+.footer-icons {
+	font-size: 1.8em;
+}
+
+.footer-labels {
+	text-transform: uppercase;
+	white-space: nowrap;
+	font-size: 0.8em;
+}
+
 
 //Page Styles
 //-----------
 
 .masthead {
 	@include clearfix();
-	background-color: $gray-dark;
+	background-color: $gray;
 	padding: 20px 150px;
 }
 
@@ -111,100 +176,72 @@ img {
 	color: $brand-primary;
 }
 
-.navigation {
-	background-color: $gray-dark;
-	ul {
-		padding-left: 0;
-		margin-bottom: 0;
-		@include clearfix();
-	}
-	li {
-		display: inline-block;
-		margin: 42px ($grid-gutter-width *2) 0;
-		list-style: none;
-		text-transform: uppercase;
-		a {
-			color: $body-bg;
-			font-size: 18px;
-			&:hover, &:active, &:focus {
-				color: $body-bg;
-				background-color: $gray-dark;
-				@include accent();
-			}
-		}
-	}
-}
-.navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: $body-bg;
-	background-color: $gray-dark;
-	@include accent();
-}
 
 
 .team {
-	@extend .row;
-	background-color: $gray-dark;
-	h1 {
+	background-color: $body-bg;
+	h2 {
 		color: $body-bg;
 		display: inline-block;
-		@include accent();
+		@include accent($brand-primary);
+	}
+	.teammates {
+		@include clearfix();
+		padding-top: ($grid-gutter-width *2);
 	}
 	.teamate {
 		@include make-sm-column(4);
 		text-align: center;
-		padding: $grid-gutter-width;
 		img {
-			width: 250px;
-			@extend .img-circle;
+			width: 300px;
 		}
 	}
 }
 
 .why {
-	background-color: $gray;
+	background-color: $brand-secondary;
 	text-align: center;
 	color: $body-bg;
-	h1 {
-		margin-bottom: 40px;
-		display: inline-block;
-		@include accent();
-	}
+	
 	p {
-		font-size: 20px;
+		font-size: 25px;
 	}
 }
 
 .where {
 	text-align: center;
-	h1 {
+	background-color: $body-bg;
+	h2 {
 		margin-bottom: 40px;
 		display: inline-block;
 		color: $gray;
-		@include accent();
+		@include accent($brand-primary);
 	}
-	.client {
-		@extend .row;
-		img {
-			@include make-sm-column(3);
-			@extend .img-circle;
-			margin-top: 120px;
-		}
+}
+.client {
+	display: block;
+	float: left;
+	width: 25%;
+	text-shadow: none;
+	img {
+		margin-top: 40px;
+		width: 100%;
 	}
 }
 
 .how {
-	background-color: $gray-dark;
+	background-color: $body-bg;
 	.contact {
 		@extend .row;
-		color: $body-bg;
+		color: $gray;
 	}
 	.blurb {
 		@include make-sm-column(6);
 	}
 	.form {
 		legend {
-			color: $body-bg;
-			@include accent();
+			color: $gray;
+			@include accent($brand-secondary);
 		}
 		@include make-sm-column(6);
 		.form-control {
@@ -220,15 +257,42 @@ img {
 	}
 }
 .four-oh-four {
-	background-color: $gray-dark;
+	background-color: $gray;
 	text-align: center;
 	color: white;
-	h1 {
+	h2 {
 		font-size: 400px;
 	}
 
 }
 
+//Bio
+.greeting {
+	text-align: center;
+	background-color: $gray;
+	padding: $grid-gutter-width;
+	h2 {
+		display: inline-block;	
+		color: $body-bg;
+		@include accent($brand-primary);
+	}
+}
+.bio {
+	@extend .row;
+	.bio_image {
+		@include make-md-column(6);
+		img {
+			width: 100%;
+		}
+	}
+	.bio_text {
+		@include make-md-column(6);
+		h2 {
+			@include accent($brand-primary);
+			display: inline-block;
+		}
+	}
+}
 
 
 //Contact Form
@@ -236,21 +300,42 @@ img {
 
 .input_container {
 	padding-bottom: ($grid-gutter-width /2);
+	text-transform: uppercase;
+}
+
+.submit-button {
+	@include action-button(2px,$brand-primary);
+}
+
+.form-control {
+	border: none;
+}
+
+legend {
+	font-size: 3em;
 }
 
 //Portfolio Page
 
 .portfolio {
-	.panel {
-		border: none;
-	}
-	.portfolio_details {
-		background-color: $gray;
+	@include clearfix();
+	.porfolio_header {
+		text-align: center;
+		padding: $grid-gutter-width;
+		background-color: $body-bg;
+		h1 {
+			font-size: 5em;
+		}
 	}
 
+	
+
 	.portfolio_mobile {
-		background-color: $gray-dark;
+		background-color: $gray;
 		text-align: center;
+		.mobile_header {
+			color: $body-bg;
+		}
 	}
 
 	.portfolio_details {
@@ -265,29 +350,48 @@ img {
 		background-color: $body-bg;
 		color: $gray;
 		text-align: center;
-	}
-
-	.mobile_row {
-		@extend .row;
-		.mobile_images {
-			.mobile_image {
-				@include make-sm-column(6);
-			}
-			.mobile_study_text {
-				@include make-sm-column(6);
-				p {
-					color: $body-bg;
-				}
-			}
+		font-size: 1.2em;
+		> h2 {
+			width: 80%;
+			margin: auto;
 		}
 	}
-
 }
+
+.mobile_study_text {
+	background: $gray;
+	color: $body-bg;	
+	font-size: 1.5em;
+	padding: 100px 0;
+}
+
+.mobile_header {
+	padding-bottom: 100px;
+}
+
+
+.visit-site {
+	@include action-button(2px,$brand-primary);
+	&:hover {
+		color: white;
+		background: $brand-primary;
+	}
+}
+
+.submit-button {
+	@include action-button(2px,$brand-primary);
+	&:hover {
+		color: white;
+		background: $brand-primary;
+	}
+}
+
+
 //Footer styles
 
 footer {
 		text-align: center;
-		background-color: $gray-dark;
+		background-color: $gray;
 	img {
 		width: 80px;
 	}
@@ -295,5 +399,48 @@ footer {
 		padding: 4px;
 		background-color: $brand-primary;
 	}
+}
+
+footer {
+	@media (max-width: $screen-sm) {
+		padding-bottom: 65px;
+	}
+}
+
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background: url(/assets/img/toronto.jpg) no-repeat center;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+.title-text {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 200px;
+    h1 {
+  		margin-bottom: 40px;
+		display: inline-block;
+		font-size: 80px;
+	}
+}
+
+.fa-angle-double-down {
+	font-size: 8em;
 }
 

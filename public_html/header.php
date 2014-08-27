@@ -21,34 +21,5 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-<header>
-        <nav class="navbar navigation navbar-fixed-top" role="navigation">
-          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <!-- <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a> -->
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <a href="/">
-                <div class="logo">
-                    <img src="/assets/img/cbrewers.png" alt="">
-                </div>
-            </a>
-              <ul class="nav navbar-nav">
-                <li><a class="scroll-who" href="#Who">who</a></li>
-                  <li><a class="scroll-why" href="#Why">why</a></li>
-                  <li><a class="scroll-where" href="#Where">where</a></li>
-                  <li><a class="scroll-how" href="#How">how</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-      </header>
+<?php include 'nav.php'; ?>
