@@ -5,17 +5,10 @@
 	<section class="hero section">
     	<div class="title-text">
     		<h1>It's nice to meet you. <span class="code">Together</span> we can make great things.</h1>
-	    	<i class="fa fa-angle-double-down wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.4s"></i>
+	    	<!-- <i class="fa fa-angle-double-down wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.4s"></i> -->
     	</div>
 	</section>
  
-	<section class="why section" id="Why">
-		<div class="container wow fadeInUp" data-wow-duration="1.7s" data-wow-delay="0.5s">
-			
-			<p>We’re a company of three because we believe the best results come from a direct partnership with clients. In other words, we do the work and we maintain the relationship. No sales reps, no account execs, no big guns trying to represent the work of someone else. We are with you every step of the way.</p>
-			<p>No matter what, we've got you covered.</p>
-		</div>
-	</section>
 
 	<section class="where section" id="Where">
 		<h2>Here's where you can see our work</h2>
@@ -28,41 +21,37 @@
 				</div>
 	</section>
 
-	<section class="team section" id="Who">
+	<section class="why section" id="Why">
+		<div class="container wow fadeInUp" data-wow-duration="1.7s" data-wow-delay="0.5s">
+			
+			<p>We’re a company of three because we believe the best results come from a direct partnership with clients. In other words, we do the work and we maintain the relationship. No sales reps, no account execs, no big guns trying to represent the work of someone else. We are with you every step of the way.</p>
+			<p>No matter what, we've got you covered.</p>
+		</div>
+	</section>
+
+<!-- 	<section class="team section" id="Who">
 		<div class="container">
 			<div class="row">
 				<div class="teammates">
 					<div class="teamate wow fadeInLeft" data-wow-delay="0.6s" data-wow-duration="1.3s">
 						<div class="teamate_inner">
-							<a href="">
-								<div class="blockicon bio" data-toggle="tooltip" data-placement="bottom" title="Hi Im Manfred. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla aperiam omnis molestias deserunt laudantium quidem, assumenda unde incidunt est excepturi officia nisi, reiciendis fugiat nihil, rerum placeat eaque ipsum perspiciatis!">
-									<img src="assets/img/manfred.jpg" alt="">
-								</div>
-							</a>
+							<img src="assets/img/manfred.jpg" alt="">
 						</div>
 					</div>
 					<div class="teamate wow fadeIn" data-wow-delay="0.6s" data-wow-duration="1.3s">
 						<div class="teamate_inner">
-							<a href="">
-								<div class="blockicon bio" data-toggle="tooltip" data-placement="bottom" title="Meet Dillon">
-									<img src="assets/img/dillon.jpg" alt="">
-								</div>
-							</a>
+							<img src="assets/img/dillon.jpg" alt="">
 						</div>
 					</div> 
 				   <div class="teamate wow fadeInRight" data-wow-delay="0.6s" data-wow-duration="1.3s">
 						<div class="teamate_inner">
-							<a href="">
-								<div class="blockicon bio" data-toggle="tooltip" data-placement="bottom" title="Meet Johann">
-									<img src="assets/img/johann.jpg" alt="">
-								</div>
-							</a>
+							<img src="assets/img/johann.jpg" alt="">
 						</div>
 					</div>
 				</div>	
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<section class="how section" id="How">
 	<div class="container">

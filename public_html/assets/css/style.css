@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Klill";
+  src: url(../css/fonts/Klill-light.ttf); }
+
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -4579,6 +4583,13 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+html, body {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
 html, html a {
   -webkit-font-smoothing: antialiased;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.004);
@@ -4601,6 +4612,28 @@ a:hover {
 
 img {
   max-width: 100%; }
+
+.hero {
+  height: 100%;
+  width: 100%;
+  background: url(/assets/img/toronto.jpg) no-repeat center;
+  top: 0;
+  left: 0;
+  position: relative; }
+
+.title-text {
+  color: #fff;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 200px; }
+  .title-text h1 {
+    margin-bottom: 40px;
+    display: inline-block;
+    font-size: 80px; }
+
+.fa-angle-double-down {
+  font-size: 8em; }
 
 .navigation {
   background-color: #2E2E34;
@@ -4668,32 +4701,6 @@ img {
 .code {
   color: #e74c3c; }
 
-.team {
-  background-color: #F4F3F3; }
-  .team h2 {
-    color: #F4F3F3;
-    display: inline-block;
-    border-bottom: 4px solid #e74c3c; }
-  .team .teammates {
-    padding-top: 60px; }
-    .team .teammates:before, .team .teammates:after {
-      content: " ";
-      display: table; }
-    .team .teammates:after {
-      clear: both; }
-  .team .teamate {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center; }
-    @media (min-width: 768px) {
-      .team .teamate {
-        float: left;
-        width: 33.33333%; } }
-    .team .teamate img {
-      width: 300px; }
-
 .why {
   background-color: #34495e;
   text-align: center;
@@ -4705,18 +4712,26 @@ img {
   text-align: center;
   background-color: #F4F3F3; }
   .where h2 {
-    margin-bottom: 40px;
+    margin: 0 0 180px;
     display: inline-block;
     color: #2E2E34;
     border-bottom: 4px solid #e74c3c; }
 
+.clients:before, .clients:after {
+  content: " ";
+  display: table; }
+.clients:after {
+  clear: both; }
+
 .client {
+  width: 50%;
   display: block;
   float: left;
-  width: 25%;
   text-shadow: none; }
+  @media (min-width: 768px) {
+    .client {
+      width: 25%; } }
   .client img {
-    margin-top: 40px;
     width: 100%; }
 
 .how {
@@ -4890,32 +4905,3 @@ footer {
 @media (max-width: 768px) {
   footer {
     padding-bottom: 65px; } }
-
-html, body {
-  height: 100%; }
-
-body {
-  margin: 0;
-  padding: 0; }
-
-.hero {
-  height: 100%;
-  width: 100%;
-  background: url(/assets/img/toronto.jpg) no-repeat center;
-  top: 0;
-  left: 0;
-  position: relative; }
-
-.title-text {
-  color: #fff;
-  text-align: center;
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 200px; }
-  .title-text h1 {
-    margin-bottom: 40px;
-    display: inline-block;
-    font-size: 80px; }
-
-.fa-angle-double-down {
-  font-size: 8em; }
