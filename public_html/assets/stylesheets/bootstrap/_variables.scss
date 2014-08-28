@@ -44,6 +44,11 @@ $link-hover-color:      darken($link-color, 15%) !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
+@font-face {
+	font-family: "Klill";
+	src: url(../css/fonts/Klill-light.ttf);
+}
+
 $font-family-sans-serif:  "Klill", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
