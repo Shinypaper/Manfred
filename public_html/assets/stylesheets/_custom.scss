@@ -17,6 +17,17 @@
 //Global Styles
 //-------------
 
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+}
+
 html, html a {
     -webkit-font-smoothing: antialiased;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.004);
@@ -46,6 +57,37 @@ a:hover {
 img {
 	max-width: 100%;
 }
+
+
+
+//Hero Section
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background: url(/assets/img/toronto.jpg) no-repeat center;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+.title-text {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 200px;
+    h1 {
+  		margin-bottom: 40px;
+		display: inline-block;
+		font-size: 80px;
+	}
+}
+
+.fa-angle-double-down {
+	font-size: 8em;
+}
+
 
 //Navigation
 //-----------
@@ -129,25 +171,25 @@ img {
 
 
 
-.team {
-	background-color: $body-bg;
-	h2 {
-		color: $body-bg;
-		display: inline-block;
-		@include accent($brand-primary);
-	}
-	.teammates {
-		@include clearfix();
-		padding-top: ($grid-gutter-width *2);
-	}
-	.teamate {
-		@include make-sm-column(4);
-		text-align: center;
-		img {
-			width: 300px;
-		}
-	}
-}
+// .team {
+// 	background-color: $body-bg;
+// 	h2 {
+// 		color: $body-bg;
+// 		display: inline-block;
+// 		@include accent($brand-primary);
+// 	}
+// 	.teammates {
+// 		@include clearfix();
+// 		padding-top: ($grid-gutter-width *2);
+// 	}
+// 	.teamate {
+// 		@include make-sm-column(4);
+// 		text-align: center;
+// 		img {
+// 			width: 300px;
+// 		}
+// 	}
+// }
 
 .why {
 	background-color: $brand-secondary;
@@ -163,19 +205,25 @@ img {
 	text-align: center;
 	background-color: $body-bg;
 	h2 {
-		margin-bottom: 40px;
+		margin:0 0 180px;
 		display: inline-block;
 		color: $gray;
 		@include accent($brand-primary);
 	}
 }
+.clients {
+	@include clearfix();
+}
 .client {
+	width: 50%;
 	display: block;
 	float: left;
-	width: 25%;
 	text-shadow: none;
+	@media (min-width: $screen-sm) {
+		width: 25%;
+	}
 	img {
-		margin-top: 40px;
+		// margin-top: 40px;
 		width: 100%;
 	}
 }
@@ -359,39 +407,4 @@ footer {
 }
 
 
-html, 
-body {
-    height: 100%;
-}
-
-body {
-    margin: 0; 
-    padding: 0;
-}
-
-.hero {
-    height: 100%;
-    width: 100%;
-    background: url(/assets/img/toronto.jpg) no-repeat center;
-    top: 0;
-    left: 0;
-    position: relative;
-}
-
-.title-text {
-    color: #fff;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 200px;
-    h1 {
-  		margin-bottom: 40px;
-		display: inline-block;
-		font-size: 80px;
-	}
-}
-
-.fa-angle-double-down {
-	font-size: 8em;
-}
 
