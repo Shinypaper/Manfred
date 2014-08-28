@@ -34,7 +34,6 @@ html, html a {
     font-weight: bold;
 }
 
-<<<<<<< HEAD
 progress {
   /* Positioning */
   position: fixed;
@@ -81,12 +80,10 @@ progress::-webkit-progress-bar {
   left: 0;
   height: .25em;
   display: block;
-=======
-h2 {
-	font-size: 3em;
->>>>>>> origin/manfred
+	h2 {
+		font-size: 3em;
+	}
 }
-
 
 a:hover {
 	text-decoration: none;
@@ -285,6 +282,9 @@ img {
 	}
 	.blurb {
 		@include make-sm-column(6);
+		a {
+			font-size: 2.5em;
+		}
 	}
 	.form {
 		legend {
@@ -399,7 +399,7 @@ legend {
 		color: $gray;
 		text-align: center;
 		font-size: 1.2em;
-		> h2 {
+		 h2 {
 			width: 80%;
 			margin: auto;
 		}
@@ -454,6 +454,3 @@ footer {
 		padding-bottom: 65px;
 	}
 }
-
-
-
