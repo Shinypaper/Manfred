@@ -4,7 +4,7 @@
 
 	<section class="hero section">
     	<div class="title-text">
-    		<h1>The CodeBrewers</h1>
+    		<h1>The <span class="code">Code</span>Brewers</h1>
     		<h4>Bring your website into the <span class="code">mobile</span> world.</h4>
 	    	<i class="fa fa-angle-double-down wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.4s"></i>
     	</div>
