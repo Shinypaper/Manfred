@@ -34,7 +34,6 @@ html, html a {
     font-weight: bold;
 }
 
-<<<<<<< HEAD
 progress {
   /* Positioning */
   position: fixed;
@@ -81,12 +80,10 @@ progress::-webkit-progress-bar {
   left: 0;
   height: .25em;
   display: block;
-=======
-h2 {
-	font-size: 3em;
->>>>>>> origin/manfred
+	h2 {
+		font-size: 3em;
+	}
 }
-
 
 a:hover {
 	text-decoration: none;
@@ -125,11 +122,11 @@ img {
     text-align: center;
     width: 80%;
     margin: 0 auto;
-    padding-top: 200px;
+    padding-top: 50px;
     h1 {
   		margin-bottom: 40px;
 		display: inline-block;
-		font-size: 80px;
+		font-size: 8em;
 	}
 }
 
@@ -137,6 +134,13 @@ img {
 	font-size: 8em;
 }
 
+h1 {
+	font-family: 'Paytone One', sans-serif;
+}
+
+h4 {
+	font-size: 4em;
+}
 
 //Navigation
 //-----------
@@ -285,6 +289,9 @@ img {
 	}
 	.blurb {
 		@include make-sm-column(6);
+		a {
+			font-size: 2.5em;
+		}
 	}
 	.form {
 		legend {
@@ -399,7 +406,7 @@ legend {
 		color: $gray;
 		text-align: center;
 		font-size: 1.2em;
-		> h2 {
+		 h2 {
 			width: 80%;
 			margin: auto;
 		}
@@ -453,6 +460,10 @@ footer {
 	@media (max-width: $screen-sm) {
 		padding-bottom: 65px;
 	}
+}
+
+.copyright {
+	color: $body-bg;
 }
 
 

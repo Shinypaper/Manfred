@@ -1,6 +1,7 @@
 
     <footer>
         <a href="/"><img src="/assets/img/codebrewer-icon-alt.png" alt=""></a>
+        <p class="copyright">&copy <?php echo Date(Y); ?> CodeBrewers</p>
         <div class="footer_accent"></div>
     </footer>
 

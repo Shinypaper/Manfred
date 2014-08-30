@@ -4,15 +4,15 @@
 
 	<section class="hero section">
     	<div class="title-text">
-    		<h1>It's nice to meet you. <span class="code">Together</span> we can make great things.</h1>
-	    	<!-- <i class="fa fa-angle-double-down wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.4s"></i> -->
+    		<h1>The CodeBrewers</h1>
+    		<h4>Bring your website into the <span class="code">mobile</span> world.</h4>
+	    	<i class="fa fa-angle-double-down wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.4s"></i>
     	</div>
 	</section>
  
 
 	<section class="where section" id="Where">
 		<h2>Here's where you can see our work</h2>
-		
 				<div class="clients">
 					<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.3s" href="#clientOne"><img src="assets/img/clients/phil-logo.png" alt=""></a>
 					<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.5s" href="#clientTwo"><img src="assets/img/clients/falling-logo.png" alt=""></a>
@@ -67,30 +67,29 @@
 								<label for="full_name">Name</label>
 								<input type="text" name="full_name" class="form-control" id="" >
 							</div>
-							<div class="input_container">
-								<label for="email">Email</label>
-								<input type="text" name="email" class="form-control" id="" >
-							</div>
-							<div class="input_container">
-								<label for="comments">Project Details</label>
-								<textarea type="textarea" name="comments" class="form-control" id=""></textarea>
-							</div>
+
+						<div class="input_container">
+							<label for="email">Email</label>
+							<input type="text" name="email" class="form-control" id="" >
 						</div>
-						<a href="javascript:void(0);" class="send_form"><input type="submit" class="submit-button" /></a>
-					</form>
-				</div>
-				<div class="success">
-					<h2>We will be in touch soon.</h2>
-					<p>In the meantime, try and think about the answer to these three questions.</p>
-					<p>1. What makes my company <span class="code">remarkable?</span> </p>
-					<p>2. Who exactly are <span class="code">my customers?</span></p>
-					<p>3. What do I consider a <span class="code">successful</span> website?</p>
-				</div>
-				<div class="blurb">
-					<h2>We'd love to learn more about you and your needs.</h2>
-					<p><span class="accent">M</span> : 416-888-2556 </p>
-					<p><span class="accent">E</span> : <a href="info@codebrewers.ca?Subject=Hello%20again" target="_top">info@codebrewers.ca</a></p>
-				</div>
+						<div class="input_container">
+							<label for="comments">Message</label>
+							<textarea type="textarea" name="comments" class="form-control" id=""></textarea>
+						</div>
+					</div>
+					<a href="javascript:void(0);" class="send_form"><input type="submit" class="submit-button" /></a>
+				</form>
+			</div>
+			<div class="success">
+				<h2>We will be in touch soon.</h2>
+				<p>In the meantime, ask yourself the following questions:</p>
+				<p>1. What makes my company <span class="code">remarkable</span>?</p>
+				<p>2. Who are my <span class="code">target customers</span>?</p>
+				<p>3. What do I consider a <span class="code">successful</span> website?</p>
+			</div>
+			<div class="blurb">
+				<h2>We'd love to learn more about you and your needs.</h2>
+				<a href="info@codebrewers.ca?Subject=Hello%20again" target="_top">info@codebrewers.ca</a>
 			</div>
 		</div>
 	</div>
