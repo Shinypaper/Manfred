@@ -4,7 +4,7 @@
 
 	<section class="hero section">
     	<div class="title-text">
-    		<h1>The CodeBrewers</h1>
+    		<h1>The <span class="code">Code</span>Brewers</h1>
     		<h4>Bring your website into the <span class="code">mobile</span> world.</h4>
 	    	<i class="fa fa-angle-double-down wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.4s"></i>
     	</div>
@@ -14,8 +14,8 @@
 	<section class="where section" id="Where">
 		<h2>Here's where you can see our work</h2>
 				<div class="clients">
-					<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.3s" href="#clientOne"><img src="assets/img/clients/phil-logo.png" alt=""></a>
-					<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.5s" href="#clientTwo"><img src="assets/img/clients/falling-logo.png" alt=""></a>
+					<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.3s" href="phil.php"><img src="assets/img/clients/phil-logo.png" alt=""></a>
+					<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.5s" href="fallingbrook.php"><img src="assets/img/clients/falling-logo.png" alt=""></a>
 					<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.7s" href="niteflite.php"><img src="assets/img/clients/nite-logo.png" alt=""></a>
 					<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.9s" href="#clientFour"><img src="assets/img/clients/phil-logo.png" alt=""></a>				
 				</div>
