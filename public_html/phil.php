@@ -5,7 +5,7 @@
 	<div class="container">
 	    <section class="portfolio_details section">
 	    	<div class="porfolio_header">
-	    		<h1>NiteFlite Pro DJ</h1>
+	    		<h1>Philip Stavrou</h1>
 	    	</div>	
 		<div class="portfolio_blurb">
 			<p>This client wanted a modern single page site that would have all his relevant information readily accesible. To add a dynamic feel and convey motion and energy a parallax effect was employed.</p>
