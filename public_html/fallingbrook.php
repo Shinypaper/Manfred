@@ -33,17 +33,7 @@
 		</section>
 
 	</div>	
-	    <section class="where section">
-		    <h2>More of our work.</h2>
-	        <div class="portfolio">
-		            <div class="clients">
-	                    <a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.3s" href="phil.php"><img src="assets/img/clients/phil-logo.png" alt=""></a>
-						<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.5s" href="#clientTwo"><img src="assets/img/clients/falling-logo.png" alt=""></a>
-						<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.7s" href="niteflite.php"><img src="assets/img/clients/nite-logo.png" alt=""></a>
-						<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.9s" href="#clientFour"><img src="assets/img/clients/phil-logo.png" alt=""></a>
-		            </div>
-	            </div>
-	    </section>
-
+	
+<?php include 'portfolio.php'; ?>
 
 <?php include('footer.php'); ?>
