@@ -226,6 +226,16 @@ img {
 	p {
 		font-size: 20px;
 	}
+	.develop_icons {
+		@include make-sm-column(2.4);
+		text-align: center;
+		i {
+			margin-top: ($grid-gutter-width *4);
+			font-size: 100px;
+			display: block;
+			margin-bottom: $grid-gutter-width;
+		}
+	}
 }
 
 .where {

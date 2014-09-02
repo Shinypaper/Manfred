@@ -4731,6 +4731,21 @@ img {
     margin: 60px 0; }
   .why p {
     font-size: 20px; }
+  .why .develop_icons {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .why .develop_icons {
+        float: left;
+        width: 20%; } }
+    .why .develop_icons i {
+      margin-top: 120px;
+      font-size: 100px;
+      display: block;
+      margin-bottom: 30px; }
 
 .where {
   text-align: center;
