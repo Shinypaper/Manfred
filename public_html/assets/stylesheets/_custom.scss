@@ -206,7 +206,7 @@ img {
 		}
 	h2 {
 		text-align: center;
-		margin:0 0 80px;
+		margin: 0;
 		font-size: 35px;
 	}
 	h3 {
@@ -227,7 +227,7 @@ img {
 		font-size: 20px;
 	}
 	.develop_icons {
-		@include make-sm-column(2.4);
+		@include make-sm-column(2);
 		text-align: center;
 		i {
 			margin-top: ($grid-gutter-width *4);
