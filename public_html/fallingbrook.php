@@ -5,14 +5,14 @@
 	<div class="container">
 	    <section class="portfolio_details section">
 	    	<div class="porfolio_header">
-	    		<h1>NiteFlite Pro DJ</h1>
+	    		<h1>Tony &amp; Claudia's On Fallingbrook</h1>
 	    	</div>	
 		<div class="portfolio_blurb">
 			<p>This client wanted a modern single page site that would have all his relevant information readily accesible. To add a dynamic feel and convey motion and energy a parallax effect was employed.</p>
 		</div>
 	
 			<div class="container">
-				<img src="assets/img/clients/niteflite-desktop.png" alt="">
+				<img src="assets/img/clients/Fallingbrook-desktop.png" alt="">
 			</div>
 		</section>
 	</div>
@@ -21,7 +21,7 @@
 			<div class="container">
 				<h2 class="mobile_header">Designed for the modern mobile user</h2>
 					<div>
-						<img src="assets/img/clients/niteflite-mobile.png" alt="">
+						<img src="assets/img/clients/fallingbrook-mobile.png" alt="">
 					</div>
 				
 				<div class="mobile_study_text">
@@ -33,7 +33,7 @@
 		</section>
 
 	</div>	
-
+	
 <?php include 'portfolio.php'; ?>
 
 <?php include('footer.php'); ?>
