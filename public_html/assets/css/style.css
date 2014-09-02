@@ -1222,13 +1222,13 @@ pre {
   .container-fluid:after {
     clear: both; }
 
-.row, .bio {
+.row {
   margin-left: -15px;
   margin-right: -15px; }
-  .row:before, .bio:before, .row:after, .bio:after {
+  .row:before, .row:after {
     content: " ";
     display: table; }
-  .row:after, .bio:after {
+  .row:after {
     clear: both; }
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
@@ -4613,6 +4613,9 @@ a:hover {
 img {
   max-width: 100%; }
 
+.code {
+  color: #e74c3c; }
+
 .hero {
   height: 100%;
   width: 100%;
@@ -4636,6 +4639,21 @@ img {
   .title-text i {
     font-size: 6em;
     margin-top: 60px; }
+
+.masthead {
+  background-color: #2E2E34;
+  padding: 20px 150px; }
+  .masthead:before, .masthead:after {
+    content: " ";
+    display: table; }
+  .masthead:after {
+    clear: both; }
+
+.logo {
+  float: left;
+  margin-top: 7px; }
+  .logo img {
+    width: 300px; }
 
 .navigation {
   background-color: #2E2E34;
@@ -4689,77 +4707,65 @@ img {
   white-space: nowrap;
   font-size: 0.6em; }
 
-.masthead {
-  background-color: #2E2E34;
-  padding: 20px 150px; }
-  .masthead:before, .masthead:after {
-    content: " ";
-    display: table; }
-  .masthead:after {
-    clear: both; }
-
-.logo {
-  float: left;
-  margin-top: 7px; }
-  .logo img {
-    width: 300px; }
-
-.code {
-  color: #e74c3c; }
-
-.why {
+.process {
   background-color: #34495e;
   color: #F4F3F3;
   text-align: center; }
   @media (min-width: 768px) {
-    .why {
+    .process {
       text-align: left; } }
-  .why h2 {
+  .process h2 {
     text-align: center;
     margin: 0;
     font-size: 35px; }
-  .why h3 {
+  .process h3 {
     text-align: center;
     font-size: 30px; }
-  .why h4 {
+  .process h4 {
     font-size: 28px; }
-  .why .mobile-first-images {
+  .process .mobile-first-images {
     text-align: center;
     margin: 60px 0; }
-  .why .mobiletext {
+  .process .mobiletext {
     margin: 60px 0; }
-  .why p {
+  .process p {
     font-size: 20px; }
-  .why .develop_icons {
+  .process .develop_icons {
+    position: relative;
+    float: left;
+    width: 50%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
     position: relative;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
     text-align: center; }
     @media (min-width: 768px) {
-      .why .develop_icons {
+      .process .develop_icons {
         float: left;
         width: 16.66667%; } }
-    .why .develop_icons i {
+    .process .develop_icons i {
       margin-top: 120px;
       font-size: 100px;
       display: block;
       margin-bottom: 30px; }
-  .why .mobile-first-button {
+  .process .mobile-first-button {
     border: 2px solid white;
     background: none;
     font-size: 1.5em;
     padding: 6px 18px;
     text-transform: uppercase;
     color: white; }
-    .why .mobile-first-button:hover {
+    .process .mobile-first-button:hover {
       color: #e74c3c;
       background: white; }
 
-.where {
+.portfolio {
   text-align: center;
   background-color: #F4F3F3; }
-  .where h2 {
+  .portfolio h2 {
     margin: 0 0 180px;
     display: inline-block;
     color: #2E2E34;
@@ -4782,29 +4788,29 @@ img {
   .client img {
     width: 100%; }
 
-.how {
+.contact_section {
   background-color: #F4F3F3; }
-  .how .contact {
+  .contact_section .contact {
     color: #2E2E34; }
-  .how .blurb {
+  .contact_section .blurb {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px; }
     @media (min-width: 768px) {
-      .how .blurb {
+      .contact_section .blurb {
         float: left;
         width: 50%; } }
-    .how .blurb a {
+    .contact_section .blurb a {
       font-size: 2.5em; }
-  .how .form legend {
+  .contact_section .form legend {
     color: #2E2E34;
     border-bottom: 4px solid #34495e; }
-  .how .form .form-control {
+  .contact_section .form .form-control {
     border-radius: 0; }
-  .how .success {
+  .contact_section .success {
     display: none; }
-    .how .success p {
+    .contact_section .success p {
       font-size: 1.2em; }
 
 .four-oh-four {
@@ -4813,61 +4819,6 @@ img {
   color: white; }
   .four-oh-four h2 {
     font-size: 400px; }
-
-.greeting {
-  text-align: center;
-  background-color: #2E2E34;
-  padding: 30px; }
-  .greeting h2 {
-    display: inline-block;
-    color: #F4F3F3;
-    border-bottom: 4px solid #e74c3c; }
-
-.bio .bio_image {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 992px) {
-    .bio .bio_image {
-      float: left;
-      width: 50%; } }
-  .bio .bio_image img {
-    width: 100%; }
-.bio .bio_text {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 992px) {
-    .bio .bio_text {
-      float: left;
-      width: 50%; } }
-  .bio .bio_text h2 {
-    border-bottom: 4px solid #e74c3c;
-    display: inline-block; }
-
-.input_container {
-  padding-bottom: 15px;
-  text-transform: uppercase; }
-
-.submit-button {
-  border: 2px solid #e74c3c;
-  background: none;
-  font-size: 1.5em;
-  padding: 6px 18px;
-  text-transform: uppercase;
-  color: #e74c3c; }
-
-.form-control {
-  border: none; }
-
-legend {
-  font-size: 2.5em;
-  text-align: center; }
-  @media (min-width: 480px) {
-    legend {
-      text-align: left; } }
 
 .portfolio:before, .portfolio:after {
   content: " ";
@@ -4918,6 +4869,28 @@ legend {
   .visit-site:hover {
     color: white;
     background: #e74c3c; }
+
+.input_container {
+  padding-bottom: 15px;
+  text-transform: uppercase; }
+
+.submit-button {
+  border: 2px solid #e74c3c;
+  background: none;
+  font-size: 1.5em;
+  padding: 6px 18px;
+  text-transform: uppercase;
+  color: #e74c3c; }
+
+.form-control {
+  border: none; }
+
+legend {
+  font-size: 2.5em;
+  text-align: center; }
+  @media (min-width: 480px) {
+    legend {
+      text-align: left; } }
 
 .submit-button {
   border: 2px solid #e74c3c;

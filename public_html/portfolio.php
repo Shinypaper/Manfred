@@ -1,4 +1,4 @@
-	<section class="where section" id="Where">
+	<section class="portfolio section" id="Where">
 		<h2>Here's some of our work</h2>
 				<div class="clients">
 					<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.3s" href="phil.php"><img src="assets/img/clients/phil-logo.png" alt=""></a>

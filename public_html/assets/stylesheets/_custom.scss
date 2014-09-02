@@ -1,5 +1,6 @@
 
 //Mixins
+//------
 
 @mixin accent($color) {
 	border-bottom: 4px solid $color;
@@ -57,6 +58,12 @@ img {
 	max-width: 100%;
 }
 
+.code {
+	color: $brand-primary;
+}
+
+
+
 
 
 //Hero Section
@@ -91,9 +98,22 @@ img {
 
 
 
-//Navigation
-//-----------
+//HEADER STYLES
+//-------------
 
+.masthead {
+	@include clearfix();
+	background-color: $gray;
+	padding: 20px 150px;
+}
+
+.logo {
+	float: left;
+	margin-top: 7px;
+	img {
+		width: 300px;
+	}
+}
 
 .navigation {
 	background-color: $gray;
@@ -153,27 +173,8 @@ img {
 	font-size: 0.6em;
 }
 
-
-//Page Styles
-//-----------
-
-.masthead {
-	@include clearfix();
-	background-color: $gray;
-	padding: 20px 150px;
-}
-
-.logo {
-	float: left;
-	margin-top: 7px;
-	img {
-		width: 300px;
-	}
-}
-
-.code {
-	color: $brand-primary;
-}
+//HEADER STYLES END
+//-----------------
 
 
 
@@ -197,7 +198,10 @@ img {
 // 	}
 // }
 
-.why {
+//PROCESS STYLES
+//----------------
+
+.process {
 	background-color: $brand-secondary;
 	color: $body-bg;
 	text-align: center;
@@ -227,6 +231,7 @@ img {
 		font-size: 20px;
 	}
 	.develop_icons {
+		@include make-xs-column(6);
 		@include make-sm-column(2);
 		text-align: center;
 		i {
@@ -245,7 +250,13 @@ img {
 	}
 }
 
-.where {
+//PROCESS STYLES END
+//--------------------
+
+//PORTFOLIO STYLES
+//----------------
+
+.portfolio {
 	text-align: center;
 	background-color: $body-bg;
 	h2 {
@@ -272,7 +283,13 @@ img {
 	}
 }
 
-.how {
+//PORTFOLIO STYLES END
+//--------------------
+
+//CONTACT FORM STYLES 
+//--------------------
+
+.contact_section {
 	background-color: $body-bg;
 	.contact {
 		// @extend .row;
@@ -302,6 +319,13 @@ img {
 		}
 	}
 }
+
+//CONTACT FORM STYLES END
+//-----------------------
+
+//404 PAGE STYLES
+//---------------
+
 .four-oh-four {
 	background-color: $gray;
 	text-align: center;
@@ -309,63 +333,15 @@ img {
 	h2 {
 		font-size: 400px;
 	}
-
 }
 
-//Bio
-.greeting {
-	text-align: center;
-	background-color: $gray;
-	padding: $grid-gutter-width;
-	h2 {
-		display: inline-block;	
-		color: $body-bg;
-		@include accent($brand-primary);
-	}
-}
-.bio {
-	@extend .row;
-	.bio_image {
-		@include make-md-column(6);
-		img {
-			width: 100%;
-		}
-	}
-	.bio_text {
-		@include make-md-column(6);
-		h2 {
-			@include accent($brand-primary);
-			display: inline-block;
-		}
-	}
-}
+//404 PAGE STYLES END
+//-------------------
 
 
-//Contact Form
 
-
-.input_container {
-	padding-bottom: ($grid-gutter-width /2);
-	text-transform: uppercase;
-}
-
-.submit-button {
-	@include action-button(2px,$brand-primary);
-}
-
-.form-control {
-	border: none;
-}
-
-legend {
-	font-size: 2.5em;
-	text-align: center;
-	@media (min-width: $screen-xs) {
-		text-align: left;
-	}
-}
-
-//Portfolio Page
+//PORTFOLIO PAGE STYLES
+//---------------------
 
 .portfolio {
 	@include clearfix();
@@ -417,12 +393,39 @@ legend {
 	padding-bottom: 100px;
 }
 
-
 .visit-site {
 	@include action-button(2px,$brand-primary);
 	&:hover {
 		color: white;
 		background: $brand-primary;
+	}
+}
+
+//PORTFOLIO STYLES END
+//--------------------
+
+
+//CONTACT FORM
+//------------
+
+.input_container {
+	padding-bottom: ($grid-gutter-width /2);
+	text-transform: uppercase;
+}
+
+.submit-button {
+	@include action-button(2px,$brand-primary);
+}
+
+.form-control {
+	border: none;
+}
+
+legend {
+	font-size: 2.5em;
+	text-align: center;
+	@media (min-width: $screen-xs) {
+		text-align: left;
 	}
 }
 
@@ -434,8 +437,12 @@ legend {
 	}
 }
 
+//CONTACT FORM END
+//------------
 
-//Footer styles
+
+//FOOTER STYLES
+//-------------
 
 footer {
 		text-align: center;
@@ -459,5 +466,6 @@ footer {
 	color: $body-bg;
 }
 
-
+//FOOTER STYLES END
+//-----------------
 
