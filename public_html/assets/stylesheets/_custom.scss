@@ -83,12 +83,12 @@ img {
 			font-size: 8em;
 		}
 	}
+	i {
+		font-size: 6em;
+		margin-top: ($grid-gutter-width *2);
+	}
 }
 
-.fa-angle-double-down {
-	font-size: 5em;
-	margin-top: 40px;
-}
 
 
 //Navigation
@@ -234,6 +234,13 @@ img {
 			font-size: 100px;
 			display: block;
 			margin-bottom: $grid-gutter-width;
+		}
+	}
+	.mobile-first-button {
+		@include action-button(2px,white);
+		&:hover {
+		color: $brand-primary;
+		background: white;
 		}
 	}
 }
