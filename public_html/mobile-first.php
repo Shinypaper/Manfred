@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-		<section class="why section" id="Why">
+		<section class="process section" id="Why">
 			<div class="container">
 				<article>
 					<h3 class="wow fadeInUp" data-wow-duration="1.7s" data-wow-delay="0.2s">A note about designing <span class="code">mobile</span> first</h3>
