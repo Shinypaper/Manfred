@@ -32,7 +32,7 @@
 				</div>	
 				<div class="mobiletext">
 					<h4><i class="fa fa-paint-brush code"></i> Solving the project needs with Design</h4>
-					<p>Based on our experience we design solutions that meets your and your client's needs.</p>
+					<p>Based on our experience we design solutions that meet the needs of you and your audience.</p>
 				</div>
 				<div class="mobiletext">
 					<h4><i class="fa fa-code code"></i> Coding out the design</h4>
@@ -44,11 +44,11 @@
 				</div>
 				<div class="mobiletext">
 					<h4><i class="code fa fa-cog"></i> Responsive and Cross-browser testing</h4>
-					<p>We make sure that your site always looks good on the most widely used devices.</p>
+					<p>We make sure that your site always looks beautiful on the most widely used devices.</p>
 				</div>	
 				<div class="mobiletext">
 					<h4><i class="code fa fa-paper-plane-o"></i> Launch</h4>
-					<p>Then we launch... BYE! </p>
+					<p>Then we launch... BYE steedrabbit! </p>
 				</div>
 				</div>
 			</article>
