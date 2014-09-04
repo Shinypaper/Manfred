@@ -4759,20 +4759,25 @@ img {
     text-align: center; }
     .process .develop_icon i {
       display: block;
-      font-size: 50px; }
+      font-size: 40px; }
+      @media (min-width: 480px) {
+        .process .develop_icon i {
+          font-size: 50px; } }
       @media (min-width: 768px) {
         .process .develop_icon i {
           font-size: 100px; } }
   .process .mobile-first-button {
-    border: 2px solid white;
-    background: none;
-    font-size: 1.5em;
-    padding: 6px 18px;
-    text-transform: uppercase;
-    color: white; }
-    .process .mobile-first-button:hover {
-      color: #e74c3c;
-      background: white; }
+    margin-top: 30px; }
+    .process .mobile-first-button a {
+      border: 2px solid white;
+      background: none;
+      font-size: 1.5em;
+      padding: 6px 18px;
+      text-transform: uppercase;
+      color: white; }
+      .process .mobile-first-button a:hover {
+        color: #e74c3c;
+        background: white; }
 
 .portfolio {
   text-align: center;
@@ -4824,6 +4829,16 @@ img {
     display: none; }
     .contact_section .success p {
       font-size: 1.2em; }
+
+label {
+  text-transform: uppercase; }
+
+.submit {
+  text-align: center;
+  margin-top: 30px; }
+  @media (min-width: 768px) {
+    .submit {
+      text-align: left; } }
 
 .four-oh-four {
   background-color: #2E2E34;

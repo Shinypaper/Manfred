@@ -247,17 +247,23 @@ img {
 		text-align: center;
 		i {
 			display: block;
-			font-size: 50px;
+			font-size: 40px;
+			@media (min-width: $screen-xs) {
+				font-size: 50px;
+			}
 			@media (min-width: $screen-sm) {
 				font-size: 100px;
 			}
 		}
 	}
 	.mobile-first-button {
-		@include action-button(2px,white);
-		&:hover {
-		color: $brand-primary;
-		background: white;
+		margin-top: $grid-gutter-width;
+		a {
+			@include action-button(2px,white);
+			&:hover {
+				color: $brand-primary;
+				background: white;
+			}
 		}
 	}
 }
@@ -329,6 +335,16 @@ img {
 		p {
 			font-size: 1.2em; 
 		}
+	}
+}
+label {
+	text-transform: uppercase;
+}
+.submit {
+	text-align: center;
+	margin-top: $grid-gutter-width;
+	@media (min-width: $screen-sm) {
+		text-align: left;
 	}
 }
 

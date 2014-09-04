@@ -52,7 +52,9 @@
 				</div>
 				</div>
 			</article>
+			<div class="mobile-first-button">
 				<a href="/mobile-first.php" class="mobile-first-button">Learn More</a>
+			</div>
 		</div>
 	</section>
 
@@ -82,27 +84,27 @@
 
 	<section class="contact_section section" id="How">
 		<div class="container">
-				<div class="contact">
-					<div class="form contact_form">
-						<form id="contact_form" name="contactform" role="form">
-							<legend>Let's work together</legend>
-						
-							<div class="form-group">
-								<div class="input_container">
-									<label for="full_name">Name</label>
-									<input type="text" name="full_name" class="form-control" id="" >
-								</div>
-
-							<div class="input_container">
-								<label for="email">Email</label>
-								<input type="text" name="email" class="form-control" id="" >
-							</div>
-							<div class="input_container">
-								<label for="comments">Message</label>
-								<textarea type="textarea" rows="6" name="comments" class="form-control" id=""></textarea>
-							</div>
+			<div class="contact">
+				<div class="form contact_form">
+					<form id="contact_form" name="contactform" role="form">
+						<legend>Let's work together</legend>
+					
+						<div class="form-group">
+							<label for="full_name">Name</label>
+							<input type="text" name="full_name" class="form-control" id="" >
 						</div>
-						<a href="javascript:void(0);" class="send_form"><input type="submit" class="submit-button" /></a>
+
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="text" name="email" class="form-control" id="" >
+						</div>
+						<div class="form-group">
+							<label for="comments">Message</label>
+							<textarea type="textarea" rows="6" name="comments" class="form-control" id=""></textarea>
+						</div>
+						<div class="form-group submit">
+							<a href="javascript:void(0);" class="send_form submit-button">Submit</a>
+						</div>
 					</form>
 				</div>
 				<div class="success">
