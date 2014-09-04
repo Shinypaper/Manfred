@@ -32,7 +32,7 @@
 				</div>	
 				<div class="mobiletext">
 					<h4><i class="fa fa-paint-brush code"></i> Solving the project needs with Design</h4>
-					<p>Based on our experience we design solutions that meet the needs of you and your audience.</p>
+					<p>Based on our experience and what will best suit your business we design solutions that meet the needs of you and your audience.</p>
 				</div>
 				<div class="mobiletext">
 					<h4><i class="fa fa-code code"></i> Coding out the design</h4>
@@ -48,7 +48,7 @@
 				</div>	
 				<div class="mobiletext">
 					<h4><i class="code fa fa-paper-plane-o"></i> Launch</h4>
-					<p>Then we launch... BYE steedrabbit! </p>
+					<p>Once you are happy with your new website we set you up with hosting and release it in the wild.</p>
 				</div>
 				</div>
 			</article>
