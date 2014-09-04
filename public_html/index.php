@@ -17,39 +17,39 @@
 		<div class="container">
 			<h2>Our Process: Design <span class="code">&amp;</span> Develop</h2>
 			<article>
-				<div>
-					<div class="row">
-						<div class="develop_icons"><i class="fa fa-search"></i></div>
-						<div class="develop_icons"><i class="fa fa-paint-brush"></i></div>
-						<div class="develop_icons"><i class="fa fa-code"></i></div>
-						<div class="develop_icons"><i class="fa fa-database"></i></div>
-						<div class="develop_icons"><i class="fa fa-cog"></i></div>
-						<div class="develop_icons"><i class="fa fa-paper-plane-o"></i></div>
-					</div>
-					<div class="mobiletext">
-						<h4><i class="fa fa-search code"></i> Finding the project needs</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nam numquam exercitationem inventore voluptatibus eaque quos laboriosam, consectetur in aut debitis facilis, molestiae hic ad voluptatum, ea atque. Officia, sunt..</p>
-					</div>	
-					<div class="mobiletext">
-						<h4><i class="fa fa-paint-brush code"></i> Solving the project needs with Design</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quos fugiat placeat, perspiciatis blanditiis enim, ipsam harum sint odit nam molestiae sit incidunt quaerat totam, officia sapiente sed culpa architecto..</p>
-					</div>
-					<div class="mobiletext">
-						<h4><i class="fa fa-code code"></i> Coding out the design</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quos fugiat placeat, perspiciatis blanditiis enim, ipsam harum sint odit nam molestiae sit incidunt quaerat totam, officia sapiente sed culpa architecto..</p>
-					</div>
-					<div class="mobiletext">
-						<h4><i class="code fa fa-database"></i> Setting Up the Database and CMS</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, obcaecati dolor, harum laboriosam ex voluptas earum odit unde magnam, magni illo repudiandae molestiae ut veritatis deserunt repellendus minus. Officiis, iure!</p>
-					</div>
-					<div class="mobiletext">
-						<h4><i class="code fa fa-cog"></i> Responsive and Cross-browser testing</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima facere quidem ex animi ullam praesentium incidunt amet quis odit! Quo, molestiae beatae veritatis, voluptatem quam perspiciatis vero dolor at! Error!</p>
-					</div>	
-					<div class="mobiletext">
-						<h4><i class="code fa fa-paper-plane-o"></i> Launch</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat voluptate quidem, eveniet aliquid, deserunt, accusantium atque, consequuntur iusto amet earum cumque aut. Fuga, aperiam quis pariatur, quasi quia commodi qui.</p>
-					</div>
+				<div class="row develop_icons">
+					<div class="develop_icon"><i class="fa fa-search"></i></div>
+					<div class="develop_icon"><i class="fa fa-paint-brush"></i></div>
+					<div class="develop_icon"><i class="fa fa-code"></i></div>
+					<div class="develop_icon"><i class="fa fa-database"></i></div>
+					<div class="develop_icon"><i class="fa fa-cog"></i></div>
+					<div class="develop_icon"><i class="fa fa-paper-plane-o"></i></div>
+				</div>
+				<div class="row">
+				<div class="mobiletext">
+					<h4><i class="fa fa-search code"></i> Finding the project needs</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nam numquam exercitationem inventore voluptatibus eaque quos laboriosam, consectetur in aut debitis facilis, molestiae hic ad voluptatum, ea atque. Officia, sunt..</p>
+				</div>	
+				<div class="mobiletext">
+					<h4><i class="fa fa-paint-brush code"></i> Solving the project needs with Design</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quos fugiat placeat, perspiciatis blanditiis enim, ipsam harum sint odit nam molestiae sit incidunt quaerat totam, officia sapiente sed culpa architecto..</p>
+				</div>
+				<div class="mobiletext">
+					<h4><i class="fa fa-code code"></i> Coding out the design</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quos fugiat placeat, perspiciatis blanditiis enim, ipsam harum sint odit nam molestiae sit incidunt quaerat totam, officia sapiente sed culpa architecto..</p>
+				</div>
+				<div class="mobiletext">
+					<h4><i class="code fa fa-database"></i> Setting Up the Database and CMS</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, obcaecati dolor, harum laboriosam ex voluptas earum odit unde magnam, magni illo repudiandae molestiae ut veritatis deserunt repellendus minus. Officiis, iure!</p>
+				</div>
+				<div class="mobiletext">
+					<h4><i class="code fa fa-cog"></i> Responsive and Cross-browser testing</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima facere quidem ex animi ullam praesentium incidunt amet quis odit! Quo, molestiae beatae veritatis, voluptatem quam perspiciatis vero dolor at! Error!</p>
+				</div>	
+				<div class="mobiletext">
+					<h4><i class="code fa fa-paper-plane-o"></i> Launch</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat voluptate quidem, eveniet aliquid, deserunt, accusantium atque, consequuntur iusto amet earum cumque aut. Fuga, aperiam quis pariatur, quasi quia commodi qui.</p>
+				</div>
 				</div>
 			</article>
 				<a href="/mobile-first.php" class="mobile-first-button">Learn More</a>

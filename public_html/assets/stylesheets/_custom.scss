@@ -108,7 +108,10 @@ img {
 	float: left;
 	margin-top: 7px;
 	img {
-		width: 300px;
+		width: 200px;
+		@media (min-width: $screen-md) {
+			width: 300px;
+		}
 	}
 }
 
@@ -125,7 +128,10 @@ img {
 	}
 	li {
 		display: inline-block;
-		margin: 58px 8px 0;
+		margin-top: 32px;
+		@media (min-width: $screen-md) {
+			margin-top: 60px;
+		}
 		list-style: none;
 		text-transform: uppercase;
 		a {
@@ -223,19 +229,25 @@ img {
 	}
 	.mobiletext {
 		margin: ($grid-gutter-width *2) 0;
+		@include make-sm-column(6);
 	}
 	p {
 		font-size: 20px;
 	}
-	.develop_icons {
-		@include make-xs-column(6);
-		@include make-sm-column(2);
+	.develop_icons {		
+		margin-top: ($grid-gutter-width *4);
+		margin-bottom: $grid-gutter-width;
+	}
+	.develop_icon {
+		// @include make-xs-column(6);
+		@include make-xs-column(2);
 		text-align: center;
 		i {
-			margin-top: ($grid-gutter-width *4);
-			font-size: 100px;
 			display: block;
-			margin-bottom: $grid-gutter-width;
+			font-size: 50px;
+			@media (min-width: $screen-sm) {
+				font-size: 100px;
+			}
 		}
 	}
 	.mobile-first-button {
