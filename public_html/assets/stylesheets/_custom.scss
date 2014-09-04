@@ -230,6 +230,9 @@ img {
 	.mobiletext {
 		margin: ($grid-gutter-width *2) 0;
 		@include make-sm-column(6);
+		&:nth-child(odd) {
+			clear: left;
+		}
 	}
 	p {
 		font-size: 20px;

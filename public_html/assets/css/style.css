@@ -4742,6 +4742,8 @@ img {
       .process .mobiletext {
         float: left;
         width: 50%; } }
+    .process .mobiletext:nth-child(odd) {
+      clear: left; }
   .process p {
     font-size: 20px; }
   .process .develop_icons {

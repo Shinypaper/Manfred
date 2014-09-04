@@ -36,7 +36,7 @@
 				</div>
 				<div class="mobiletext">
 					<h4><i class="fa fa-code code"></i> Coding out the design</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quos fugiat placeat, perspiciatis blanditiis enim, ipsam harum sint odit nam molestiae sit incidunt quaerat totam, officia sapiente sed culpa architecto..</p>
+					<p>Using the latest web development standards we build your site in way that's optimized for search engines.</p>
 				</div>
 				<div class="mobiletext">
 					<h4><i class="code fa fa-database"></i> Setting Up the Database and CMS</h4>
