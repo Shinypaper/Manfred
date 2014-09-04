@@ -4759,7 +4759,7 @@ img {
     text-align: center; }
     .process .develop_icon i {
       display: block;
-      font-size: 40px; }
+      font-size: 30px; }
       @media (min-width: 480px) {
         .process .develop_icon i {
           font-size: 50px; } }
