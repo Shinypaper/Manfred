@@ -40,7 +40,7 @@
 				</div>
 				<div class="mobiletext">
 					<h4><i class="code fa fa-database"></i> Setting Up the Database and CMS</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, obcaecati dolor, harum laboriosam ex voluptas earum odit unde magnam, magni illo repudiandae molestiae ut veritatis deserunt repellendus minus. Officiis, iure!</p>
+					<p>If your new website requires it, we make a custom Wordpress theme that's easy for you to access and edit.</p>
 				</div>
 				<div class="mobiletext">
 					<h4><i class="code fa fa-cog"></i> Responsive and Cross-browser testing</h4>
