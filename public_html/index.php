@@ -28,7 +28,7 @@
 				<div class="row">
 				<div class="mobiletext">
 					<h4><i class="fa fa-search code"></i> Finding the project needs</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nam numquam exercitationem inventore voluptatibus eaque quos laboriosam, consectetur in aut debitis facilis, molestiae hic ad voluptatum, ea atque. Officia, sunt..</p>
+					<p>We speak directly to you and work out how your new website will be most effective in reaching your audience.</p>
 				</div>	
 				<div class="mobiletext">
 					<h4><i class="fa fa-paint-brush code"></i> Solving the project needs with Design</h4>
@@ -40,15 +40,15 @@
 				</div>
 				<div class="mobiletext">
 					<h4><i class="code fa fa-database"></i> Setting Up the Database and CMS</h4>
-					<p>If your new website requires it, we make a custom Wordpress theme that's easy for you to access and edit.</p>
+					<p>If your new website requires it, we install a suitable content management solution that's easy for you to access and edit.</p>
 				</div>
 				<div class="mobiletext">
 					<h4><i class="code fa fa-cog"></i> Responsive and Cross-browser testing</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima facere quidem ex animi ullam praesentium incidunt amet quis odit! Quo, molestiae beatae veritatis, voluptatem quam perspiciatis vero dolor at! Error!</p>
+					<p>We make sure that your site always looks good on the most widely used devices.</p>
 				</div>	
 				<div class="mobiletext">
 					<h4><i class="code fa fa-paper-plane-o"></i> Launch</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat voluptate quidem, eveniet aliquid, deserunt, accusantium atque, consequuntur iusto amet earum cumque aut. Fuga, aperiam quis pariatur, quasi quia commodi qui.</p>
+					<p>Then we launch... BYE! </p>
 				</div>
 				</div>
 			</article>
