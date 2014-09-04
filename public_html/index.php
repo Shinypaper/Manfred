@@ -32,7 +32,7 @@
 				</div>	
 				<div class="mobiletext">
 					<h4><i class="fa fa-paint-brush code"></i> Solving the project needs with Design</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quos fugiat placeat, perspiciatis blanditiis enim, ipsam harum sint odit nam molestiae sit incidunt quaerat totam, officia sapiente sed culpa architecto..</p>
+					<p>Based on our experience we design solutions that meets your and your client's needs.</p>
 				</div>
 				<div class="mobiletext">
 					<h4><i class="fa fa-code code"></i> Coding out the design</h4>
