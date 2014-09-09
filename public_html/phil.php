@@ -1,10 +1,11 @@
 <?php include('header.php'); ?>
-	
+	        <div class="header_accent"></div>
+
 	<div class="portfolio">
 		
 	<div class="container">
 	    <section class="portfolio_details section">
-	    	<div class="porfolio_header">
+	    	<div class="portfolio_header">
 	    		<h1>Philip Stavrou</h1>
 	    	</div>	
 		<div class="portfolio_blurb">
