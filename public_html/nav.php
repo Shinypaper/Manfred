@@ -14,7 +14,7 @@
 				<ul class="nav navbar-nav pull-right">
 					<li><a class="scroll-where" href="#Where">Portfolio</a></li>
                     <li><a class="scroll-who" href="#Why">Process</a></li>
-                    <li><a class="scroll-who" href="#Why">About Us</a></li>
+                    <!-- <li><a class="scroll-who" href="#Why">About Us</a></li> -->
 					<li><a class="scroll-how" href="#How">Contact</a></li>
 				</ul>
 			</div>
@@ -42,12 +42,12 @@
             <div class="footer-labels">Process</div>
         </div>
     </a>
-    <a href="#Why" class="mobile_nav_column">
+<!--     <a href="#Why" class="mobile_nav_column">
         <div class="footer-select">
             <i class="fa fa-group footer-icons"></i>
             <div class="footer-labels">About Us</div>
         </div>
-    </a>
+    </a> -->
     <a href="#How" class="mobile_nav_column">
         <div class=" footer-select">
             <i class="fa fa-envelope footer-icons"></i>

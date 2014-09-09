@@ -4,7 +4,7 @@
 		
 	<div class="container">
 	    <section class="portfolio_details section">
-	    	<div class="porfolio_header">
+	    	<div class="portfolio_header">
 	    		<h1>Tony &amp; Claudia's On Fallingbrook</h1>
 	    	</div>	
 		<div class="portfolio_blurb">

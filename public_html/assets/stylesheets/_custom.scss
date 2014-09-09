@@ -15,6 +15,11 @@
 	color: $color;
 }
 
+@mixin edge_accent($color) {
+	padding: 4px;
+	background-color: $color;
+}
+
 //Global Styles
 //-------------
 
@@ -46,6 +51,7 @@ a:hover {
 
 .section {
 	padding: 40px 0;
+
 	@media (min-width: $screen-sm) {
 	padding: 100px 0;
 	}
@@ -58,9 +64,11 @@ img {
 	max-width: 100%;
 }
 
-.code {
+.highlight {
 	color: $brand-primary;
 }
+
+
 
 
 //Hero Section
@@ -74,22 +82,35 @@ img {
     position: relative;
 }
 
+.mobile_logo {
+	width: 60px;
+	margin: 0 auto;
+	@media (min-width: $screen-sm) {
+		display: none;
+	}
+}
+
 .title-text {
     color: #fff;
     text-align: center;
     width: 80%;
     margin: 0 auto;
-    padding-top: 50px;
+    @media (min-width: $screen-sm) {
+	    padding-top: 50px;
+	}
     h1 {
   		margin-bottom: 40px;
-		font-size: 3em;
+		font-size: 2.3em;
 		@media (min-width: $screen-sm) {
 			font-size: 8em;
 		}
 	}
 	i {
-		font-size: 6em;
-		margin-top: ($grid-gutter-width *2);
+		font-size: 2em;
+		@media (min-width:$screen-sm) {
+			margin-top: ($grid-gutter-width *2);
+			font-size: 6em;
+		}
 	}
 }
 
@@ -150,7 +171,7 @@ img {
 }
 
 .mobile-nav {
-	padding: 15px 10px 10px; 
+	padding: 8px 10px 10px; 
 	background: $gray;
 	text-align: center;
 	@media (min-width: $screen-sm) { 
@@ -158,16 +179,20 @@ img {
 	}
 }
 	.mobile_nav_column {
-		width: 20%;
+		width: 25%;
 		float: left;
 	}
 
 .footer-select {
 	color: $body-bg;
+	i {
+		font-size: 2em;
+		margin-bottom: 8px;
+	}
 }
 
-.footer-icons {
-	font-size: 1.4em;
+.header_accent {
+	@include edge_accent($gray);
 }
 
 .footer-labels {
@@ -278,7 +303,12 @@ img {
 	text-align: center;
 	background-color: $body-bg;
 	h2 {
-		margin:0 0 180px;
+		margin-bottom: 60px;
+		font-size: 26px;
+		@media (min-width: $screen-sm) {
+			font-size: 30px;
+			margin:0 0 180px;
+		}
 		display: inline-block;
 		color: $gray;
 		@include accent($brand-primary);
@@ -373,7 +403,7 @@ label {
 
 .portfolio {
 	@include clearfix();
-	.porfolio_header {
+	.portfolio_header {
 		text-align: center;
 		padding: $grid-gutter-width;
 		background-color: $body-bg;
@@ -429,6 +459,24 @@ label {
 	}
 }
 
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $brand-secondary;
+	opacity: 0.8;
+	color: $body-bg;
+	font-size: 20px;
+	i {
+		display: block;
+		font-size: 40px;
+		margin-top: 40%;
+	}
+}
+
+
 //PORTFOLIO STYLES END
 //--------------------
 
@@ -476,12 +524,13 @@ footer {
 		text-align: center;
 		background-color: $gray;
 	img {
-		width: 80px;
+		width: 70px;
+		margin: 5px 0;
 	}
-	.footer_accent {
-		padding: 4px;
-		background-color: $brand-primary;
-	}
+}
+
+.footer_accent {
+	@include edge_accent($brand-primary);
 }
 
 footer {
