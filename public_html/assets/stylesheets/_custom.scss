@@ -48,6 +48,14 @@ a:hover {
 	text-decoration: none;
 }
 
+::-moz-selection {
+  background: $brand-primary; /* Gecko Browsers */
+  color: $body-bg;
+}
+::selection {
+  background: $brand-primary; /* WebKit/Blink Browsers */
+  color: $body-bg;
+}
 
 .section {
 	padding: 40px 0;
