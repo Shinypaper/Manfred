@@ -4835,8 +4835,6 @@ img {
       width: 25%; } }
   .client img {
     width: 100%; }
-  .client:hover {
-    color: #e74c3c; }
 
 .contact_section {
   background-color: #F4F3F3; }
@@ -4925,7 +4923,9 @@ label {
   font-size: 1.5em;
   padding: 6px 18px;
   text-transform: uppercase;
-  color: #e74c3c; }
+  color: #e74c3c;
+  display: inline-block;
+  margin-top: 60px; }
   .visit-site:hover {
     color: white;
     background: #e74c3c; }

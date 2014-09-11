@@ -22,7 +22,7 @@
 			<div class="container">
 				<h2 class="mobile_header">Mobile View</h2>
 					<div class="mobile_study_text">
-						<p>For a mobile view, it was important to drive clients to the main sections of the site - Buy, Sell &amp; Neighbourhoods. We set this center stage for the mobile view, making it the </p>
+						<p>For a mobile view, it was important to drive clients to the main sections of the site - Buy, Sell &amp; Neighbourhoods. We set this center stage for the mobile view, making it easily accessible to his clients.</p>
 					</div>
 					<div>
 						<img src="assets/img/clients/phil-mobile.png" alt="">
@@ -30,7 +30,7 @@
 				
 			</div>
 			<div>
-				<a class="visit-site" href="http://www.nitefliteprodj.com" target="_blank">visit site</a>
+				<a class="visit-site" href="http://www.philipstavrou.com" target="_blank">visit site</a>
 			</div>
 
 		</section>

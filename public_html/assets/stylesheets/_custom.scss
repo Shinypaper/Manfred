@@ -337,9 +337,6 @@ img {
 		// margin-top: 40px;
 		width: 100%;
 	}
-	&:hover {
-		color: $brand-primary;
-	}
 }
 
 //PORTFOLIO STYLES END
@@ -461,6 +458,8 @@ label {
 
 .visit-site {
 	@include action-button(2px,$brand-primary);
+	display: inline-block;
+	margin-top: ($grid-gutter-width  *2);
 	&:hover {
 		color: white;
 		background: $brand-primary;
