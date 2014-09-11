@@ -26,7 +26,6 @@
 					<div>
 						<img src="assets/img/clients/niteflite-mobile.png" alt="">
 					</div>
-				
 			</div>
 			<div>
 				<a class="visit-site" href="http://www.nitefliteprodj.com" target="_blank">visit site</a>

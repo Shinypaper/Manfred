@@ -21,7 +21,7 @@
 			<div class="container">
 				<h2 class="mobile_header">Mobile View</h2>
 					<div class="mobile_study_text">
-						<p>For a mobile view, it was important to maintian maximum functionality, where still retaining the overall feel of the site. To that end efforts were made to declutter the interface so that core actions were easy to determine.</p>
+						<p>For a mobile view, it was important to maintian maximum functionality, where still retaining the overall feel of the site. Keeping the "contact us" button near the top was important because that is what most people are looking for, especially when browsing the site on a mobile device.</p>
 					</div>
 					<div>
 						<img src="assets/img/clients/fallingbrook-mobile.png" alt="">
