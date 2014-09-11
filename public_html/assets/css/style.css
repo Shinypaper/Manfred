@@ -4837,6 +4837,8 @@ img {
     width: 100%; }
   .client:hover {
     color: #e74c3c; }
+    .client:hover .overlay {
+      display: block; }
 
 .contact_section {
   background-color: #F4F3F3; }
@@ -4931,6 +4933,7 @@ label {
     background: #e74c3c; }
 
 .overlay {
+  display: none;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -4944,6 +4947,8 @@ label {
     display: block;
     font-size: 40px;
     margin-top: 40%; }
+  .overlay.stay {
+    display: block; }
 
 .input_container {
   padding-bottom: 15px;
