@@ -338,8 +338,6 @@ img {
 		width: 100%;
 	}
 	&:hover {
-
-		color: $brand-primary;
 		.overlay {
 			display: block;
 		}
@@ -421,7 +419,10 @@ label {
 		padding: $grid-gutter-width;
 		background-color: $body-bg;
 		h1 {
-			font-size: 5em;
+			font-size: 4em;
+			@media (min-width: $screen-sm) {
+				font-size: 5em;
+			}
 		}
 	}
 
@@ -466,6 +467,8 @@ label {
 
 .visit-site {
 	@include action-button(2px,$brand-primary);
+	display: inline-block;
+	margin-top: ($grid-gutter-width  *2);
 	&:hover {
 		color: white;
 		background: $brand-primary;
@@ -490,6 +493,7 @@ label {
 	}
 	&.stay {
 		display: block;
+		background-color: $brand-secondary;
 	}
 }
 
