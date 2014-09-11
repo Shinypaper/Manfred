@@ -337,6 +337,11 @@ img {
 		// margin-top: 40px;
 		width: 100%;
 	}
+	&:hover {
+		.overlay {
+			display: block;
+		}
+	}
 }
 
 //PORTFOLIO STYLES END
@@ -468,6 +473,7 @@ label {
 }
 
 .overlay {
+	display: none;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -481,6 +487,9 @@ label {
 		display: block;
 		font-size: 40px;
 		margin-top: 40%;
+	}
+	&.stay {
+		display: block;
 	}
 }
 
