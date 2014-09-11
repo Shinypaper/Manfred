@@ -4601,6 +4601,16 @@ textarea {
 a:hover {
   text-decoration: none; }
 
+::-moz-selection {
+  background: #e74c3c;
+  /* Gecko Browsers */
+  color: #F4F3F3; }
+
+::selection {
+  background: #e74c3c;
+  /* WebKit/Blink Browsers */
+  color: #F4F3F3; }
+
 .section {
   padding: 40px 0; }
   @media (min-width: 768px) {

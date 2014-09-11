@@ -9,7 +9,7 @@
 	    		<h1>Philip Stavrou</h1>
 	    	</div>	
 		<div class="portfolio_blurb">
-			<p>This client wanted a modern single page site that would have all his relevant information readily accesible. To add a dynamic feel and convey motion and energy a parallax effect was employed.</p>
+			<p>This client had an outdated site that was based on an old template. He wanted a fresh <span class="highlight">mobile friendly</span> site. Not only was a new design needed but a robust housing market backend was also integral to the success of his new website.</p>
 		</div>
 	
 			<div class="container">
