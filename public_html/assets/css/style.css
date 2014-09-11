@@ -4835,6 +4835,8 @@ img {
       width: 25%; } }
   .client img {
     width: 100%; }
+  .client:hover .overlay {
+    display: block; }
 
 .contact_section {
   background-color: #F4F3F3; }
@@ -4888,7 +4890,10 @@ label {
   padding: 30px;
   background-color: #F4F3F3; }
   .portfolio .portfolio_header h1 {
-    font-size: 5em; }
+    font-size: 4em; }
+    @media (min-width: 768px) {
+      .portfolio .portfolio_header h1 {
+        font-size: 5em; } }
 .portfolio .portfolio_mobile {
   background-color: #2E2E34;
   text-align: center; }
@@ -4931,12 +4936,13 @@ label {
     background: #e74c3c; }
 
 .overlay {
+  display: none;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #34495e;
+  background-color: #e74c3c;
   opacity: 0.8;
   color: #F4F3F3;
   font-size: 20px; }
@@ -4944,6 +4950,9 @@ label {
     display: block;
     font-size: 40px;
     margin-top: 40%; }
+  .overlay.stay {
+    display: block;
+    background-color: #34495e; }
 
 .input_container {
   padding-bottom: 15px;
