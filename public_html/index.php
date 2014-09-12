@@ -86,8 +86,8 @@
 	<section class="contact_section section" id="Contact">
 		<div class="container">
 			<div class="contact">
-				<div class="form">
-					<form id="contact_form" name="contact_form" role="form">
+				<div class="form contact_form">
+					<form id="contact_form" name="contactform" role="form">
 						<legend>Let's work together</legend>
 					
 						<div class="form-group">
@@ -104,7 +104,7 @@
 							<textarea type="textarea" rows="6" name="comments" class="form-control" id=""></textarea>
 						</div>
 						<div class="form-group submit">
-							<a href="javascript:void(0);" class="send_form submit-button">Submit</a>
+							<button href="javascript:void(0);" class="send_form submit-button">Submit</button>
 						</div>
 					</form>
 				</div>

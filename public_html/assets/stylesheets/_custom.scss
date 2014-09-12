@@ -356,12 +356,6 @@ img {
 	.contact {
 		color: $gray;
 	}
-	.blurb {
-		@include make-sm-column(6);
-		a {
-			font-size: 2.5em;
-		}
-	}
 	.form {
 		legend {
 			color: $gray;
