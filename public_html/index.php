@@ -92,12 +92,12 @@
 					
 						<div class="form-group">
 							<label for="full_name">Name</label>
-							<input type="text" name="full_name" class="form-control" id="" >
+							<input type="text" name="full_name" required=""  class="form-control" id="" >
 						</div>
 
 						<div class="form-group">
 							<label for="email">Email</label>
-							<input type="text" name="email" class="form-control" id="" >
+							<input type="text" name="email"  required="" class="form-control" id="" >
 						</div>
 						<div class="form-group">
 							<label for="comments">Message</label>
