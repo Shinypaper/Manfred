@@ -21,14 +21,14 @@
 			<div class="container">
 				<h2 class="mobile_header">Mobile View</h2>
 					<div class="mobile_study_text">
-						<p>For a mobile view, it was important to maintian maximum functionality, where still retaining the overall feel of the site. Keeping the "contact us" button near the top was important because that is what most people are looking for, especially when browsing the site on a mobile device.</p>
+						<p>For a mobile view, it was important to maintian maximum functionality, where still retaining the overall feel of the site. Keeping the "contact us" button near the top was important because that is what most people are looking for, especially when browsing the site on a mobile device. It was also important to make sure that the pictures of the food stayed prominently placed, because after all that is what is going to keep Tony &amp; Claudia's customers coming back for more.</p>
 					</div>
 					<div>
 						<img src="assets/img/clients/fallingbrook-mobile.png" alt="">
 					</div>
 			</div>
 			<div>
-				<a class="visit-site" href="http://www.nitefliteprodj.com" target="_blank">visit site</a>
+				<div class="visit-site" href="http://www.tonyandclaudiasonfallingbrook.com" target="_blank">Launching Soon...</div>
 			</div>
 
 		</section>

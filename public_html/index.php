@@ -14,7 +14,7 @@
 
 	<?php include 'portfolio.php'; ?>
 
-	<section class="process section" id="Why">
+	<section class="process section" id="Process">
 		<div class="container">
 			<h2>Our Process: Design <span class="highlight">&amp;</span> Develop</h2>
 			<article>
@@ -83,7 +83,7 @@
 		</div>
 	</section> -->
 
-	<section class="contact_section section" id="How">
+	<section class="contact_section section" id="Contact">
 		<div class="container">
 			<div class="contact">
 				<div class="form contact_form">
