@@ -86,8 +86,8 @@
 	<section class="contact_section section" id="Contact">
 		<div class="container">
 			<div class="contact">
-				<div class="form contact_form">
-					<form id="contact_form" name="contactform" role="form">
+				<div class="form">
+					<form id="contact_form" name="contact_form" role="form">
 						<legend>Let's work together</legend>
 					
 						<div class="form-group">

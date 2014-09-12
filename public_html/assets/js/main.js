@@ -1,8 +1,6 @@
 $(document).ready(function(){
     
     new WOW().init();
-
-    $('.submit-button').click(function() {
         $('#contact_form').validate({ 
             rules: {
                 full_name: {
@@ -23,6 +21,4 @@ $(document).ready(function(){
                 return false;
             }
         });
-    });
-
 });
