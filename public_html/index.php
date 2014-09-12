@@ -115,9 +115,9 @@
 					<p>2. Who are my <span class="highlight">target customers</span>?</p>
 					<p>3. What do I consider a <span class="highlight">successful</span> website?</p>
 				</div>
-				<div class="blurb">
+<!-- 				<div class="blurb">
 					<h3>We'd love to learn more about you and your needs.</h3>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
