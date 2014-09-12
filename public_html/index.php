@@ -92,12 +92,12 @@
 					
 						<div class="form-group">
 							<label for="full_name">Name</label>
-							<input type="text" name="full_name" class="form-control" id="" >
+							<input type="text" name="full_name" required=""  class="form-control" id="" >
 						</div>
 
 						<div class="form-group">
 							<label for="email">Email</label>
-							<input type="text" name="email" class="form-control" id="" >
+							<input type="text" name="email"  required="" class="form-control" id="" >
 						</div>
 						<div class="form-group">
 							<label for="comments">Message</label>
@@ -115,9 +115,9 @@
 					<p>2. Who are my <span class="highlight">target customers</span>?</p>
 					<p>3. What do I consider a <span class="highlight">successful</span> website?</p>
 				</div>
-<!-- 				<div class="blurb">
+				<div class="blurb">
 					<h3>We'd love to learn more about you and your needs.</h3>
-				</div> -->
+				</div>
 			</div>
 		</div>
 	</section>
