@@ -16,7 +16,6 @@ $(document).ready(function(){
                 $.post('send_form_email.php', form_data, function(data, textStatus, xhr) {
                     $('.contact_form').fadeOut('300');
                     $('.success').delay(400).fadeIn('600');
-                    max = getMax();
                 });
                 return false;
             }
