@@ -22,7 +22,7 @@
 </nav>
 </header>
 
-<nav class="mobile-nav navbar-fixed-bottom">
+<nav class="mobile-nav navbar-fixed-top">
 
 
     <a href="/" class="mobile_nav_column">
