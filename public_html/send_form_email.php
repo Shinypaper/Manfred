@@ -48,7 +48,7 @@ if(isset($_POST['email'])) {
  
     $full_name = $_POST['full_name']; // required
  
-    $email_from = 'codebrewers@codebrewers.com'; // required
+    $email_from = 'codebrewers@codebrewers.ca'; // required
  
     $comments = $_POST['comments']; // required
  
