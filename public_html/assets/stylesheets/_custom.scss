@@ -414,7 +414,7 @@ label {
 		padding: $grid-gutter-width;
 		background-color: $body-bg;
 		h1 {
-			font-size: 4em;
+			font-size: 3.4em;
 			@media (min-width: $screen-sm) {
 				font-size: 5em;
 			}
@@ -484,7 +484,10 @@ label {
 	i {
 		display: block;
 		font-size: 40px;
-		margin-top: 40%;
+		margin-top: 30%;
+		@media (min-width: $screen-sm) {
+			margin-top: 40%;
+		}
 	}
 	&.stay {
 		display: block;

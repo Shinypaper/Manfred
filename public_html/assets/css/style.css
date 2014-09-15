@@ -4881,7 +4881,7 @@ label {
   padding: 30px;
   background-color: #F4F3F3; }
   .portfolio .portfolio_header h1 {
-    font-size: 4em; }
+    font-size: 3.4em; }
     @media (min-width: 768px) {
       .portfolio .portfolio_header h1 {
         font-size: 5em; } }
@@ -4940,7 +4940,10 @@ label {
   .overlay i {
     display: block;
     font-size: 40px;
-    margin-top: 40%; }
+    margin-top: 30%; }
+    @media (min-width: 768px) {
+      .overlay i {
+        margin-top: 40%; } }
   .overlay.stay {
     display: block;
     background-color: #34495e; }
