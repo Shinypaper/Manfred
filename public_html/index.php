@@ -59,29 +59,6 @@
 		</div>
 	</section>
 
-<!-- 	<section class="team section" id="team">
-		<div class="container">
-			<div class="row">
-				<div class="teammates">
-					<div class="teamate wow fadeInLeft" data-wow-delay="0.6s" data-wow-duration="1.3s">
-						<div class="teamate_inner">
-							<img src="assets/img/manfred.jpg" alt="">
-						</div>
-					</div>
-					<div class="teamate wow fadeIn" data-wow-delay="0.6s" data-wow-duration="1.3s">
-						<div class="teamate_inner">
-							<img src="assets/img/dillon.jpg" alt="">
-						</div>
-					</div> 
-				   <div class="teamate wow fadeInRight" data-wow-delay="0.6s" data-wow-duration="1.3s">
-						<div class="teamate_inner">
-							<img src="assets/img/johann.jpg" alt="">
-						</div>
-					</div>
-				</div>	
-			</div>
-		</div>
-	</section> -->
 
 	<section class="contact_section section" id="contact">
 		<div class="container">
@@ -115,9 +92,6 @@
 					<p>2. Who are my <span class="highlight">target customers</span>?</p>
 					<p>3. What do I consider a <span class="highlight">successful</span> website?</p>
 				</div>
-<!-- 				<div class="blurb">
-					<h3>We'd love to learn more about you and your needs.</h3>
-				</div> -->
 			</div>
 		</div>
 	</section>

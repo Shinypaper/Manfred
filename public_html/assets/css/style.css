@@ -1,6 +1,8 @@
 @font-face {
   font-family: "Klill";
-  src: url(../css/fonts/Klill-light.ttf); }
+  src: url(../css/fonts/Klill-Light.eot), url(../css/fonts/Klill-Light.svg) format('svg'), url(../css/fonts/Klill-Light.woff) format('woff'), url(../css/fonts/Klill-Light.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal; }
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -4826,6 +4828,7 @@ img {
   clear: both; }
 
 .client {
+  position: relative;
   width: 50%;
   display: block;
   float: left;
