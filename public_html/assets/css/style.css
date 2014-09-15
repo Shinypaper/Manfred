@@ -4600,9 +4600,6 @@ html, html a {
 textarea {
   resize: none; }
 
-a:hover {
-  text-decoration: none; }
-
 ::-moz-selection {
   background: #e74c3c;
   /* Gecko Browsers */
@@ -4621,6 +4618,8 @@ a:hover {
   @media (min-width: 992px) {
     .section {
       padding: 200px 0; } }
+  .section a:hover {
+    text-decoration: none; }
 
 img {
   max-width: 100%; }
