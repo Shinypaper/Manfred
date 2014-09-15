@@ -2,7 +2,7 @@
 
 
 
-	<section class="hero section">
+	<section id="home" class="hero section">
 		<div class="mobile_logo"><img src="/assets/img/codebrewer-icon-alt.png" alt=""></div>
     	<div class="title-text">
     		<h1>The <span class="highlight">Code</span>Brewers</h1>
@@ -14,7 +14,7 @@
 
 	<?php include 'portfolio.php'; ?>
 
-	<section class="process section" id="Why">
+	<section class="process section" id="process">
 		<div class="container">
 			<h2>Our Process: Design <span class="highlight">&amp;</span> Develop</h2>
 			<article>
@@ -59,7 +59,7 @@
 		</div>
 	</section>
 
-<!-- 	<section class="team section" id="Who">
+<!-- 	<section class="team section" id="team">
 		<div class="container">
 			<div class="row">
 				<div class="teammates">
@@ -83,7 +83,7 @@
 		</div>
 	</section> -->
 
-	<section class="contact_section section" id="How">
+	<section class="contact_section section" id="contact">
 		<div class="container">
 			<div class="contact">
 				<div class="form contact_form">

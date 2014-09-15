@@ -1,4 +1,4 @@
-	<section class="portfolio section" id="Where">
+	<section class="portfolio section" id="portfolio">
 		<h3>Here's some of our work</h3>
 		<div class="clients">
 			<a class="client wow flipInX" data-wow-duration="1s" data-wow-delay="0.3s" href="phil.php"><img src="assets/img/clients/phil-logo.png" alt=""><div class="overlay"><i class="fa fa-search-plus"></i>Philip Stavrou</div></a>
