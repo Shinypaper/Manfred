@@ -20,7 +20,7 @@ $(document).ready(function(){
         },
         submitHandler: function (form) { 
             form_data = $('#contact_form').serialize();
-            $.post('send_form_email.php', form_data, function(data, textStatus, xhr) {
+            $.post('/send_form_email.php', form_data, function(data, textStatus, xhr) {
                 $('.contact_form').fadeOut('300');
                 $('.success').delay(400).fadeIn('600');
             });
