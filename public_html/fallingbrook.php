@@ -12,7 +12,7 @@
 		</div>
 	
 			<div class="container">
-				<img src="assets/img/clients/Fallingbrook-desktop.jpg" alt="">
+				<img src="assets/img/clients/Fallingbrook-desktop.jpeg" alt="">
 			</div>
 		</section>
 	</div>
