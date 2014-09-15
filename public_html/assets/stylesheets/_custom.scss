@@ -44,9 +44,6 @@ textarea {
     resize: none;
 }
 
-a:hover {
-	text-decoration: none;
-}
 
 ::-moz-selection {
   background: $brand-primary; /* Gecko Browsers */
@@ -65,6 +62,9 @@ a:hover {
 	}
 	@media (min-width: $screen-md) { 
 	padding: 200px 0;
+	}
+	a:hover {
+		text-decoration: none;
 	}
 }
 
