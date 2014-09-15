@@ -6,7 +6,7 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
-    $email_to = "info@codebrewers.ca";
+    $email_to = "dillon@razoredgelabs.com";
  
     $email_subject = "CodeBrewers";
  
@@ -48,7 +48,7 @@ if(isset($_POST['email'])) {
  
     $full_name = $_POST['full_name']; // required
  
-    $email_from = 'codebrewers@codebrewers.c'; // required
+    $email_from = 'codebrewers@codebrewers.com'; // required
  
     $comments = $_POST['comments']; // required
  
@@ -112,7 +112,8 @@ $headers = 'From: '.$email_from."\r\n".
  
 'X-Mailer: PHP/' . phpversion();
  
-@mail($email_to, $email_subject, $email_message, $headers);  
+// @mail($email_to, $email_subject, $email_message, $headers);  
+@mail('dillon@razoredgelabs.com', $email_subject, $email_message, $headers);  
  
 ?>
  

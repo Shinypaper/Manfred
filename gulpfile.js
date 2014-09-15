@@ -11,15 +11,21 @@ var sass_src = './public_html/assets/stylesheets/bootstrap.scss' // bootstrap.sa
     ,js_watched = './public_html/assets/js/**/*.js' // js files to watch for changes
     ,templates_watched = './public_html/**/*.php'; // other files to watch for changes (php / html)
 
+function errorHandler (error) {
+  console.log(error.toString());
+  this.emit('end');
+  gutil.beep();
+}
+
 gulp.task('sass', function() {
   gulp.src(sass_src)
   .pipe(rename('style.scss'))
   .pipe(sass({
     paths: [ path.join(__dirname, 'sass', 'includes') ]
   }))
+  .on('error', errorHandler)
   .pipe(gulp.dest(css_dest))
-  .pipe(livereload())
-  .on('error', gutil.log);
+  .pipe(livereload());
 });
 
 gulp.task('watch', function() {
