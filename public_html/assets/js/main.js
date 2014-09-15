@@ -1,24 +1,25 @@
 $(document).ready(function(){
-   if ($(window).width() > 767) {
+
+    if ($(window).width() > 767) {
         new WOW().init();
-   }; 
-        $('#contact_form').validate({ 
-            rules: {
-                full_name: {
-                    required: true
-                },
-                email: {
-                    required: true,
-                    email: true
-                }
+    }; 
+    $('#contact_form').validate({ 
+        rules: {
+            full_name: {
+                required: true
             },
-            submitHandler: function (form) { 
-                form_data = $('#contact_form').serialize();
-                $.post('send_form_email.php', form_data, function(data, textStatus, xhr) {
-                    $('.contact_form').fadeOut('300');
-                    $('.success').delay(400).fadeIn('600');
-                });
-                return false;
+            email: {
+                required: true,
+                email: true
             }
-        });
+        },
+        submitHandler: function (form) { 
+            form_data = $('#contact_form').serialize();
+            $.post('send_form_email.php', form_data, function(data, textStatus, xhr) {
+                $('.contact_form').fadeOut('300');
+                $('.success').delay(400).fadeIn('600');
+            });
+            return false;
+        }
+    });
 });
