@@ -24,6 +24,7 @@
 
 <nav class="mobile-nav navbar-fixed-bottom">
 
+
     <a href="/" class="mobile_nav_column">
         <div class="footer-select">
             <i class="fa fa-home footer-icons"></i>
