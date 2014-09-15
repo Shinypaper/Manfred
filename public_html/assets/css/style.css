@@ -4940,7 +4940,7 @@ label {
   .overlay i {
     display: block;
     font-size: 40px;
-    margin-top: 30%; }
+    margin-top: 20%; }
     @media (min-width: 768px) {
       .overlay i {
         margin-top: 40%; } }
