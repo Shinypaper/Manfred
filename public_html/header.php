@@ -13,10 +13,10 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.css">
-        <link rel="apple-touch-icon" sizes="57x57" href="assets/img/touch-icons/apple-icon-57x57.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/touch-icons/apple-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/touch-icons/apple-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="assets/img/touch-icons/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/img/touch-icons/apple-icon-57x57-precomposed.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/touch-icons/apple-icon-72x72-precomposed.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/touch-icons/apple-icon-114x114-precomposed.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/img/touch-icons/apple-icon-144x144-precomposed.png" />
         <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
