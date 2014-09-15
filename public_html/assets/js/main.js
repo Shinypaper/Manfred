@@ -79,4 +79,20 @@ if ('createTouch' in document) {
     } catch(e){}
 }
 
+
+var currentScroll = $(window).scrollTop();
+$(window).scroll(function() {
+    if ($(window).scrollTop() < 400 || $(window).scrollTop() > 400 && currentScroll > $(window).scrollTop()) {
+        $('.mobile-nav').addClass('active');
+
+    } else {
+        $('.mobile-nav').removeClass('active');
+
+    }
+    currentScroll = $(window).scrollTop();
+});
+
+
+
+
 });

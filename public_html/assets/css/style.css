@@ -4591,6 +4591,9 @@ html, body {
 body {
   margin: 0;
   padding: 0; }
+  @media (max-width: 768px) {
+    body {
+      padding-top: 65px; } }
 
 html, html a {
   -webkit-font-smoothing: antialiased;
@@ -4716,10 +4719,15 @@ img {
 .mobile-nav {
   padding: 8px 10px 10px;
   background: #2E2E34;
-  text-align: center; }
+  text-align: center;
+  top: -65px;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s; }
   @media (min-width: 768px) {
     .mobile-nav {
       display: none; } }
+  .mobile-nav.active {
+    top: 0; }
 
 .mobile_nav_column {
   width: 25%;
@@ -4991,10 +4999,6 @@ footer {
 .footer_accent {
   padding: 4px;
   background-color: #e74c3c; }
-
-@media (max-width: 768px) {
-  footer {
-    padding-bottom: 65px; } }
 
 .copyright {
   color: #F4F3F3; }

@@ -32,6 +32,9 @@ body {
 body {
     margin: 0; 
     padding: 0;
+    @media (max-width: $screen-sm) {
+		padding-top: 65px;
+	}
 }
 
 html, html a {
@@ -182,8 +185,14 @@ img {
 	padding: 8px 10px 10px; 
 	background: $gray;
 	text-align: center;
+	top: -65px;
+	-webkit-transition: top .5s;
+	transition: top .5s;
 	@media (min-width: $screen-sm) { 
 		display: none;
+	}
+	&.active {
+		top: 0;
 	}
 }
 	.mobile_nav_column {
@@ -552,11 +561,6 @@ footer {
 	@include edge_accent($brand-primary);
 }
 
-footer {
-	@media (max-width: $screen-sm) {
-		padding-bottom: 65px;
-	}
-}
 
 .copyright {
 	color: $body-bg;
