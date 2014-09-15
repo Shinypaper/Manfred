@@ -82,7 +82,7 @@ if ('createTouch' in document) {
 
 var currentScroll = $(window).scrollTop();
 $(window).scroll(function() {
-    if ($(window).scrollTop() < 400 || $(window).scrollTop() > 200 && currentScroll > $(window).scrollTop()) {
+    if ($(window).scrollTop() < 200 || $(window).scrollTop() > 200 && currentScroll > $(window).scrollTop()) {
         $('.mobile-nav').addClass('active');
 
     } else {
