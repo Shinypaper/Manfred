@@ -1,6 +1,7 @@
 $(document).ready(function(){
-    
-    new WOW().init();
+   if (window.width() > 767) {
+        new WOW().init();
+   }; 
         $('#contact_form').validate({ 
             rules: {
                 full_name: {
