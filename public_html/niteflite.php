@@ -12,7 +12,7 @@
 		</div>
 	
 			<div class="container">
-				<img src="assets/img/clients/niteflite-desktop.png" alt="">
+				<img src="assets/img/clients/niteflite-desktop.jpg" alt="">
 			</div>
 		</section>
 	</div>
