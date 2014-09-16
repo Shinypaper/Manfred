@@ -9,7 +9,7 @@
 	    		<h1>Philip Stavrou</h1>
 	    	</div>	
 		<div class="portfolio_blurb">
-			<p>Phil had an outdated site that was based on an old template. He wanted a fresh <span class="highlight">mobile friendly</span> site. Not only was a new design needed but a robust housing market backend was also integral to the success of his business.</p>
+			<p>Phil had an outdated site that was based on an old template. He wanted a fresh <span class="highlight">mobile friendly</span> site. Not only was a new design needed but a robust housing market back-end was also integral to the success of his business.</p>
 		</div>
 	
 			<div class="container">

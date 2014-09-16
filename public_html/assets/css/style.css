@@ -4631,12 +4631,14 @@ img {
   color: #e74c3c; }
 
 .hero {
-  height: 100%;
   width: 100%;
   background: url(/assets/img/toronto.jpg) no-repeat center;
   top: 0;
   left: 0;
   position: relative; }
+  @media (min-width: 992px) {
+    .hero {
+      height: 100%; } }
 
 .mobile_logo {
   width: 60px;
