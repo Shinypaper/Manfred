@@ -59,12 +59,11 @@ textarea {
 
 .section {
 	padding: 40px 0;
-
 	@media (min-width: $screen-sm) {
-	padding: 100px 0;
+		padding: 100px 0;
 	}
-	@media (min-width: $screen-md) { 
-	padding: 200px 0;
+	@media (min-width: $screen-lg) { 
+		padding: 200px 0;
 	}
 	a:hover {
 		text-decoration: none;
@@ -85,7 +84,7 @@ img {
 //Hero Section
 
 .hero {
-	@media (min-width: $screen-md) {
+	@media (min-width: $screen-md) and (min-height: 750px) {
 	    height: 100%;
 	}
     width: 100%;

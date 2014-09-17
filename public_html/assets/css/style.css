@@ -4618,7 +4618,7 @@ textarea {
   @media (min-width: 768px) {
     .section {
       padding: 100px 0; } }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .section {
       padding: 200px 0; } }
   .section a:hover {
@@ -4636,7 +4636,7 @@ img {
   top: 0;
   left: 0;
   position: relative; }
-  @media (min-width: 992px) {
+  @media (min-width: 992px) and (min-height: 750px) {
     .hero {
       height: 100%; } }
 
