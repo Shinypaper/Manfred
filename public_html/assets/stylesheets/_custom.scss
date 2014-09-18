@@ -96,12 +96,10 @@ img {
 }
 
 .mobile_logo {
-	img {
-		width: 60px;
-		margin: 0 auto;
-		@media (min-width: $screen-sm) {
-			display: none;
-		}
+	width: 55px;
+	margin: 0 auto;
+	@media (min-width: $screen-sm) {
+		display: none;
 	}
 }
 

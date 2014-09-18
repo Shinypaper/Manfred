@@ -4641,11 +4641,11 @@ img {
     .hero {
       height: 100%; } }
 
-.mobile_logo img {
-  width: 60px;
+.mobile_logo {
+  width: 55px;
   margin: 0 auto; }
   @media (min-width: 768px) {
-    .mobile_logo img {
+    .mobile_logo {
       display: none; } }
 
 .title-text {
