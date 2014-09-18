@@ -5,10 +5,10 @@
 					<h3 class="wow fadeInUp" data-wow-duration="1.7s" data-wow-delay="0.2s">Our Design Philosophy: A <span class="highlight">Mobile First</span> Design</h3>
 					<div class="mobile-first-images">
 						<div class="hidden-sm hidden-xs">
-							<img src="assets/img/mobile-first.png" alt="">		
+							<img src="assets/img/mobile-first.png" alt="mobile first">		
 						</div>
 						<div class="visible-sm visible-xs">
-							<img src="assets/img/mobile-first-phone.png" alt="">		
+							<img src="assets/img/mobile-first-phone.png" alt="mobile first phone">		
 						</div>
 					</div>
 					<div>

@@ -3,7 +3,7 @@
 
 
 	<section id="home" class="hero section">
-		<div class="mobile_logo"><img src="/assets/img/codebrewer-icon-alt.png" alt=""></div>
+		<div class="mobile_logo"><img src="/assets/img/codebrewer-icon-alt.png" alt="mobile logo"></div>
     	<div class="title-text">
     		<h1>The <span class="highlight">Code</span>Brewers</h1>
     		<h2>Bring your website into the <span class="highlight">mobile</span> world.</h2>

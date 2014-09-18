@@ -6,8 +6,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
+        <title>Code Brewers</title>
+        <meta name="description" content="We are a Toronto based web development and website design team that specialize in responsive, mobile friendly, and beautiful websites and custom wordpress themes">
         <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0; user-scalable=0; minimal-ui"> 
         <link rel="shortcut icon" href="favicon.ico?v=5" />
         <link rel="stylesheet" href="assets/css/style.css">

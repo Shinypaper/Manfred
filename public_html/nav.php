@@ -8,7 +8,7 @@
 			<div class="collapse navbar-collapse" id="nav-moblie">
 				<a href="/">
 					<div class="logo">
-						<img src="/assets/img/codebrew.png" alt="">
+						<img src="/assets/img/codebrew.png" alt="logo">
 					</div>
 				</a>
 				<ul class="nav navbar-nav pull-right">
