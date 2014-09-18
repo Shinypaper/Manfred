@@ -12,7 +12,7 @@
 		</div>
 	
 			<div class="container">
-				<img src="assets/img/clients/Fallingbrook-desktop.png" alt="">
+				<img src="assets/img/clients/fallingbrook-desktop.jpg" alt="fallingbrook desktop">
 			</div>
 		</section>
 	</div>
@@ -24,7 +24,7 @@
 						<p>For a mobile view, it was important to maintian maximum functionality, where still retaining the overall feel of the site. Keeping the "contact us" button near the top was important because that is what most people are looking for, especially when browsing the site on a mobile device. It was also important to make sure that the pictures of the food stayed prominently placed, because after all that is what is going to keep Tony &amp; Claudia's customers coming back for more.</p>
 					</div>
 					<div>
-						<img src="assets/img/clients/fallingbrook-mobile.png" alt="">
+						<img src="assets/img/clients/fallingbrook-mobile.png" alt="fallingbrook-mobile">
 					</div>
 			</div>
 			<div>

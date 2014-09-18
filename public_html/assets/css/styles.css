@@ -2848,7 +2848,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @font-face {
   font-family: "Klill";
+<<<<<<< HEAD
   src: url(../css/fonts/Klill-light.ttf); }
+=======
+  src: url(../css/fonts/Klill-Light.eot), url(../css/fonts/Klill-Light.svg) format('svg'), url(../css/fonts/Klill-Light.woff) format('woff'), url(../css/fonts/Klill-Light.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal; }
+>>>>>>> origin/master
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -7437,6 +7443,12 @@ html, body {
 body {
   margin: 0;
   padding: 0; }
+<<<<<<< HEAD
+=======
+  @media (max-width: 768px) {
+    body {
+      padding-top: 65px; } }
+>>>>>>> origin/master
 
 html, html a {
   -webkit-font-smoothing: antialiased;
@@ -7446,9 +7458,12 @@ html, html a {
 textarea {
   resize: none; }
 
+<<<<<<< HEAD
 a:hover {
   text-decoration: none; }
 
+=======
+>>>>>>> origin/master
 ::-moz-selection {
   background: #e74c3c;
   /* Gecko Browsers */
@@ -7464,9 +7479,17 @@ a:hover {
   @media (min-width: 768px) {
     .section {
       padding: 100px 0; } }
+<<<<<<< HEAD
   @media (min-width: 992px) {
     .section {
       padding: 200px 0; } }
+=======
+  @media (min-width: 1200px) {
+    .section {
+      padding: 200px 0; } }
+  .section a:hover {
+    text-decoration: none; }
+>>>>>>> origin/master
 
 img {
   max-width: 100%; }
@@ -7475,12 +7498,24 @@ img {
   color: #e74c3c; }
 
 .hero {
+<<<<<<< HEAD
   height: 100%;
   width: 100%;
   background: url(/assets/img/toronto.jpg) no-repeat center;
   top: 0;
   left: 0;
   position: relative; }
+=======
+  width: 100%;
+  background: url(/assets/img/banner.jpg) no-repeat center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  position: relative; }
+  @media (min-width: 992px) and (min-height: 750px) {
+    .hero {
+      height: 100%; } }
+>>>>>>> origin/master
 
 .mobile_logo {
   width: 60px;
@@ -7493,7 +7528,12 @@ img {
   color: #fff;
   text-align: center;
   width: 80%;
+<<<<<<< HEAD
   margin: 0 auto; }
+=======
+  margin: 0 auto;
+  text-shadow: 1px 1px 2px #4a4a4a; }
+>>>>>>> origin/master
   @media (min-width: 768px) {
     .title-text {
       padding-top: 50px; } }
@@ -7544,12 +7584,20 @@ img {
       clear: both; }
   .navigation li {
     display: inline-block;
+<<<<<<< HEAD
     margin-top: 32px;
+=======
+    margin-top: 25px;
+>>>>>>> origin/master
     list-style: none;
     text-transform: uppercase; }
     @media (min-width: 992px) {
       .navigation li {
+<<<<<<< HEAD
         margin-top: 60px; } }
+=======
+        margin-top: 49px; } }
+>>>>>>> origin/master
     .navigation li a {
       color: #F4F3F3;
       font-size: 18px; }
@@ -7563,10 +7611,22 @@ img {
 .mobile-nav {
   padding: 8px 10px 10px;
   background: #2E2E34;
+<<<<<<< HEAD
   text-align: center; }
   @media (min-width: 768px) {
     .mobile-nav {
       display: none; } }
+=======
+  text-align: center;
+  top: -65px;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s; }
+  @media (min-width: 768px) {
+    .mobile-nav {
+      display: none; } }
+  .mobile-nav.active {
+    top: 0; }
+>>>>>>> origin/master
 
 .mobile_nav_column {
   width: 25%;
@@ -7674,6 +7734,10 @@ img {
   clear: both; }
 
 .client {
+<<<<<<< HEAD
+=======
+  position: relative;
+>>>>>>> origin/master
   width: 50%;
   display: block;
   float: left;
@@ -7727,7 +7791,11 @@ label {
   padding: 30px;
   background-color: #F4F3F3; }
   .portfolio .portfolio_header h1 {
+<<<<<<< HEAD
     font-size: 4em; }
+=======
+    font-size: 3.4em; }
+>>>>>>> origin/master
     @media (min-width: 768px) {
       .portfolio .portfolio_header h1 {
         font-size: 5em; } }
@@ -7786,7 +7854,14 @@ label {
   .overlay i {
     display: block;
     font-size: 40px;
+<<<<<<< HEAD
     margin-top: 40%; }
+=======
+    margin-top: 27%; }
+    @media (min-width: 768px) {
+      .overlay i {
+        margin-top: 40%; } }
+>>>>>>> origin/master
   .overlay.stay {
     display: block;
     background-color: #34495e; }
@@ -7835,9 +7910,12 @@ footer {
   padding: 4px;
   background-color: #e74c3c; }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
   footer {
     padding-bottom: 65px; } }
 
+=======
+>>>>>>> origin/master
 .copyright {
   color: #F4F3F3; }

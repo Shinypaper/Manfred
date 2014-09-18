@@ -8,7 +8,7 @@
 			<div class="collapse navbar-collapse" id="nav-moblie">
 				<a href="/">
 					<div class="logo">
-						<img src="/assets/img/codebrew.png" alt="">
+						<img src="/assets/img/codebrew.png" alt="logo">
 					</div>
 				</a>
 				<ul class="nav navbar-nav pull-right">
@@ -22,7 +22,8 @@
 </nav>
 </header>
 
-<nav class="mobile-nav navbar-fixed-bottom">
+<nav class="mobile-nav navbar-fixed-top active">
+
 
     <a href="/" class="mobile_nav_column">
         <div class="footer-select">

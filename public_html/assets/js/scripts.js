@@ -2011,9 +2011,10 @@ if(!jQuery)throw new Error("Bootstrap requires jQuery");+function(a){"use strict
 (function(){var e,t=function(e,t){return function(){return e.apply(t,arguments)}};e=function(){function e(){}return e.prototype.extend=function(e,t){var n,r;for(n in e)r=e[n],null!=r&&(t[n]=r);return t},e.prototype.isMobile=function(e){return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(e)},e}(),this.WOW=function(){function n(e){null==e&&(e={}),this.scrollCallback=t(this.scrollCallback,this),this.scrollHandler=t(this.scrollHandler,this),this.start=t(this.start,this),this.scrolled=!0,this.config=this.util().extend(e,this.defaults)}return n.prototype.defaults={boxClass:"wow",animateClass:"animated",offset:0,mobile:!0},n.prototype.init=function(){var e;return this.element=window.document.documentElement,"interactive"===(e=document.readyState)||"complete"===e?this.start():document.addEventListener("DOMContentLoaded",this.start)},n.prototype.start=function(){var e,t,n,r;if(this.boxes=this.element.getElementsByClassName(this.config.boxClass),this.boxes.length){if(this.disabled())return this.resetStyle();for(r=this.boxes,t=0,n=r.length;n>t;t++)e=r[t],this.applyStyle(e,!0);return window.addEventListener("scroll",this.scrollHandler,!1),window.addEventListener("resize",this.scrollHandler,!1),this.interval=setInterval(this.scrollCallback,50)}},n.prototype.stop=function(){return window.removeEventListener("scroll",this.scrollHandler,!1),window.removeEventListener("resize",this.scrollHandler,!1),null!=this.interval?clearInterval(this.interval):void 0},n.prototype.show=function(e){return this.applyStyle(e),e.className=""+e.className+" "+this.config.animateClass},n.prototype.applyStyle=function(e,t){var n,r,i;return r=e.getAttribute("data-wow-duration"),n=e.getAttribute("data-wow-delay"),i=e.getAttribute("data-wow-iteration"),e.setAttribute("style",this.customStyle(t,r,n,i))},n.prototype.resetStyle=function(){var e,t,n,r,i;for(r=this.boxes,i=[],t=0,n=r.length;n>t;t++)e=r[t],i.push(e.setAttribute("style","visibility: visible;"));return i},n.prototype.customStyle=function(e,t,n,r){var i;return i=e?"visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;":"visibility: visible;",t&&(i+="-webkit-animation-duration: "+t+"; -moz-animation-duration: "+t+"; animation-duration: "+t+";"),n&&(i+="-webkit-animation-delay: "+n+"; -moz-animation-delay: "+n+"; animation-delay: "+n+";"),r&&(i+="-webkit-animation-iteration-count: "+r+"; -moz-animation-iteration-count: "+r+"; animation-iteration-count: "+r+";"),i},n.prototype.scrollHandler=function(){return this.scrolled=!0},n.prototype.scrollCallback=function(){var e;return this.scrolled&&(this.scrolled=!1,this.boxes=function(){var t,n,r,i;for(r=this.boxes,i=[],t=0,n=r.length;n>t;t++)e=r[t],e&&(this.isVisible(e)?this.show(e):i.push(e));return i}.call(this),!this.boxes.length)?this.stop():void 0},n.prototype.offsetTop=function(e){var t;for(t=e.offsetTop;e=e.offsetParent;)t+=e.offsetTop;return t},n.prototype.isVisible=function(e){var t,n,r,i,s;return n=e.getAttribute("data-wow-offset")||this.config.offset,s=window.pageYOffset,i=s+this.element.clientHeight-n,r=this.offsetTop(e),t=r+e.clientHeight,i>=r&&t>=s},n.prototype.util=function(){return this._util||(this._util=new e)},n.prototype.disabled=function(){return!this.config.mobile&&this.util().isMobile(navigator.userAgent)},n}()}).call(this);
 (function(){var a,b=function(a,b){return function(){return a.apply(b,arguments)}};a=function(){function a(){}return a.prototype.extend=function(a,b){var c,d;for(c in a)d=a[c],null!=d&&(b[c]=d);return b},a.prototype.isMobile=function(a){return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(a)},a}(),this.WOW=function(){function c(a){null==a&&(a={}),this.scrollCallback=b(this.scrollCallback,this),this.scrollHandler=b(this.scrollHandler,this),this.start=b(this.start,this),this.scrolled=!0,this.config=this.util().extend(a,this.defaults)}return c.prototype.defaults={boxClass:"wow",animateClass:"animated",offset:0,mobile:!0},c.prototype.init=function(){var a;return this.element=window.document.documentElement,"interactive"===(a=document.readyState)||"complete"===a?this.start():document.addEventListener("DOMContentLoaded",this.start)},c.prototype.start=function(){var a,b,c,d;if(this.boxes=this.element.getElementsByClassName(this.config.boxClass),this.boxes.length){if(this.disabled())return this.resetStyle();for(d=this.boxes,b=0,c=d.length;c>b;b++)a=d[b],this.applyStyle(a,!0);return window.addEventListener("scroll",this.scrollHandler,!1),window.addEventListener("resize",this.scrollHandler,!1),this.interval=setInterval(this.scrollCallback,50)}},c.prototype.stop=function(){return window.removeEventListener("scroll",this.scrollHandler,!1),window.removeEventListener("resize",this.scrollHandler,!1),null!=this.interval?clearInterval(this.interval):void 0},c.prototype.show=function(a){return this.applyStyle(a),a.className=""+a.className+" "+this.config.animateClass},c.prototype.applyStyle=function(a,b){var c,d,e;return d=a.getAttribute("data-wow-duration"),c=a.getAttribute("data-wow-delay"),e=a.getAttribute("data-wow-iteration"),a.setAttribute("style",this.customStyle(b,d,c,e))},c.prototype.resetStyle=function(){var a,b,c,d,e;for(d=this.boxes,e=[],b=0,c=d.length;c>b;b++)a=d[b],e.push(a.setAttribute("style","visibility: visible;"));return e},c.prototype.customStyle=function(a,b,c,d){var e;return e=a?"visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;":"visibility: visible;",b&&(e+="-webkit-animation-duration: "+b+"; -moz-animation-duration: "+b+"; animation-duration: "+b+";"),c&&(e+="-webkit-animation-delay: "+c+"; -moz-animation-delay: "+c+"; animation-delay: "+c+";"),d&&(e+="-webkit-animation-iteration-count: "+d+"; -moz-animation-iteration-count: "+d+"; animation-iteration-count: "+d+";"),e},c.prototype.scrollHandler=function(){return this.scrolled=!0},c.prototype.scrollCallback=function(){var a;return this.scrolled&&(this.scrolled=!1,this.boxes=function(){var b,c,d,e;for(d=this.boxes,e=[],b=0,c=d.length;c>b;b++)a=d[b],a&&(this.isVisible(a)?this.show(a):e.push(a));return e}.call(this),!this.boxes.length)?this.stop():void 0},c.prototype.offsetTop=function(a){var b;for(b=a.offsetTop;a=a.offsetParent;)b+=a.offsetTop;return b},c.prototype.isVisible=function(a){var b,c,d,e,f;return c=a.getAttribute("data-wow-offset")||this.config.offset,f=window.pageYOffset,e=f+this.element.clientHeight-c,d=this.offsetTop(a),b=d+a.clientHeight,e>=d&&b>=f},c.prototype.util=function(){return this._util||(this._util=new a)},c.prototype.disabled=function(){return!this.config.mobile&&this.util().isMobile(navigator.userAgent)},c}()}).call(this);
 $(document).ready(function(){
-    
-    new WOW().init();
 
+    if ($(window).width() > 767) {
+        new WOW().init();
+    }; 
     $('#contact_form').validate({ 
         rules: {
             full_name: {
@@ -2033,4 +2034,77 @@ $(document).ready(function(){
             return false;
         }
     });
+
+// disable :hover on touch devices
+// based on http://retrogamecrunch.com/tmp/hover-fix
+// via https://gist.github.com/4404503
+// + https://twitter.com/javan/status/284873379062890496
+// + https://twitter.com/pennig/status/285790598642946048
+// re http://retrogamecrunch.com/tmp/hover
+if ('createTouch' in document) {
+    try {
+        var pattern = /:hover\b/,
+        sheet, rule, selectors, newSelector,
+        selectorAdded, newRule, i, j, k;
+ 
+        for (i=0; i<document.styleSheets.length; i++) {
+            sheet = document.styleSheets[i];
+ 
+            for (j=sheet.cssRules.length-1; j>=0; j--) {
+                rule = sheet.cssRules[j];
+ 
+                if (rule.type !== CSSRule.STYLE_RULE || !pattern.test(rule.selectorText)) {
+                    continue;
+                }
+ 
+                selectors = rule.selectorText.split(',');
+                newSelector = '';
+                selectorAdded = false;
+ 
+                // Iterate over the selectors and test them against the pattern
+                for (k=0; k<selectors.length; k++) {
+                    // Add string to the new selector if it didn't match
+                    if (pattern.test(selectors[k])) {
+                        continue;
+                    }
+ 
+                    if (!selectorAdded) {
+                        newSelector += selectors[k];
+                        selectorAdded = true;
+                    } else {
+                        newSelector += ", " + selectors[k];
+                    }
+                }
+ 
+                // Remove the rule, and add the new one if we've got something
+                // added to the new selector
+                if (selectorAdded) {
+                    newRule = rule.cssText.replace(/([^{]*)?/, newSelector + ' ');
+ 
+                    sheet.deleteRule(j);
+                    sheet.insertRule(newRule, j);
+                } else {
+                    sheet.deleteRule(j);
+                }
+            }
+        }
+    } catch(e){}
+}
+
+
+var currentScroll = $(window).scrollTop();
+$(window).scroll(function() {
+    if ($(window).scrollTop() < 200 || $(window).scrollTop() > 200 && currentScroll > $(window).scrollTop()) {
+        $('.mobile-nav').addClass('active');
+
+    } else {
+        $('.mobile-nav').removeClass('active');
+
+    }
+    currentScroll = $(window).scrollTop();
+});
+
+
+
+
 });

@@ -3,7 +3,7 @@
 
 
 	<section id="home" class="hero section">
-		<div class="mobile_logo"><img src="/assets/img/codebrewer-icon-alt.png" alt=""></div>
+		<div class="mobile_logo"><img src="/assets/img/codebrewer-icon-alt.png" alt="mobile logo"></div>
     	<div class="title-text">
     		<h1>The <span class="highlight">Code</span>Brewers</h1>
     		<h2>Bring your website into the <span class="highlight">mobile</span> world.</h2>
@@ -59,29 +59,6 @@
 		</div>
 	</section>
 
-<!-- 	<section class="team section" id="team">
-		<div class="container">
-			<div class="row">
-				<div class="teammates">
-					<div class="teamate wow fadeInLeft" data-wow-delay="0.6s" data-wow-duration="1.3s">
-						<div class="teamate_inner">
-							<img src="assets/img/manfred.jpg" alt="">
-						</div>
-					</div>
-					<div class="teamate wow fadeIn" data-wow-delay="0.6s" data-wow-duration="1.3s">
-						<div class="teamate_inner">
-							<img src="assets/img/dillon.jpg" alt="">
-						</div>
-					</div> 
-				   <div class="teamate wow fadeInRight" data-wow-delay="0.6s" data-wow-duration="1.3s">
-						<div class="teamate_inner">
-							<img src="assets/img/johann.jpg" alt="">
-						</div>
-					</div>
-				</div>	
-			</div>
-		</div>
-	</section> -->
 
 	<section class="contact_section section" id="contact">
 		<div class="container">
@@ -115,9 +92,6 @@
 					<p>2. Who are my <span class="highlight">target customers</span>?</p>
 					<p>3. What do I consider a <span class="highlight">successful</span> website?</p>
 				</div>
-<!-- 				<div class="blurb">
-					<h3>We'd love to learn more about you and your needs.</h3>
-				</div> -->
 			</div>
 		</div>
 	</section>

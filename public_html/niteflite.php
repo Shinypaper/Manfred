@@ -12,7 +12,7 @@
 		</div>
 	
 			<div class="container">
-				<img src="assets/img/clients/niteflite-desktop.png" alt="">
+				<img src="assets/img/clients/niteflite-desktop.jpg" alt="niteflite-desktop">
 			</div>
 		</section>
 	</div>
@@ -24,7 +24,7 @@
 						<p>When it came to designing the <span class="highlight"> mobile view </span>of this site we had to balance pragmatism and style. When visitors would access the site via their mobile device we realized that it would be for very specific reasons. They wanted to know who Greg was, what his specialities are and how they could get into contact with him. We were able to keep the experience very focused and streamlined to meet those goals. We accomplished that be decluttering the interface and eliminating the parallax effect. That made the experience smooth and refreshingly direct.</p>
 					</div>
 					<div>
-						<img src="assets/img/clients/niteflite-mobile.png" alt="">
+						<img src="assets/img/clients/niteflite-mobile.png" alt="niteflite-mobile">
 					</div>
 			</div>
 			<div>

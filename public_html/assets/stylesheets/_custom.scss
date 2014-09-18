@@ -32,6 +32,9 @@ body {
 body {
     margin: 0; 
     padding: 0;
+    @media (max-width: $screen-sm) {
+		padding-top: 65px;
+	}
 }
 
 html, html a {
@@ -44,9 +47,6 @@ textarea {
     resize: none;
 }
 
-a:hover {
-	text-decoration: none;
-}
 
 ::-moz-selection {
   background: $brand-primary; /* Gecko Browsers */
@@ -59,12 +59,14 @@ a:hover {
 
 .section {
 	padding: 40px 0;
-
 	@media (min-width: $screen-sm) {
-	padding: 100px 0;
+		padding: 100px 0;
 	}
-	@media (min-width: $screen-md) { 
-	padding: 200px 0;
+	@media (min-width: $screen-lg) { 
+		padding: 200px 0;
+	}
+	a:hover {
+		text-decoration: none;
 	}
 }
 
@@ -82,9 +84,12 @@ img {
 //Hero Section
 
 .hero {
-    height: 100%;
+	@media (min-width: $screen-md) and (min-height: 750px) {
+	    height: 100%;
+	}
     width: 100%;
-    background: url(/assets/img/toronto.jpg) no-repeat center;
+    background: url(/assets/img/banner.jpg) no-repeat center;
+    background-size: cover;
     top: 0;
     left: 0;
     position: relative;
@@ -103,6 +108,7 @@ img {
     text-align: center;
     width: 80%;
     margin: 0 auto;
+    text-shadow: 1px 1px 2px #4a4a4a;
     @media (min-width: $screen-sm) {
 	    padding-top: 50px;
 	}
@@ -135,7 +141,7 @@ img {
 
 .logo {
 	float: left;
-	margin-top: 7px;
+	margin-top: 14px;
 	img {
 		width: 200px;
 		@media (min-width: $screen-md) {
@@ -157,9 +163,9 @@ img {
 	}
 	li {
 		display: inline-block;
-		margin-top: 32px;
+		margin-top: 25px;
 		@media (min-width: $screen-md) {
-			margin-top: 60px;
+			margin-top: 55px; 
 		}
 		list-style: none;
 		text-transform: uppercase;
@@ -182,8 +188,14 @@ img {
 	padding: 8px 10px 10px; 
 	background: $gray;
 	text-align: center;
+	top: -65px;
+	-webkit-transition: top .5s;
+	transition: top .5s;
 	@media (min-width: $screen-sm) { 
 		display: none;
+	}
+	&.active {
+		top: 0;
 	}
 }
 	.mobile_nav_column {
@@ -326,6 +338,7 @@ img {
 	@include clearfix();
 }
 .client {
+	position: relative;
 	width: 50%;
 	display: block;
 	float: left;
@@ -413,7 +426,7 @@ label {
 		padding: $grid-gutter-width;
 		background-color: $body-bg;
 		h1 {
-			font-size: 4em;
+			font-size: 3.4em;
 			@media (min-width: $screen-sm) {
 				font-size: 5em;
 			}
@@ -483,7 +496,10 @@ label {
 	i {
 		display: block;
 		font-size: 40px;
-		margin-top: 40%;
+		margin-top: 27%;
+		@media (min-width: $screen-sm) {
+			margin-top: 40%;
+		}
 	}
 	&.stay {
 		display: block;
@@ -548,11 +564,6 @@ footer {
 	@include edge_accent($brand-primary);
 }
 
-footer {
-	@media (max-width: $screen-sm) {
-		padding-bottom: 65px;
-	}
-}
 
 .copyright {
 	color: $body-bg;
