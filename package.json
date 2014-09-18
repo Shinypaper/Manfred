@@ -16,7 +16,13 @@
     "gulp-rename": "~1.2.0",
     "gulp-file-include": "*"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-imagemin": "~1.0.1",
+    "imagemin-pngcrush": "~1.0.0",
+    "gulp-concat": "~2.4.1",
+    "gulp-uglify": "~0.3.2",
+    "gulp-cssmin": "~0.1.6"
+  },
   "scripts": {
     "test": "default"
   },
