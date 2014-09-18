@@ -6,9 +6,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Code Brewers</title>
+        <title>Code Brewers | Bring your website into the mobile world</title>
         <meta name="description" content="We are a Toronto based web development and website design team that specialize in responsive, mobile friendly, and beautiful websites and custom wordpress themes">
-        <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1.0 user-scalable=0 minimal-ui"> 
+        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0; user-scalable=0; minimal-ui"> 
         <link rel="shortcut icon" href="favicon.ico?v=5" />
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/styles.min.css">

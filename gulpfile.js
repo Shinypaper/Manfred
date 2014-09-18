@@ -3,6 +3,7 @@ var gulp = require('gulp')
     ,concat = require('gulp-concat')
     ,cssmin = require('gulp-cssmin')
     ,uglify = require('gulp-uglify')
+    ,gzip = require('gulp-gzip')
     ,livereload = require('gulp-livereload')
     ,path = require('path')
     ,rename = require('gulp-rename')
@@ -36,27 +37,28 @@ gulp.task('sass', function() {
 });
 
 gulp.task('js', function() {
-  gulp.src(['!./public_html/assets/js/vendor/jquery-1.10.1.min.js', '!./public_html/assets/js/vendor/scrollTo.js', '!./public_html/assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js', './public_html/assets/js/vendor/*', './public_html/assets/js/main.js'])
+  gulp.src(['!./public_html/assets/js/vendor/scripts.js', '!./public_html/assets/js/vendor/scripts.min.js', '!./public_html/assets/js/vendor/jquery-1.10.1.min.js', '!./public_html/assets/js/vendor/scrollTo.js', '!./public_html/assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js', './public_html/assets/js/vendor/*', './public_html/assets/js/main.js'])
   .pipe(concat('scripts.js'))
   .on('error', errorHandler)
   .pipe(gulp.dest(js_dest))
   .pipe(uglify())
   .on('error', errorHandler)
+  // .pipe(gzip())
   .pipe(rename('scripts.min.js'))
   .pipe(gulp.dest(js_dest))
   .pipe(livereload());
 });
 
 gulp.task('css', function() {
-  gulp.src(['./public_html/assets/css/*', './public_html/assets/css/style.css'])
+  gulp.src(['!./public_html/assets/css/*.min.css','!./public_html/assets/css/styles.css','./public_html/assets/css/*', './public_html/assets/css/style.css'])
   .pipe(concat('styles.css'))
   .on('error', errorHandler)
   .pipe(gulp.dest(css_dest))
-  .pipe(cssmin())
+  // .pipe(cssmin())
   .on('error', errorHandler)
+  // .pipe(gzip())
   .pipe(rename('styles.min.css'))
   .pipe(gulp.dest(css_dest))
-  .pipe(livereload());
 });
 
 gulp.task('images', function () {
