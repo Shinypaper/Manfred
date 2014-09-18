@@ -54,7 +54,7 @@ gulp.task('css', function() {
   .pipe(concat('styles.css'))
   .on('error', errorHandler)
   .pipe(gulp.dest(css_dest))
-  // .pipe(cssmin())
+  .pipe(cssmin())
   .on('error', errorHandler)
   // .pipe(gzip())
   .pipe(rename('styles.min.css'))
