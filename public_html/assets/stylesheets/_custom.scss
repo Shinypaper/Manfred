@@ -35,6 +35,12 @@ body {
     @media (max-width: $screen-sm) {
 		padding-top: 65px;
 	}
+	> footer {
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		z-index: -1;
+	}
 }
 
 html, html a {
@@ -366,6 +372,7 @@ img {
 
 .contact_section {
 	background-color: $body-bg;
+	margin-bottom: 117px;
 	.contact {
 		color: $gray;
 	}
