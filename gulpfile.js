@@ -3,7 +3,6 @@ var gulp = require('gulp')
     ,concat = require('gulp-concat')
     ,mincss = require('gulp-minify-css')
     ,uglify = require('gulp-uglify')
-    ,gzip = require('gulp-gzip')
     ,livereload = require('gulp-livereload')
     ,path = require('path')
     ,rename = require('gulp-rename')
@@ -43,7 +42,6 @@ gulp.task('js', function() {
   .pipe(gulp.dest(js_dest))
   .pipe(uglify())
   .on('error', errorHandler)
-  // .pipe(gzip())
   .pipe(rename('scripts.min.js'))
   .pipe(gulp.dest(js_dest))
   .pipe(livereload());
@@ -56,7 +54,6 @@ gulp.task('css', function() {
   .pipe(gulp.dest(css_dest))
   .pipe(mincss({keepSpecialComments:0}))
   .on('error', errorHandler)
-  // .pipe(gzip())
   .pipe(rename('styles.min.css'))
   .pipe(gulp.dest(css_dest))
 });
