@@ -110,7 +110,7 @@ Options -MultiViews
     # `mod_headers` cannot match based on the content-type, however, this
     # header should be send only for HTML pages and not for the other resources
     <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|tt[cf]|vcf|vtt|webapp|web[mp]|woff|xml|xpi)$">
-        Header unset X-UA-Compatible
+        Header unset X-UA-Compatible "IE=Edge,chrome=1" env=ie
     </FilesMatch>
 </IfModule>
 
