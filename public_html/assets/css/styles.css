@@ -7490,7 +7490,7 @@ img {
       height: 100%; } }
 
 .mobile_logo {
-  width: 55px;
+  width: 50px;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .mobile_logo {
