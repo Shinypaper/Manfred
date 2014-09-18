@@ -43,7 +43,7 @@ gulp.task('js', function() {
   .pipe(gulp.dest(js_dest))
   .pipe(uglify())
   .on('error', errorHandler)
-  .pipe(gzip())
+  // .pipe(gzip())
   .pipe(rename('scripts.min.js'))
   .pipe(gulp.dest(js_dest))
   .pipe(livereload());
@@ -56,7 +56,7 @@ gulp.task('css', function() {
   .pipe(gulp.dest(css_dest))
   // .pipe(cssmin())
   .on('error', errorHandler)
-  .pipe(gzip())
+  // .pipe(gzip())
   .pipe(rename('styles.min.css'))
   .pipe(gulp.dest(css_dest))
 });
