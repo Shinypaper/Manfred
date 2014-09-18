@@ -65,24 +65,26 @@
 			<div class="contact">
 				<div class="form contact_form">
 					<form id="contact_form" name="contactform" role="form">
-						<legend>Let's work together</legend>
-					
-						<div class="form-group">
-							<label for="full_name">Name</label>
-							<input type="text" name="full_name" required=""  class="form-control" id="" >
-						</div>
+						<fieldset>
+							<legend>Let's work together</legend>
+						
+							<div class="form-group">
+								<label for="full_name">Name</label>
+								<input type="text" name="full_name" required=""  class="form-control" id="full_name">
+							</div>
 
-						<div class="form-group">
-							<label for="email">Email</label>
-							<input type="text" name="email"  required="" class="form-control" id="" >
-						</div>
-						<div class="form-group">
-							<label for="comments">Message</label>
-							<textarea type="textarea" rows="6" name="comments" class="form-control" id=""></textarea>
-						</div>
-						<div class="form-group submit">
-							<button href="javascript:void(0);" class="send_form submit-button">Submit</button>
-						</div>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="text" name="email"  required="" class="form-control" id="email">
+							</div>
+							<div class="form-group">
+								<label for="comments">Message</label>
+								<textarea rows="6" name="comments" class="form-control" id="comments"></textarea>
+							</div>
+							<div class="form-group submit">
+								<button class="send_form submit-button">Submit</button>
+							</div>
+						</fieldset>
 					</form>
 				</div>
 				<div class="success">
