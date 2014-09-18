@@ -4652,7 +4652,8 @@ img {
   color: #fff;
   text-align: center;
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-shadow: 1px 1px 2px #4a4a4a; }
   @media (min-width: 768px) {
     .title-text {
       padding-top: 50px; } }
