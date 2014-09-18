@@ -96,10 +96,12 @@ img {
 }
 
 .mobile_logo {
-	width: 60px;
-	margin: 0 auto;
-	@media (min-width: $screen-sm) {
-		display: none;
+	img {
+		width: 60px;
+		margin: 0 auto;
+		@media (min-width: $screen-sm) {
+			display: none;
+		}
 	}
 }
 
@@ -555,7 +557,7 @@ footer {
 		text-align: center;
 		background-color: $gray;
 	img {
-		width: 70px;
+		width: 60px;
 		margin: 5px 0;
 	}
 }

@@ -4641,11 +4641,11 @@ img {
     .hero {
       height: 100%; } }
 
-.mobile_logo {
+.mobile_logo img {
   width: 60px;
   margin: 0 auto; }
   @media (min-width: 768px) {
-    .mobile_logo {
+    .mobile_logo img {
       display: none; } }
 
 .title-text {
@@ -4997,7 +4997,7 @@ footer {
   text-align: center;
   background-color: #2E2E34; }
   footer img {
-    width: 70px;
+    width: 60px;
     margin: 5px 0; }
 
 .footer_accent {
