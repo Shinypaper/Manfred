@@ -1,5 +1,6 @@
 
 //Mixins
+//------
 
 @mixin accent($color) {
 	border-bottom: 4px solid $color;
@@ -14,6 +15,11 @@
 	color: $color;
 }
 
+@mixin edge_accent($color) {
+	padding: 4px;
+	background-color: $color;
+}
+
 //Global Styles
 //-------------
 
@@ -26,6 +32,9 @@ body {
 body {
     margin: 0; 
     padding: 0;
+    @media (max-width: $screen-sm) {
+		padding-top: 65px;
+	}
 }
 
 html, html a {
@@ -34,69 +43,30 @@ html, html a {
     font-weight: bold;
 }
 
-progress {
-  /* Positioning */
-  position: fixed;
-  left: 0;
-  bottom: 0;
-
-  /* Dimensions */
-  width: 100%;
-  height: .45em;
-
-  /* Reset the apperance */  
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-
-  /* Get rid of the default border in Firefox/Opera. */
-  border: none;
-
-  /* For Firefox/IE10+ */
-  background-color: transparent;
-
-  /* For IE10+, color of the progress bar */
-  color: $brand-primary;
-}
-
-progress::-webkit-progress-bar {
-  background-color: transparent;
-}
-
-.flat::-webkit-progress-value {
-  background-color: $brand-primary;
-}
-
-.flat::-moz-progress-bar {
-  background-color: $brand-primary;
+textarea {
+    resize: none;
 }
 
 
-
-.progress-container {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: .25em;
-  display: block;
-	h2 {
-		font-size: 3em;
-	}
+::-moz-selection {
+  background: $brand-primary; /* Gecko Browsers */
+  color: $body-bg;
 }
-
-a:hover {
-	text-decoration: none;
+::selection {
+  background: $brand-primary; /* WebKit/Blink Browsers */
+  color: $body-bg;
 }
-
 
 .section {
 	padding: 40px 0;
 	@media (min-width: $screen-sm) {
-	padding: 100px 0;
+		padding: 100px 0;
 	}
-	@media (min-width: $screen-md) { 
-	padding: 200px 0;
+	@media (min-width: $screen-lg) { 
+		padding: 200px 0;
+	}
+	a:hover {
+		text-decoration: none;
 	}
 }
 
@@ -104,17 +74,35 @@ img {
 	max-width: 100%;
 }
 
+.highlight {
+	color: $brand-primary;
+}
 
+
+.sitemap {
+	padding-top: 100px
+}
 
 //Hero Section
 
 .hero {
-    height: 100%;
+	@media (min-width: $screen-md) and (min-height: 750px) {
+	    height: 100%;
+	}
     width: 100%;
-    background: url(/assets/img/toronto.jpg) no-repeat center;
-    // top: 0;
-    // left: 0;
-    // position: relative;
+    background: url(/assets/img/banner.jpg) no-repeat center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+.mobile_logo {
+	width: 50px;
+	margin: 0 auto;
+	@media (min-width: $screen-sm) {
+		display: none;
+	}
 }
 
 .title-text {
@@ -122,22 +110,47 @@ img {
     text-align: center;
     width: 80%;
     margin: 0 auto;
-    padding-top: 200px;
+    text-shadow: 1px 1px 2px #4a4a4a;
+    @media (min-width: $screen-sm) {
+	    padding-top: 50px;
+	}
     h1 {
   		margin-bottom: 40px;
-		display: inline-block;
-		font-size: 80px;
+		font-size: 2.3em;
+		@media (min-width: $screen-sm) {
+			font-size: 8em;
+		}
+	}
+	i {
+		font-size: 2em;
+		@media (min-width:$screen-sm) {
+			margin-top: ($grid-gutter-width *2);
+			font-size: 6em;
+		}
 	}
 }
 
-.fa-angle-double-down {
-	font-size: 8em;
+
+
+//HEADER STYLES
+//-------------
+
+.masthead {
+	@include clearfix();
+	background-color: $gray;
+	padding: 20px 150px;
 }
 
-
-//Navigation
-//-----------
-
+.logo {
+	float: left;
+	margin-top: 14px;
+	img {
+		width: 200px;
+		@media (min-width: $screen-md) {
+			width: 300px;
+		}
+	}
+}
 
 .navigation {
 	background-color: $gray;
@@ -152,7 +165,10 @@ img {
 	}
 	li {
 		display: inline-block;
-		margin: 58px ($grid-gutter-width *2) 0;
+		margin-top: 25px;
+		@media (min-width: $screen-md) {
+			margin-top: 55px; 
+		}
 		list-style: none;
 		text-transform: uppercase;
 		a {
@@ -171,87 +187,128 @@ img {
 }
 
 .mobile-nav {
-	padding: 15px 10px 10px; 
+	padding: 8px 10px 10px; 
 	background: $gray;
 	text-align: center;
+	top: -65px;
+	-webkit-transition: top .5s;
+	transition: top .5s;
 	@media (min-width: $screen-sm) { 
 		display: none;
 	}
+	&.active {
+		top: 0;
+	}
 }
+	.mobile_nav_column {
+		width: 25%;
+		float: left;
+	}
 
 .footer-select {
 	color: $body-bg;
+	i {
+		font-size: 2em;
+		margin-bottom: 8px;
+	}
 }
 
-.footer-icons {
-	font-size: 1.8em;
+.header_accent {
+	@include edge_accent($gray);
 }
 
 .footer-labels {
 	text-transform: uppercase;
 	white-space: nowrap;
-	font-size: 0.8em;
+	font-size: 0.6em;
 }
 
+//HEADER STYLES END
+//-----------------
 
-//Page Styles
-//-----------
+//PROCESS STYLES
+//----------------
 
-.masthead {
-	@include clearfix();
-	background-color: $gray;
-	padding: 20px 150px;
-}
-
-.logo {
-	float: left;
-	margin-top: 7px;
-	img {
-		width: 300px;
-	}
-}
-
-.code {
-	color: $brand-primary;
-}
-
-
-
-// .team {
-// 	background-color: $body-bg;
-// 	h2 {
-// 		color: $body-bg;
-// 		display: inline-block;
-// 		@include accent($brand-primary);
-// 	}
-// 	.teammates {
-// 		@include clearfix();
-// 		padding-top: ($grid-gutter-width *2);
-// 	}
-// 	.teamate {
-// 		@include make-sm-column(4);
-// 		text-align: center;
-// 		img {
-// 			width: 300px;
-// 		}
-// 	}
-// }
-
-.why {
+.process {
 	background-color: $brand-secondary;
-	text-align: center;
 	color: $body-bg;
-	
+	text-align: center;
+		@media (min-width: $screen-sm) {
+			text-align: left;
+		}
+	h2 {
+		text-align: center;
+		margin: 0;
+		font-size: 35px;
+	}
+	h3 {
+		text-align: center;
+		font-size: 30px;
+	}
+	h4 {
+		font-size: 28px;
+	}
+	.mobile-first-images {
+		text-align: center;
+		margin: ($grid-gutter-width *2) 0;	
+	}
+	.mobiletext {
+		margin: ($grid-gutter-width * 2) 0 0;
+		@include make-sm-column(6);
+		&:nth-child(odd) {
+			clear: left;
+		}
+	}
 	p {
-		font-size: 25px;
+		font-size: 20px;
+	}
+	.develop_icons {		
+		margin-top: ($grid-gutter-width *4);
+		margin-bottom: $grid-gutter-width;
+	}
+	.develop_icon {
+		// @include make-xs-column(6);
+		@include make-xs-column(2);
+		text-align: center;
+		i {
+			display: block;
+			font-size: 30px;
+			@media (min-width: $screen-xs) {
+				font-size: 50px;
+			}
+			@media (min-width: $screen-sm) {
+				font-size: 100px;
+			}
+		}
+	}
+	.mobile-first-button {
+		margin-top: $grid-gutter-width;
+		a {
+			@include action-button(2px,white);
+			&:hover {
+				color: $brand-primary;
+				background: white;
+			}
+		}
 	}
 }
 
-.where {
+//PROCESS STYLES END
+//--------------------
+
+//PORTFOLIO STYLES
+//----------------
+
+.portfolio {
 	text-align: center;
 	background-color: $body-bg;
-	h2 {
-		margin:0 0 180px;
+	h3 {
+		margin-bottom: 60px;
+		font-size: 26px;
+		@media (min-width: $screen-sm) {
+			font-size: 30px;
+			margin:0 0 180px;
+		}
 		display: inline-block;
 		color: $gray;
 		@include accent($brand-primary);
@@ -261,6 +318,7 @@ img {
 	@include clearfix();
 }
 .client {
+	position: relative;
 	width: 50%;
 	display: block;
 	float: left;
@@ -272,38 +330,58 @@ img {
 		// margin-top: 40px;
 		width: 100%;
 	}
+	&:hover {
+		.overlay {
+			display: block;
+		}
+
+	}
 }
 
-.how {
+//PORTFOLIO STYLES END
+//--------------------
+
+//CONTACT FORM STYLES 
+//--------------------
+
+.contact_section {
 	background-color: $body-bg;
 	.contact {
-		@extend .row;
 		color: $gray;
-	}
-	.blurb {
-		@include make-sm-column(6);
-		a {
-			font-size: 2.5em;
-		}
 	}
 	.form {
 		legend {
 			color: $gray;
 			@include accent($brand-secondary);
 		}
-		@include make-sm-column(6);
 		.form-control {
 			border-radius: 0;
 		}
 	}
 	.success {
 		display: none;
-		@include make-sm-column(6);
 		p {
 			font-size: 1.2em; 
 		}
 	}
 }
+label {
+	text-transform: uppercase;
+}
+.submit {
+	text-align: center;
+	margin-top: $grid-gutter-width;
+	@media (min-width: $screen-sm) {
+		text-align: left;
+	}
+}
+
+//CONTACT FORM STYLES END
+//-----------------------
+
+//404 PAGE STYLES
+//---------------
+
 .four-oh-four {
 	background-color: $gray;
 	text-align: center;
@@ -311,40 +389,111 @@ img {
 	h2 {
 		font-size: 400px;
 	}
-
 }
 
-//Bio
-.greeting {
-	text-align: center;
-	background-color: $gray;
-	padding: $grid-gutter-width;
-	h2 {
-		display: inline-block;	
-		color: $body-bg;
-		@include accent($brand-primary);
+//404 PAGE STYLES END
+//-------------------
+
+
+
+//PORTFOLIO PAGE STYLES
+//---------------------
+
+.portfolio {
+	@include clearfix();
+	.portfolio_header {
+		text-align: center;
+		padding: $grid-gutter-width;
+		background-color: $body-bg;
+		h1 {
+			font-size: 3.4em;
+			@media (min-width: $screen-sm) {
+				font-size: 5em;
+			}
+		}
 	}
-}
-.bio {
-	@extend .row;
-	.bio_image {
-		@include make-md-column(6);
+
+	.portfolio_mobile {
+		background-color: $gray;
+		text-align: center;
+		.mobile_header {
+			color: $body-bg;
+			font-size: 40px;
+			display: inline-block;
+			@include accent($brand-primary);
+		}
+	}
+
+	.portfolio_details {
+		margin: 0 auto;
 		img {
 			width: 100%;
 		}
 	}
-	.bio_text {
-		@include make-md-column(6);
-		h2 {
-			@include accent($brand-primary);
-			display: inline-block;
+
+	.portfolio_blurb {
+		background-color: $body-bg;
+		color: $gray;
+		text-align: center;
+		font-size: 1.5em;
+		margin-bottom: $grid-gutter-width;
+		 h2 {
+			width: 80%;
+			margin: auto;
 		}
 	}
 }
 
+.mobile_study_text {
+	background: $gray;
+	color: $body-bg;	
+	font-size: 1.5em;
+	padding: 60px 0;
+}
 
-//Contact Form
 
+.visit-site {
+	@include action-button(2px,$brand-primary);
+	display: inline-block;
+	margin-top: ($grid-gutter-width  *2);
+	&:hover {
+		color: white;
+		background: $brand-primary;
+	}
+}
+
+.overlay {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $brand-primary;
+	opacity: 0.8;
+	color: $body-bg;
+	font-size: 20px;
+	i {
+		display: block;
+		font-size: 40px;
+		margin-top: 27%;
+		@media (min-width: $screen-sm) {
+			margin-top: 40%;
+		}
+	}
+	&.stay {
+		display: block;
+		background-color: $brand-secondary;
+	}
+}
+
+
+//PORTFOLIO STYLES END
+//--------------------
+
+
+//CONTACT FORM
+//------------
 
 .input_container {
 	padding-bottom: ($grid-gutter-width /2);
@@ -360,69 +509,10 @@ img {
 }
 
 legend {
-	font-size: 3em;
-}
-
-//Portfolio Page
-
-.portfolio {
-	@include clearfix();
-	.porfolio_header {
-		text-align: center;
-		padding: $grid-gutter-width;
-		background-color: $body-bg;
-		h1 {
-			font-size: 5em;
-		}
-	}
-
-	
-
-	.portfolio_mobile {
-		background-color: $gray;
-		text-align: center;
-		.mobile_header {
-			color: $body-bg;
-		}
-	}
-
-	.portfolio_details {
-		margin: 0 auto;
-		img {
-			width: 100%;
-			padding:0 10%;
-		}
-	}
-
-	.portfolio_blurb {
-		background-color: $body-bg;
-		color: $gray;
-		text-align: center;
-		font-size: 1.2em;
-		 h2 {
-			width: 80%;
-			margin: auto;
-		}
-	}
-}
-
-.mobile_study_text {
-	background: $gray;
-	color: $body-bg;	
-	font-size: 1.5em;
-	padding: 100px 0;
-}
-
-.mobile_header {
-	padding-bottom: 100px;
-}
-
-
-.visit-site {
-	@include action-button(2px,$brand-primary);
-	&:hover {
-		color: white;
-		background: $brand-primary;
+	font-size: 2.5em;
+	text-align: center;
+	@media (min-width: $screen-xs) {
+		text-align: left;
 	}
 }
 
@@ -434,23 +524,31 @@ legend {
 	}
 }
 
+//CONTACT FORM END
+//------------
 
-//Footer styles
+
+//FOOTER STYLES
+//-------------
 
 footer {
 		text-align: center;
 		background-color: $gray;
 	img {
-		width: 80px;
-	}
-	.footer_accent {
-		padding: 4px;
-		background-color: $brand-primary;
+		width: 50px;
+		margin: 5px 0;
 	}
 }
 
-footer {
-	@media (max-width: $screen-sm) {
-		padding-bottom: 65px;
-	}
+.footer_accent {
+	@include edge_accent($brand-primary);
 }
+
+
+.copyright {
+	color: $body-bg;
+}
+
+//FOOTER STYLES END
+//-----------------
+

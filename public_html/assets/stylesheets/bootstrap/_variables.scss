@@ -46,7 +46,9 @@ $link-hover-color:      darken($link-color, 15%) !default;
 
 @font-face {
 	font-family: "Klill";
-	src: url(../css/fonts/Klill-light.ttf);
+	src: url(../css/fonts/Klill-Light.eot),url(../css/fonts/Klill-Light.svg) format('svg'), url(../css/fonts/Klill-Light.woff) format('woff'), url(../css/fonts/Klill-Light.ttf) format('truetype');
+	font-weight: normal;
+    font-style: normal;
 }
 
 $font-family-sans-serif:  "Klill", Helvetica, Arial, sans-serif !default;

@@ -6,7 +6,7 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
-    $email_to = "manfred.headley@gmail.com";
+    $email_to = "info@codebrewers.ca";
  
     $email_subject = "CodeBrewers";
  
@@ -48,7 +48,7 @@ if(isset($_POST['email'])) {
  
     $full_name = $_POST['full_name']; // required
  
-    $email_from = 'info@codebrewers.ca'; // required
+    $email_from = 'codebrewers@codebrewers.ca'; // required
  
     $comments = $_POST['comments']; // required
  
