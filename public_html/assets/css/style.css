@@ -4651,10 +4651,7 @@ img {
 .hero {
   height: 100%;
   width: 100%;
-  background: url(/assets/img/toronto.jpg) no-repeat center;
-  top: 0;
-  left: 0;
-  position: relative; }
+  background: url(/assets/img/toronto.jpg) no-repeat center; }
 
 .title-text {
   color: #fff;
