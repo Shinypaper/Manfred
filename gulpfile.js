@@ -88,7 +88,7 @@ gulp.task('critical', function () {
         base: './',
         src: './public_html/index.php',
         styleTarget: './public_html/assets/css/small.css',
-        htmlTarget: './index.php',
+        htmlTarget: './header.php',
         width: 320,
         height: 480,
         minify: true
