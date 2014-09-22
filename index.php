@@ -37,11 +37,11 @@
 				</div>
 				<div class="mobiletext">
 					<h4><i class="fa fa-code highlight"></i> Coding out the design</h4>
-					<p>Using the latest web development standards we build your site in way that's optimized for search engines.</p>
+					<p>Using the latest web development standards we build your site in way that&apos;s optimized for search engines.</p>
 				</div>
 				<div class="mobiletext">
 					<h4><i class="highlight fa fa-database"></i> Setting Up the Database and CMS</h4>
-					<p>If your new website requires it, we install a suitable content management solution that's easy for you to access and edit.</p>
+					<p>If your new website requires it, we install a suitable content management solution that&apos;s easy for you to access and edit.</p>
 				</div>
 				<div class="mobiletext">
 					<h4><i class="highlight fa fa-cog"></i> Responsive and Cross-browser testing</h4>
@@ -66,16 +66,16 @@
 				<div class="form contact_form">
 					<form id="contact_form" name="contactform" role="form">
 						<fieldset>
-							<legend>Let's work together</legend>
+							<legend>Let&apos;s work together</legend>
 						
 							<div class="form-group">
 								<label for="full_name">Name</label>
-								<input type="text" name="full_name" required=""  class="form-control" id="full_name">
+								<input type="text" name="full_name" required class="form-control" id="full_name">
 							</div>
 
 							<div class="form-group">
 								<label for="email">Email</label>
-								<input type="text" name="email"  required="" class="form-control" id="email">
+								<input type="text" name="email" required class="form-control" id="email">
 							</div>
 							<div class="form-group">
 								<label for="comments">Message</label>

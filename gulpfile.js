@@ -9,6 +9,7 @@ var gulp = require('gulp')
     ,gutil = require('gulp-util')
     ,imagemin = require('gulp-imagemin')
     ,pngcrush = require('imagemin-pngcrush')
+    ,critical = require('critical')
     ,uncss = require('gulp-uncss');
 
 
@@ -73,6 +74,25 @@ gulp.task('images', function () {
         }))
         .on('error', errorHandler)
         .pipe(gulp.dest('./public_html/assets/img/'));
+});
+
+
+// gulp.task('copystyles', function () {
+//     return gulp.src(['./public_html/assets/css/styles.min.css'])
+//         .pipe(rename('small.css'))
+//         .pipe(gulp.dest(css_dest));
+// });
+
+gulp.task('critical', function () {
+    critical.generateInline({
+        base: './',
+        src: './public_html/index.php',
+        styleTarget: './public_html/assets/css/small.css',
+        htmlTarget: './index.php',
+        width: 320,
+        height: 480,
+        minify: true
+    });
 });
 
 
