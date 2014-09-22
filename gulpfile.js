@@ -28,7 +28,7 @@ function errorHandler (error) {
 }
 
 gulp.task('sass', function() {
-  gulp.src(sass_src)
+  return gulp.src(sass_src)
   .pipe(rename('style.scss'))
   .pipe(sass({
     paths: [ path.join(__dirname, 'sass', 'includes') ]
@@ -49,18 +49,18 @@ gulp.task('js', function() {
   .pipe(livereload());
 });
 
-gulp.task('css', function() {
+gulp.task('css', ['sass'], function() {
   gulp.src(['!./public_html/assets/css/*.min.css','!./public_html/assets/css/styles.css','./public_html/assets/css/*', './public_html/assets/css/style.css'])
   .pipe(concat('styles.css'))
   .on('error', errorHandler)
   .pipe(gulp.dest(css_dest))
-  .on('error', errorHandler)
-  .pipe(uncss({
-            html: ['./public_html/index.php', './public_html/header.php','./public_html/footer.php','./public_html/phil.php','./public_html/portfolio.php','./public_html/fallingbrook.php','./public_html/404.php','./public_html/mobile-first.php','./public_html/nav.php','./public_html/niteflite.php' ]
-            ,ignore: ['wow','animated','hover','focus','click','FlipInX','overlay', 'stay']
-        }))
-  .pipe(rename('styles.min.css'))
   .pipe(mincss({keepSpecialComments:0}))
+  .pipe(rename('styles.min.css'))
+  // .pipe(uncss({
+  //           html: ['./public_html/index.php', './public_html/header.php','./public_html/footer.php','./public_html/phil.php','./public_html/portfolio.php','./public_html/fallingbrook.php','./public_html/404.php','./public_html/mobile-first.php','./public_html/nav.php','./public_html/niteflite.php' ]
+  //           ,ignore: ['wow','animated','hover','focus','click','FlipInX','overlay', 'stay']
+  //       }))
+  // .on('error', errorHandler)
   .pipe(gulp.dest(css_dest))
   .pipe(livereload());
 });
@@ -77,18 +77,18 @@ gulp.task('images', function () {
 });
 
 
-// gulp.task('copystyles', function () {
-//     return gulp.src(['./public_html/assets/css/styles.min.css'])
-//         .pipe(rename('small.css'))
-//         .pipe(gulp.dest(css_dest));
-// });
+gulp.task('copystyles', function () {
+    return gulp.src(['./public_html/assets/css/styles.min.css'])
+        .pipe(rename('small.css'))
+        .pipe(gulp.dest(css_dest));
+});
 
-gulp.task('critical', function () {
+gulp.task('critical', ['copystyles'], function () {
     critical.generateInline({
-        base: './',
-        src: './public_html/index.php',
-        styleTarget: './public_html/assets/css/small.css',
-        htmlTarget: './header.php',
+        base: './public_html/',
+        src: 'index.php',
+        styleTarget: 'assets/css/small.css',
+        htmlTarget: 'header.php',
         width: 320,
         height: 480,
         minify: true
@@ -99,7 +99,7 @@ gulp.task('critical', function () {
 gulp.task('watch', function() {
   var server = livereload();
 
-  gulp.watch(sass_watched, ['sass', 'css']);
+  gulp.watch(sass_watched, ['css']);
   gulp.watch(js_watched, ['js']);
 
   gulp.watch([templates_watched, js_watched]).on('change', function(file) {
@@ -109,7 +109,7 @@ gulp.task('watch', function() {
 });
 
 
-gulp.task('default', ['sass', 'css', 'js', 'watch']);
+gulp.task('default', ['css', 'js', 'watch']);
 
 
 
