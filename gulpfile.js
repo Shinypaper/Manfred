@@ -8,7 +8,9 @@ var gulp = require('gulp')
     ,rename = require('gulp-rename')
     ,gutil = require('gulp-util')
     ,imagemin = require('gulp-imagemin')
-    ,pngcrush = require('imagemin-pngcrush');
+    ,pngcrush = require('imagemin-pngcrush')
+    ,uncss = require('gulp-uncss');
+
 
 var sass_src = './public_html/assets/stylesheets/bootstrap.scss' // bootstrap.sass with import to custom.sass file
     ,css_dest = './public_html/assets/css' // css destination dir
@@ -31,8 +33,7 @@ gulp.task('sass', function() {
     paths: [ path.join(__dirname, 'sass', 'includes') ]
   }))
   .on('error', errorHandler)
-  .pipe(gulp.dest(css_dest))
-  .pipe(livereload());
+  .pipe(gulp.dest(css_dest));
 });
 
 gulp.task('js', function() {
@@ -52,10 +53,15 @@ gulp.task('css', function() {
   .pipe(concat('styles.css'))
   .on('error', errorHandler)
   .pipe(gulp.dest(css_dest))
-  .pipe(mincss({keepSpecialComments:0}))
   .on('error', errorHandler)
+  .pipe(uncss({
+            html: ['./public_html/index.php', './public_html/header.php','./public_html/footer.php','./public_html/phil.php','./public_html/portfolio.php','./public_html/fallingbrook.php','./public_html/404.php','./public_html/mobile-first.php','./public_html/nav.php','./public_html/niteflite.php' ]
+            ,ignore: ['wow','animated','hover','focus','click','FlipInX','overlay', 'stay']
+        }))
   .pipe(rename('styles.min.css'))
+  .pipe(mincss({keepSpecialComments:0}))
   .pipe(gulp.dest(css_dest))
+  .pipe(livereload());
 });
 
 gulp.task('images', function () {

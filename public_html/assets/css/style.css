@@ -4635,9 +4635,6 @@ img {
 
 .hero {
   width: 100%;
-<<<<<<< HEAD
-  background: url(/assets/img/toronto.jpg) no-repeat center; }
-=======
   background: url(/assets/img/banner.jpg) no-repeat center;
   background-size: cover;
   top: 0;
@@ -4653,7 +4650,6 @@ img {
   @media (min-width: 768px) {
     .mobile_logo {
       display: none; } }
->>>>>>> origin/manfred
 
 .title-text {
   color: #fff;
@@ -4964,7 +4960,6 @@ label {
       .overlay i {
         margin-top: 40%; } }
   .overlay.stay {
-    display: block;
     background-color: #34495e; }
 
 .input_container {
