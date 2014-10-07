@@ -49,7 +49,7 @@
 				</div>	
 				<div class="mobiletext">
 					<h4><i class="highlight fa fa-paper-plane-o"></i> Launch</h4>
-					<p>Once you are happy with your new website we set you up with hosting and release it in the wild.</p>
+					<p>Once you are happy with your new website we set you up with hosting and release it into the wild.</p>
 				</div>
 				</div>
 			</article>

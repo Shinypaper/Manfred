@@ -21,7 +21,7 @@
 			<div class="container">
 				<h2 class="mobile_header">Mobile View</h2>
 					<div class="mobile_study_text">
-						<p>When it came to designing the <span class="highlight"> mobile view </span>of this site we had to balance pragmatism and style. When visitors would access the site via their mobile device we realized that it would be for very specific reasons. They wanted to know who Greg was, what his specialities are and how they could get into contact with him. We were able to keep the experience very focused and streamlined to meet those goals. We accomplished that be decluttering the interface and eliminating the parallax effect. That made the experience smooth and refreshingly direct.</p>
+						<p>When it came to designing the <span class="highlight"> mobile view </span>of this site we had to balance pragmatism and style. When visitors would access the site via their mobile device we realized that it would be for very specific reasons. They wanted to know who Greg was, what his specialities are and how they could get into contact with him. We were able to keep the experience very focused and streamlined to meet those goals. We accomplished that by decluttering the interface and eliminating the parallax effect. That made the experience smooth and refreshingly direct.</p>
 					</div>
 					<div>
 						<img src="assets/img/clients/niteflite-mobile.png" alt="niteflite-mobile">

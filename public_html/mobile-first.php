@@ -18,7 +18,7 @@
 						</div>
 						<div class="mobiletext">
 							<h4 class="highlight">Why design mobile first?</h4>
-							<p>According to the latest statistics <span class="highlight">more than 70% of all internet users access the web through their primarily through their phones.</span> That means roughly everyone will first see your website on a mobile device. So why design your website in a way that doesn't put those mobile users first?</p>
+							<p>According to the latest statistics <span class="highlight">more than 70% of all internet users access the web primarily through their phones.</span> That means roughly everyone will first see your website on a mobile device. So why not design your website in a way that puts those mobile users first?</p>
 						</div>
 						<div class="mobiletext">
 							<h4 class="highlight">How does this make my new website better?</h4>
@@ -26,7 +26,7 @@
 						</div>	
 						<div class="mobiletext">
 							<h4 class="highlight">What does it mean for bigger screens?</h4>
-							<p>Mobile first design doesn't mean desktop last design. Getting your website to look great on mobile devices for what will be almost everyones first look is very important, but that doesn't mean desktops are forgotten.</p>
+							<p>Mobile first design doesn't mean desktop last design. Getting your website to look great on mobile devices for what will be almost everyone's first look is very important, but that doesn't mean desktops are forgotten.</p>
 						</div>
 					</div>
 				</article>
