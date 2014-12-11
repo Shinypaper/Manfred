@@ -7,6 +7,7 @@
     	<div class="title-text">
     		<h1>The <span class="highlight">Code</span>Brewers</h1>
     		<h2>Bring your website into the <span class="highlight">mobile</span> world.</h2>
+			<a href="/#contact" class="contact-button">Get Started</a>
 	    	<i class="fa fa-angle-double-down wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.4s"></i>
     	</div>
 	</section>
