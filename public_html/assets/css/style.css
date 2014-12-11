@@ -4671,11 +4671,11 @@ img {
     display: block; }
     @media (min-width: 768px) {
       .title-text i {
-        margin-top: 60px;
+        margin-top: 30px;
         font-size: 6em; } }
 
 .contact-button {
-  margin-top: 20px;
+  margin-top: 30px;
   display: inline-block;
   color: white;
   background: #e74c3c;

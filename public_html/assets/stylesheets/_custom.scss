@@ -125,14 +125,14 @@ img {
 		font-size: 2em;
 		display: block;
 		@media (min-width:$screen-sm) {
-			margin-top: ($grid-gutter-width *2);
+			margin-top: ($grid-gutter-width);
 			font-size: 6em;
 		}
 	}
 }
 
 .contact-button {
-	margin-top: 20px;
+	margin-top: $grid-gutter-width;
 	display: inline-block;
 	color: white;
 	background: $brand-primary;
