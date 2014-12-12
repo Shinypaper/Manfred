@@ -12,7 +12,6 @@
     	</div>
 	</section>
  
-
 	<?php include 'portfolio.php'; ?>
 
 	<section class="process section" id="process">
