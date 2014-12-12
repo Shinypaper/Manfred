@@ -4668,10 +4668,11 @@ img {
         font-size: 8em; } }
   .title-text i {
     font-size: 2em;
-    display: block; }
+    display: none; }
     @media (min-width: 768px) {
       .title-text i {
         margin-top: 30px;
+        display: block;
         font-size: 6em; } }
 
 .contact-button {
