@@ -126,7 +126,7 @@ img {
 		display: none;
 		@media (min-width:$screen-sm) {
 			margin-top: ($grid-gutter-width);
-			display: block;
+			display: block; 
 			font-size: 6em;
 		}
 	}
