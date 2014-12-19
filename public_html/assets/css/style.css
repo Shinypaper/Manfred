@@ -4976,7 +4976,6 @@ label {
       .overlay i {
         margin-top: 40%; } }
   .overlay.stay {
-    display: block;
     background-color: #34495e; }
 
 .input_container {
