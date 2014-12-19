@@ -499,6 +499,7 @@ label {
 	}
 	&.stay {
 		background-color: $brand-secondary;
+		display: none;
 	}
 }
 
