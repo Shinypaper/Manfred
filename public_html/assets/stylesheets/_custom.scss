@@ -31,7 +31,7 @@ body {
 
 body {
     margin: 0; 
-    padding: 0;
+    padding: 0px;
     @media (max-width: $screen-sm) {
 		padding-top: 65px;
 	}
@@ -79,7 +79,9 @@ img {
 }
 
 
-
+.sitemap {
+	padding-top: 100px
+}
 
 //Hero Section
 
@@ -96,7 +98,7 @@ img {
 }
 
 .mobile_logo {
-	width: 60px;
+	width: 50px;
 	margin: 0 auto;
 	@media (min-width: $screen-sm) {
 		display: none;
@@ -121,13 +123,30 @@ img {
 	}
 	i {
 		font-size: 2em;
+		display: none;
 		@media (min-width:$screen-sm) {
-			margin-top: ($grid-gutter-width *2);
+			margin-top: ($grid-gutter-width);
+			display: block; 
 			font-size: 6em;
 		}
 	}
 }
 
+.contact-button {
+	margin-top: $grid-gutter-width;
+	display: inline-block;
+	color: white;
+	background: $brand-primary;
+	color: white;
+	font-size: 1.2em;
+	padding: 6px 18px;
+	border: 2px solid $brand-primary; 
+	text-transform: uppercase;
+	&:hover {
+		color: white;
+		border: 2px solid white; 
+	}
+}
 
 
 //HEADER STYLES
@@ -223,28 +242,6 @@ img {
 
 //HEADER STYLES END
 //-----------------
-
-
-
-// .team {
-// 	background-color: $body-bg;
-// 	h2 {
-// 		color: $body-bg;
-// 		display: inline-block;
-// 		@include accent($brand-primary);
-// 	}
-// 	.teammates {
-// 		@include clearfix();
-// 		padding-top: ($grid-gutter-width *2);
-// 	}
-// 	.teamate {
-// 		@include make-sm-column(4);
-// 		text-align: center;
-// 		img {
-// 			width: 300px;
-// 		}
-// 	}
-// }
 
 //PROCESS STYLES
 //----------------
@@ -354,7 +351,6 @@ img {
 		.overlay {
 			display: block;
 		}
-
 	}
 }
 
@@ -481,7 +477,7 @@ label {
 		background: $brand-primary;
 	}
 }
-
+ 
 .overlay {
 	display: none;
 	position: absolute;
@@ -502,11 +498,10 @@ label {
 		}
 	}
 	&.stay {
-		display: block;
 		background-color: $brand-secondary;
+		display: none;
 	}
 }
-
 
 //PORTFOLIO STYLES END
 //--------------------
@@ -555,7 +550,7 @@ footer {
 		text-align: center;
 		background-color: $gray;
 	img {
-		width: 70px;
+		width: 50px;
 		margin: 5px 0;
 	}
 }

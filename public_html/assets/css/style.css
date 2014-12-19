@@ -4590,7 +4590,7 @@ html, body {
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0px; }
   @media (max-width: 768px) {
     body {
       padding-top: 65px; } }
@@ -4630,6 +4630,9 @@ img {
 .highlight {
   color: #e74c3c; }
 
+.sitemap {
+  padding-top: 100px; }
+
 .hero {
   width: 100%;
   background: url(/assets/img/banner.jpg) no-repeat center;
@@ -4642,7 +4645,7 @@ img {
       height: 100%; } }
 
 .mobile_logo {
-  width: 60px;
+  width: 50px;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .mobile_logo {
@@ -4664,11 +4667,27 @@ img {
       .title-text h1 {
         font-size: 8em; } }
   .title-text i {
-    font-size: 2em; }
+    font-size: 2em;
+    display: none; }
     @media (min-width: 768px) {
       .title-text i {
-        margin-top: 60px;
+        margin-top: 30px;
+        display: block;
         font-size: 6em; } }
+
+.contact-button {
+  margin-top: 30px;
+  display: inline-block;
+  color: white;
+  background: #e74c3c;
+  color: white;
+  font-size: 1.2em;
+  padding: 6px 18px;
+  border: 2px solid #e74c3c;
+  text-transform: uppercase; }
+  .contact-button:hover {
+    color: white;
+    border: 2px solid white; }
 
 .masthead {
   background-color: #2E2E34;
@@ -4957,8 +4976,8 @@ label {
       .overlay i {
         margin-top: 40%; } }
   .overlay.stay {
-    display: block;
-    background-color: #34495e; }
+    background-color: #34495e;
+    display: none; }
 
 .input_container {
   padding-bottom: 15px;
@@ -4997,7 +5016,7 @@ footer {
   text-align: center;
   background-color: #2E2E34; }
   footer img {
-    width: 70px;
+    width: 50px;
     margin: 5px 0; }
 
 .footer_accent {
