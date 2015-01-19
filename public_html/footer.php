@@ -1,7 +1,7 @@
 
         <footer>
             <a href="/"><img src="/assets/img/codebrewer-icon-alt.png" alt="footer logo"></a>
-            <p class="copyright">&copy; <?php echo date('Y'); ?> <span class="highlight">Code</span>Brewers</p>
+            <p class="copyright">&copy; <?php date_default_timezone_set('America/Toronto'); echo date('Y'); ?> <span class="highlight">Code</span>Brewers</p>
             <div class="footer_accent"></div>
         </footer>
 
